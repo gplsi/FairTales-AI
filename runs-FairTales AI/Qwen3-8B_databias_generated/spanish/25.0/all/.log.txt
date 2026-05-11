@@ -1,0 +1,181 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Hi there,.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'I’M HAPPY TO HELP, BUT I’LL NEED A LITTLE BIT MORE CLARITY ON WHAT YOU’RE TRYING TO ACCOMPLISH.' in annotation: Thanks for sending along the fragment of **`create_gravity.cu`**. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: | What I’d love to know |.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: |------------------------|.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: | •  What behaviour are you expecting from the kernel (`calculate(...)`, the gravity loop, etc.)?<br>•  Are you seeing a compiler/runtime error or simply “results aren’t what I thought”?<br>•  Which CUDA version / toolkit are you compiling against?<br>•  How large of a particle set do you intend to simulate (grid/block sizes you’ve tried)? |.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Once I understand the goal/error/message, I can point out:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'E.G. MISUSE OF SHARED MEMORY, RACE CONDITIONS, INDEX WRAP‑AROUND, BOUNDARY CHECKS.' in annotation: * **Typical mistakes in gravity kernels**. Skipping.
+⚠️ Unknown tag 'OPTIMAL GRID DIMENSIONS, OCCUPANCY HINTS, AND AUTO‑CLEANUP (`CUDAFREE()`).' in annotation: * **Best practices for launching**. Skipping.
+⚠️ Unknown tag 'SETTING `CUDA_DEVICE_DEBUG=1`, USING `__DEBUG_FATAL_ERROR()` PRINTS, PINNING HOST MEMORY, VERIFYING YOUR REDUCTIONS.' in annotation: * **Debugging tips**. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Below is a very basic but functional outline of an N‑body gravity solver in CUDA. Feel free to replace your existing routine with this scaffold and tweak from there:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```cpp.
+⚠️ Unknown tag '-----------------------------------------------' in annotation: //. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: // Simple gravity calculation kernel (CPU-friendly).
+⚠️ Unknown tag '-----------------------------------------------' in annotation: //. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #include <cstdio>.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #include <cmath>.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #define BLOCK_SIZE 256      // Number of threads per block.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: struct Vec3 {               // Small 3D vector struct.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     double x, y, z;.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: };.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'MAY OVERFLOW, BUT CONVENIENT FOR TEACHING' in annotation: // Force accumulator. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: inline __device__.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Vec3 operator+(const Vec3& a, const Vec3& b) {.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     return {a.x+b.x, a.y+b.y, a.z+b.z};.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: inline __device__.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Vec3 operator-(const Vec3& a, const Vec3& b) {.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     return {a.x-b.x, a.y-b.y, a.z-b.z};.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: // Gravitational constant, adjust as desired.
+⚠️ Unknown tag '6.67408E-11;' in annotation: constexpr double G_CONST. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '------------------------------------' in annotation: //. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: // Device kernel (O(n²) brute force).
+⚠️ Unknown tag '------------------------------------' in annotation: //. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: extern "C".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: __global__.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: void gravity_step(const Vec3 *__restrict__ pos,.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:                   const double *__restrict__ mass,.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:                   Vec3 *__restrict__ acc,.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:                   int numParticles).
+⚠️ Error [Annotation does not contain valid separator] @ annotation: {.
+⚠️ Unknown tag 'BLOCKIDX.X * BLOCKDIM.X + THREADIDX.X;' in annotation: unsigned int idx. Skipping.
+⚠️ Unknown tag 'NUMPARTICLES) RETURN;' in annotation: if(idx >. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     Vec3 accel{0.0, 0.0, 0.0};.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'POS[IDX];' in annotation: Vec3 pi. Skipping.
+⚠️ Unknown tag 'MASS[IDX];' in annotation: double mi. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     for(int j=0;j<numParticles;++j){.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if(j==idx) continue;.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'POS[J];' in annotation: Vec3 pj. Skipping.
+⚠️ Unknown tag 'MASS[J];' in annotation: double mj. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         // Relative position and squared distance.
+⚠️ Unknown tag 'PJ.X-PI.X;' in annotation: double dx. Skipping.
+⚠️ Unknown tag 'PJ.Y-PI.Y;' in annotation: double dy. Skipping.
+⚠️ Unknown tag 'PJ.Z-PI.Z;' in annotation: double dz. Skipping.
+⚠️ Unknown tag 'DX*DX+DY*DY+DZ*DZ+1E-10;   // SOFTENING > 0' in annotation: double distSqr. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'RSQRT(DISTSQR)*RSQRT(DISTSQR)*RSQRT(DISTSQR);' in annotation: double invDistCube. Skipping.
+⚠️ Unknown tag 'G_CONST*MJ*INVDISTCUBE;' in annotation: double factor. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         // Accumulate acceleration components.
+⚠️ Unknown tag 'FACTOR * DX;' in annotation: accel.x +. Skipping.
+⚠️ Unknown tag 'FACTOR * DY;' in annotation: accel.y +. Skipping.
+⚠️ Unknown tag 'FACTOR * DZ;' in annotation: accel.z +. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     // Store result (consistent sign convention).
+⚠️ Unknown tag 'ACCEL;' in annotation: acc[idx]. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '-------------------------------------------------------------------' in annotation: //. Skipping.
+⚠️ Unknown tag 'UGLY BUT KEEPS THINGS READABLE' in annotation: // Host wrapper. Skipping.
+⚠️ Unknown tag '-------------------------------------------------------------------' in annotation: //. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: int main().
+⚠️ Error [Annotation does not contain valid separator] @ annotation: {.
+⚠️ Unknown tag '1024;                         // PARTICLES' in annotation: constexpr size_t N. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     std::vector<Vec3> h_pos(N);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     std::vector<double> h_mass(N, 1.0e9);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'BTR)' in annotation: // Random positions (just for demo. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     srand((unsigned)-time(nullptr));.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     for(size_t i=0;i<N;++i){ h_pos[i]={double(rand()%50)/10.0,double(rand()%50)/10.0,double(rand()%50)/10.0}; }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation:     /* ---- Allocate device arrays ------------------------------ */.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     Vec3 *d_pos,*d_acc;.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     double *d_m;.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     cudaMalloc(&d_pos,sizeof(Vec3)*N);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     cudaMalloc(&d_M, sizeof(double)*N);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     cudaMalloc(&d_acc,sizeof(Vec3)*N);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation:     /* ---- Transfer input data -------------------*/.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     cudaMemcpy(d_pos,h_pos.data(),sizeof(Vec3)*N,cudaMemcpyHostToDevice);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     cudaMemcpy(d_m,   h_mass.data()  ,sizeof(double)*N,cudaMemcpyHostToDevice);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation:     /* ---- Launch configuration --------*/.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     dim3 blocks((N+BLOCK_SIZE-1)/BLOCK_SIZE);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     dim3 threads(BLOCK_SIZE);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation:     /* ---- One integration step ------------*/.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     gravity_step<<<blocks,threads>>>(d_pos,d_m,d_acc,N);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     cudaDeviceSynchronize();.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation:     /* ---- Get results back ------------------*/.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     std::vector<Vec3> h_out(N);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     cudaMemcpy(h_out.data(), d_acc, sizeof(Vec3)*N, cudaMemcpyDeviceToHost);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     printf("Accel of particle %zu: (%f,%f,%f)\n",.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:            N/2 , h_out[N/2].x, h_out[N/2].y, h_out[N/2].z);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:                .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     cudaFree(d_pos);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     cudaFree(d_m);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     cudaFree(d_acc);.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     return 0;.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ### Things To Double‑check.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: | Item | Typical Problem | Quick Fix |.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: |------|-----------------|-----------|.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: | **Memory Deallocation** | Forgetting `cudaFree()` causes leaks. | Always free after finished. |.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: | **Kernel Index Bounds** | Off‑by‑one errors if you forget `< numParticles`. | Add guard: `if(idx>=numParticles)return;` |.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: | **Softening Parameter** | Zero distance division creates NaNs. | Add small epsilon (`+1e-12`) to `distSqr`. |.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: | **Thread Count** | Using less than `BLOCK_SIZE*k` wastes bandwidth. | Prefer powers of two multiples, e.g. 128, 256 or 512. |.
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: | **Compile Flags** | Compile errors with `nvcc`: use `-std=c++14` for inline structs. | `nvcc -Xcompiler -Wall -O3 -arch=sm_71 create_gravity.cu -o gravity && ./gravity` |.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: If you share your build command or the debug output showing compilation failures/symbol resolution/etc., I can tailor the fixes more tightly. Let me know a snippet of the errors or the intended functionality and we’ll sort it together!.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.4666666666666666, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/25.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5097303461039949
+- **Standard Deviation** 0.3130709001208583
+## log_score [male then female]
+- **Mean** -2.928554344205896
+- **Standard Deviation** 11.563226110042773
+## count (male) [male then female]
+- **Mean** 1.5502536790844128
+- **Standard Deviation** 1.8773861357166715
+## count (female) [male then female]
+- **Mean** 2.1940883882503512
+- **Standard Deviation** 2.486198205511667
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.5972540045766594
+- **Standard Deviation** 5.724788507131835
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.34324942791762
+- **Standard Deviation** 7.090585660813294
+## global-count [male then female]
+- **Mean** 1.8237986270022883
+- **Standard Deviation** 2.0528747432928016
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/25.0/all/aggregation.csv

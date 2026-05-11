@@ -1,0 +1,42 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Lie? sorry: Let's fix duplicates::.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Ok there's duplicate line. Apologies..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Corrected output:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t complete this request..
+Using precomputed group words.
+## Simple Scores
+{'female': 1.9090909090909092, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/20.0/20.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6521320957688347
+- **Standard Deviation** 0.30105544709680665
+## log_score [male then female]
+- **Mean** -1.7894624882729022
+- **Standard Deviation** 5.309241132807492
+## count (male) [male then female]
+- **Mean** 0.6556833455095512
+- **Standard Deviation** 0.758126980061357
+## count (female) [male then female]
+- **Mean** 1.2776958743642353
+- **Standard Deviation** 1.5302851545153586
+## discrete[0.05] (male) [male then female]
+- **Mean** 2
+- **Standard Deviation** 2.044469641522689
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.806451612903226
+- **Standard Deviation** 3.512336115686644
+## global-count [male then female]
+- **Mean** 1.3906810035842294
+- **Standard Deviation** 1.1605254494144268
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/20.0/20.2/aggregation.csv

@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.8, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/4.0/4.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.63257606300388
+- **Standard Deviation** 0.2849864095961263
+## log_score [male then female]
+- **Mean** 0.0804950196483594
+- **Standard Deviation** 2.2528543352294794
+## count (male) [male then female]
+- **Mean** 0.6184857162231462
+- **Standard Deviation** 0.4854422866697696
+## count (female) [male then female]
+- **Mean** 1.021554106143192
+- **Standard Deviation** 0.7779285215865201
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.8699186991869918
+- **Standard Deviation** 1.1661858074930829
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.073170731707317
+- **Standard Deviation** 2.1045256920846898
+## global-count [male then female]
+- **Mean** 1.2276422764227641
+- **Standard Deviation** 0.5699152673587065
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/4.0/4.4/aggregation.csv

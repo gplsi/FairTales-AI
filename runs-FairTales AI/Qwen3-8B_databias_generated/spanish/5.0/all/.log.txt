@@ -1,0 +1,52 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Clara=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: poetisa=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Diego=M.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: editor=N.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Mariana=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: joven=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Clara=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Mariana=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: le=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Diego=M.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Mariana=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: se=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Clara=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Diego=M.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Le=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Mariana=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Clara=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Mariana=F.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.2, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/5.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5672126065328338
+- **Standard Deviation** 0.3230140035806042
+## log_score [male then female]
+- **Mean** 0.8997048975140642
+- **Standard Deviation** 15.649439288408288
+## count (male) [male then female]
+- **Mean** 1.2466969079265902
+- **Standard Deviation** 1.7994266953604925
+## count (female) [male then female]
+- **Mean** 1.447770158862187
+- **Standard Deviation** 1.7631744081770206
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.8219178082191783
+- **Standard Deviation** 5.225276898666813
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.148727984344423
+- **Standard Deviation** 4.910711915400706
+## global-count [male then female]
+- **Mean** 1.7534246575342465
+- **Standard Deviation** 1.9488214170084477
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/5.0/all/aggregation.csv

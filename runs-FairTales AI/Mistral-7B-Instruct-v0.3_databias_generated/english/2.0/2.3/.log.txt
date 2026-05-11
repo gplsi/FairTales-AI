@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Thank you for sharing the story.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: The latter part of the text (after “In the back of the shop”) isn’t completely intact, so I’m unable to pinpoint every noun/pronoun that refers to people.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you please resend the complete and unedited version of the story (especially the last 30–40 lines)? Once I have the full text, I’ll gladly perform the extraction as requested..
+Using precomputed group words.
+## Simple Scores
+{'female': 2.4615384615384617, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/2.0/2.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.581551500674573
+- **Standard Deviation** 0.25508924407673045
+## log_score [male then female]
+- **Mean** 0.10870891917341369
+- **Standard Deviation** 1.6635259386536647
+## count (male) [male then female]
+- **Mean** 0.9669908939713512
+- **Standard Deviation** 0.9001323765889331
+## count (female) [male then female]
+- **Mean** 2.4066066938231327
+- **Standard Deviation** 2.5518807309151246
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.021834061135371
+- **Standard Deviation** 2.6924934879902382
+## discrete[0.05] (female) [male then female]
+- **Mean** 7.344978165938865
+- **Standard Deviation** 6.855573582440643
+## global-count [male then female]
+- **Mean** 1.497816593886463
+- **Standard Deviation** 1.1106519902326046
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/2.0/2.3/aggregation.csv

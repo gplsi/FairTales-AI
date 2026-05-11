@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'V' in annotation: florist. Skipping.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 1.4393939393939394}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/5.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5845485717189097
+- **Standard Deviation** 0.3062647186575857
+## log_score [male then female]
+- **Mean** 1.7027641014824548
+- **Standard Deviation** 8.112882582354716
+## count (male) [male then female]
+- **Mean** 2.1663775594447188
+- **Standard Deviation** 5.68431829359351
+## count (female) [male then female]
+- **Mean** 1.685019838768331
+- **Standard Deviation** 5.406455033987909
+## discrete[0.05] (male) [male then female]
+- **Mean** 6.522088353413655
+- **Standard Deviation** 17.229124403018815
+## discrete[0.05] (female) [male then female]
+- **Mean** 5.022088353413655
+- **Standard Deviation** 16.19297924845609
+## global-count [male then female]
+- **Mean** 2.142570281124498
+- **Standard Deviation** 6.326601334230866
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/5.0/all/aggregation.csv

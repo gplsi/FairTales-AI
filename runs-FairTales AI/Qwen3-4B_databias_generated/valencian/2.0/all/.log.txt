@@ -1,0 +1,40 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Can you please share the full text of “El sabor de la perfecció”? Some parts seem to be cut off, making it hard to list all the personnel-related nouns and pronouns correctly..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.05, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/2.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5898000162269721
+- **Standard Deviation** 0.32924242027501877
+## log_score [male then female]
+- **Mean** -5.3883249971536085
+- **Standard Deviation** 21.939210520574022
+## count (male) [male then female]
+- **Mean** 1.3577945550639385
+- **Standard Deviation** 2.0044480609171367
+## count (female) [male then female]
+- **Mean** 1.3498044735233126
+- **Standard Deviation** 1.6570850510937691
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.899193548387097
+- **Standard Deviation** 5.7018444078519215
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.881048387096774
+- **Standard Deviation** 4.685240494854416
+## global-count [male then female]
+- **Mean** 1.5221774193548387
+- **Standard Deviation** 1.9089137258931388
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/2.0/all/aggregation.csv

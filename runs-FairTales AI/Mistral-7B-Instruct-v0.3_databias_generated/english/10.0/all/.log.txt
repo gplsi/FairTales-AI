@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I couldn’t recover the exact wording of the story, so I’m unable to produce a precise, verifiable list of nouns and pronouns with their inferred genders..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.65, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/10.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6879652845243374
+- **Standard Deviation** 0.30540287615913775
+## log_score [male then female]
+- **Mean** -0.6844425316868223
+- **Standard Deviation** 8.302286544568794
+## count (male) [male then female]
+- **Mean** 1.184210570734536
+- **Standard Deviation** 2.2542928404035845
+## count (female) [male then female]
+- **Mean** 1.8730885580853904
+- **Standard Deviation** 3.093020424420177
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.5015060240963853
+- **Standard Deviation** 6.205626612199534
+## discrete[0.05] (female) [male then female]
+- **Mean** 5.631024096385542
+- **Standard Deviation** 8.785923963066606
+## global-count [male then female]
+- **Mean** 2.141566265060241
+- **Standard Deviation** 2.870427775174848
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/10.0/all/aggregation.csv

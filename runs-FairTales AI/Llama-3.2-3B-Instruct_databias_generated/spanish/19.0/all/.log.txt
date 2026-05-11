@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m unable to perform the extraction because the supplied text is incomplete/corrupted. Please resend a clear, uninterrupted version of the story..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough detail to extract every person‑referencing word from the text—you’ll need to give me the full, unbroken version of the story so I can perform the extraction accurately..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.2580645161290323, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/spanish/19.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6750080397695394
+- **Standard Deviation** 0.3459389398173099
+## log_score [male then female]
+- **Mean** 3.8232045565707176
+- **Standard Deviation** 22.35364648254958
+## count (male) [male then female]
+- **Mean** 0.8666701219386294
+- **Standard Deviation** 1.1493406236420114
+## count (female) [male then female]
+- **Mean** 1.1663151472042377
+- **Standard Deviation** 1.6492065729900292
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.706422018348624
+- **Standard Deviation** 3.3052508144728026
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.5064220183486237
+- **Standard Deviation** 5.070138123723253
+## global-count [male then female]
+- **Mean** 1.9779816513761468
+- **Standard Deviation** 2.14704644076004
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/spanish/19.0/all/aggregation.csv

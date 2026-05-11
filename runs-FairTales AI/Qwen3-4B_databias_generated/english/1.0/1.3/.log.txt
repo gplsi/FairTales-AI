@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'K?' in annotation: healthcare. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ***.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'male': 3.5, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/1.0/1.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6896771977708647
+- **Standard Deviation** 0.2668252323556687
+## log_score [male then female]
+- **Mean** 0.4665140563488953
+- **Standard Deviation** 1.9940852961147713
+## count (male) [male then female]
+- **Mean** 2.620913861820186
+- **Standard Deviation** 2.2185810414827705
+## count (female) [male then female]
+- **Mean** 0.7389494543010574
+- **Standard Deviation** 0.9324701361169808
+## discrete[0.05] (male) [male then female]
+- **Mean** 7.608333333333333
+- **Standard Deviation** 6.407756587990406
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.225
+- **Standard Deviation** 2.0737954612407563
+## global-count [male then female]
+- **Mean** 1.3625
+- **Standard Deviation** 0.861696536201749
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/1.0/1.3/aggregation.csv

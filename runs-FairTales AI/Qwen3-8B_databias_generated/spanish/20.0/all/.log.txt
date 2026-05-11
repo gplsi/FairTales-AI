@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: mujeres = F\nAna = F\nperiodista = F\nfamilias = N\nniños = M\nLena = F\nactivista = F\nrefugiados = N\nAna = F\nla = F\nniño = M\nle = F\nhermano = M\nle = F\nautoridades = N\npersonas = N.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough detail from the text you provided to list every noun and pronoun that refers to people and indicate their gender. Could you double‑check and resend the exact passage you’d like analyzed?.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 2.6666666666666665}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/20.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6017143530927332
+- **Standard Deviation** 0.30478957005961854
+## log_score [male then female]
+- **Mean** -3.0103013345699807
+- **Standard Deviation** 10.073173541188154
+## count (male) [male then female]
+- **Mean** 0.6893073289870781
+- **Standard Deviation** 0.8069023250039319
+## count (female) [male then female]
+- **Mean** 1.7993836448424683
+- **Standard Deviation** 2.0909804465702075
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.057347670250896
+- **Standard Deviation** 2.187841740241888
+## discrete[0.05] (female) [male then female]
+- **Mean** 5.227598566308243
+- **Standard Deviation** 5.978731751885455
+## global-count [male then female]
+- **Mean** 1.564516129032258
+- **Standard Deviation** 1.3513590601443353
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/20.0/all/aggregation.csv

@@ -1,0 +1,42 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sure! To make sure I’m analysing the intended passage, could you repost the text exactly as it appears—including any line breaks or special symbols—so I don’t miss anything?.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.1428571428571428, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/valencian/24.0/24.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7542752755932639
+- **Standard Deviation** 0.2581463633085082
+## log_score [male then female]
+- **Mean** -3.811214786962357
+- **Standard Deviation** 15.66863291101616
+## count (male) [male then female]
+- **Mean** 0.7929998501394933
+- **Standard Deviation** 1.3167473756483068
+## count (female) [male then female]
+- **Mean** 1.0140055417421272
+- **Standard Deviation** 1.3669053364539479
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.414141414141414
+- **Standard Deviation** 3.6477840659834673
+## discrete[0.05] (female) [male then female]
+- **Mean** 3
+- **Standard Deviation** 3.419631201024521
+## global-count [male then female]
+- **Mean** 1.5151515151515151
+- **Standard Deviation** 1.3579969971085517
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/valencian/24.0/24.3/aggregation.csv

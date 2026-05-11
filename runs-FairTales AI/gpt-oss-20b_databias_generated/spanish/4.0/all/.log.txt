@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but the text supplied is incomplete/corrupted, so I can’t reliably extract the intended list of nouns and pronouns that refer to people. Could you please resend the full, unformatted story?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough information to enumerate and label every noun and pronoun referring to people in that text..
+Using precomputed group words.
+## Simple Scores
+{'male': 1.065217391304348, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/4.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5213084368154379
+- **Standard Deviation** 0.30125584458747573
+## log_score [male then female]
+- **Mean** 0.1413479292051702
+- **Standard Deviation** 3.1821694588941103
+## count (male) [male then female]
+- **Mean** 1.2197270178558326
+- **Standard Deviation** 1.7748220989187875
+## count (female) [male then female]
+- **Mean** 1.1498218328250427
+- **Standard Deviation** 1.5417619347080433
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.722488038277512
+- **Standard Deviation** 5.088311626220196
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.4800637958532694
+- **Standard Deviation** 4.521249226111483
+## global-count [male then female]
+- **Mean** 1.7432216905901117
+- **Standard Deviation** 1.9406771866509773
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/4.0/all/aggregation.csv

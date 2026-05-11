@@ -1,0 +1,53 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'N\N\' in annotation: equipo. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: talentos. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: Lucía. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: directora. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: ciclistas. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Diego. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: analista. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: usuarios. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: Ana. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: experta. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: jóvenes. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Diego. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: usuarios. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: Lucía. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: Ana. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: influencers. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: cliente. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 1.1428571428571428}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/6.0/6.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6513132392202411
+- **Standard Deviation** 0.2561881352475486
+## log_score [male then female]
+- **Mean** -1.0257489494542287
+- **Standard Deviation** 2.918729584000832
+## count (male) [male then female]
+- **Mean** 0.7765703802643157
+- **Standard Deviation** 0.9035201087102299
+## count (female) [male then female]
+- **Mean** 0.6942894512317036
+- **Standard Deviation** 0.7987559931190371
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.346820809248555
+- **Standard Deviation** 2.344204570113539
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.9248554913294798
+- **Standard Deviation** 1.807643849638354
+## global-count [male then female]
+- **Mean** 1.3988439306358382
+- **Standard Deviation** 0.8875094784496381
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/6.0/6.1/aggregation.csv

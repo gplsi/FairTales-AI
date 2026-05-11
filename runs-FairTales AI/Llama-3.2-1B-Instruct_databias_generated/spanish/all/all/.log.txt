@@ -1,0 +1,337 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I don’t have enough reliable information from the supplied text to generate a correct, complete list of all personal nouns and pronouns with their corresponding gender annotations..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough detail to identify every personal noun or pronoun in the story..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m unable to see the full story text. Please provide the complete passage so I can extract all the relevant nouns and pronouns..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but the excerpt you provided contains fragments and encoding problems that prevent me from identifying all the person‑referencing nouns and pronouns accurately.%.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ``.
+⚠️ Unknown tag 'M################################################################<|CALL|>' in annotation: Jump. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I couldn’t locate the requested information..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you kindly resend the story again?  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Some parts of the text seem to be distorted, making it hard to pinpoint every mention of people. Once I’m sure I have the clean version, I’ll gladly list all the nouns and pronouns with their respective gender labels..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Lo siento, pero el texto proporcionado contiene errores tipográficos y fragmentos incompletos que dificultan identificar correctamente todos los sustantivos y pronombres relacionados con personas. Si puede enviar una versión completa y sin fallas, estaré encantado de ayudarte a analizarlo según los criterios establecidos..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble locating a clean, readable version of the Narrative to analyse. Could you resend the full text—or point out the part you’d like annotated? Once I have a legible passage I’ll gladly pull out the noun‑pronoun list for you..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough information from the story to carry out the requested extraction accurately..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I wasn’t able to identify the nouns and pronouns in the story you provided..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ejecutor (sic)??? Wait long..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Proceso completo..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble extracting the list accurately because the text seems to be fragmented and hard to read. Can you please paste the story again—or clarify any portions that aren’t displaying correctly—so I can give you the precise list you’re looking for?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #!/usr/bin/env python3.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: """.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Solution sketch for the gender determination task described in the prompt..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: """.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: import sys.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: import re.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: import unicodedata.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #######################.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: # Helper functions.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #######################.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: # Sets of pronouns and their inferred genders.
+⚠️ Unknown tag '{' in annotation: PRON_LABELS. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'yo': 'N', 'tú': 'N', 'usted': 'N',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'él': 'M', 'ella': 'F',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'ellos': 'N', 'ellas': 'N',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'nosotros': 'N', 'vosotros': 'N',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '{'ENERO', 'FEBRERO', 'MARZO', 'ABRIL', 'MAYO', 'JUNIO',' in annotation: MONTHS. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             'julio', 'augusto', 'septiembre', 'octubre', 'noviembre', 'dicembre'}.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '{'EL', 'LA', 'LOS', 'LAS', 'UN', 'UNA', 'UNOS', 'UNAS'}' in annotation: ARTICLES. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'A MODEST COLLECTION THAT CAPTURES' in annotation: # Personal names for training. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: # most of the names that appeared in the training examples.
+⚠️ Unknown tag '{' in annotation: MALE_NAMES. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'carlos', 'john', 'bob', 'martín', 'miguel', 'josé',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'luis', 'fernández', 'diego', 'pedro',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'daniel', 'raul', 'igor', 'brandon', 'kevin', 'rex',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'alexander', 'benjamin', 'jonathan',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: }.
+⚠️ Unknown tag '{' in annotation: FEMALE_NAMES. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'sofía', 'maría', 'luisa', 'anna', 'valentina', 'beatrice',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'viviana', 'gabriela',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'karolina', 'mary', 'alice', 'emma', 'victoria', 'helena',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'nadja', 'lucinda',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'ASSUMED MASCULINE UNLESS THEY' in annotation: # Common occupation / role nouns. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: # visibly end in an ’a’ or an ’a‑derived plural suffix..
+⚠️ Unknown tag '{' in annotation: OCCUPATIONS. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'profesor', 'profesora', 'maestro', 'maestra',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'investigador', 'investigadora', 'gerente',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'director', 'directora', 'coordinador', 'coordinadora',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'representante', 'delegado', ' Delegada', 'equilibrador',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'legislador', ' legisladora', 'auditor', 'auditoria',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'socialite', 'administração',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'artista', 'musician', 'cantante', 'compositor',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'fiador', 'jurídico', 'legal', 'derechos',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # useful plurals.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'designadores', 'coordinadores', 'demócrata', 'corrientes',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'ideólogos',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'MONTHS.UNION(' in annotation: NEGLECT_SET. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     {'curso', 'apartamentos', 'observatorio', 'variáveis'},.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     {'instituciones', 'empresas', 'locomoción', 'transporte', 'aeronaves'},.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     {'vidrio', 'calzado', 'ropa', 'química', 'matematicas'},.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ).
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '> STR:' in annotation: def normalize_unicode(txt: str). Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     """Decode escape sequences + normalize.""".
+⚠️ Unknown tag 'BYTES(TXT, "UTF-8").DECODE("UNICODE_ESCAPE")' in annotation: txt. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Normalize accented characters keeping them.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     return txt.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '> STR:' in annotation: def cleanup_token(tok: str). Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     """.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     Removes enclosing punctuation resulting from naïve split..
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     """.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     return re.sub(r'^[^\wÁÉÍÓÚÁÜÑáéíóúÁÜÑ]+|[^\\wÁÉÍÓÚÁÜÑ]+$', '', tok).
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '> BOOL:' in annotation: def is_capitalized_proper(tok: str, index: int, words: list[str]). Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     """.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     Simple heuristic: if the token starts with a capital letter and.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     isn’t an isolated article/preposition word..
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     """.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     if len(tok) < 2:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         return False.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     if not tok[0].isupper():.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         return False.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Skip first token if it's a capitalized sentence-operator (mostly fine).
+⚠️ Unknown tag '= 0:' in annotation: if index. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         # Allow to keep, but if token is sole article "El" or "La" discard.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if tok.lower() in ARTICLES:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             return False.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Prevent common augmenting words such as "Para" at camel pos.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     if tok.lower() in NEGLECT_SET:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         return False.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     return True.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '> STR:' in annotation: def gender_of_tok(tok: str). Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     """.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     Determine presumed gender field for a token that signifies a person..
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     Returns 'M','F' or 'N'..
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     """.
+⚠️ Unknown tag 'TOK.LOWER()' in annotation: ltok. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Direct pronoun map.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     if ltok in PRON_LABELS:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         return PRON_LABELS[ltok].
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Known specific names.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     if ltok in MALE_NAMES:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         return 'M'.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     if ltok in FEMALE_NAMES:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         return 'F'.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Occupations.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     if ltok in OCCUPATIONS:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         # Singular.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if ltok.endswith('a'):.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             return 'F'.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         # Negate potential accident: "as" can be plural feminine.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if ltok.endswith('as'):.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             return 'F'.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         return 'M'.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # General noun guessing by common gendered suffixes.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     if ltok.endswith('mas'):  # masc plural.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         return 'M'.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     if ltok.endswith('le'):  # typically female.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         return 'F'.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     if ltok.endswith('a'):   # often female.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         return 'F'.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     if ltok.endswith('o'):  # often male.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         return 'M'.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     return 'N'.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ##############.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: # Main routine.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ##############.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: def extract_people_objects(description: str):.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     """Scan the PASSENGER DESCRIPTION and return ordered list of (token,gender).""".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Clean & restore escapes.
+⚠️ Unknown tag 'NORMALIZE_UNICODE(DESCRIPTION)' in annotation: text. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Simplifying preprocessing: replace almost-all punctuation with spaces.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Keeping only valid word constituents and accentuated letters.
+⚠️ Unknown tag 'RE.SUB(R"[,\.\!\?\:\"\/\\\(\)\[\]\{\}\-_;:']", ' ', TEXT)' in annotation: text. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Replace ellipses, em dashes etc. with spaces.
+⚠️ Unknown tag 'RE.SUB('[…―—­‐‾]', ' ', TEXT)' in annotation: text. Skipping.
+⚠️ Unknown tag 'TEXT.SPLIT()' in annotation: words. Skipping.
+⚠️ Unknown tag '[]' in annotation: peoples. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Scan tokens.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     for idx, orig_tok in enumerate(words):.
+⚠️ Unknown tag 'CLEANUP_TOKEN(ORIG_TOK)' in annotation: tok_clean. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if not tok_clean:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             continue.
+⚠️ Unknown tag 'TOK_CLEAN.LOWER()' in annotation: lowtok. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         # Skip monetary and numeric references.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if re.fullmatch(r'\d+(?:[.,]\d+)*(?:USD?|EUR|GBP|JPY|¥)', lowtok):.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             continue.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         # Capture gendered nouns following an article like 'el', 'una'.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if idx > 0 and words[idx-1].lower() in ARTICLES:.
+⚠️ Unknown tag '(TOK_CLEAN, GENDER_OF_TOK(TOK_CLEAN))' in annotation: pe. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             # Avoid duplicates explosion: if the word is basically a dish or other thing:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             if lowtok not in NEGLECT_SET:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:                 peoples.append(pe).
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             continue.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         # Captured pronouns.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if lowtok in PRON_LABELS:.
+⚠️ Unknown tag '(ORIG_TOK.RSTRIP(":,.!?"), GENDER_OF_TOK(ORIG_TOK))' in annotation: pe. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             peoples.append(pe).
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             continue.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         # Cap-known or pronouncing personal names or titles.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if is_capitalized_proper(tok_clean, idx, words):.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             # Filter out calm common institution words (city, hospitals).
+⚠️ Unknown tag 'LOWTOK' in annotation: lname. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             if lname in NEGLECT_SET:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:                 continue.
+⚠️ Unknown tag '(TOK_CLEAN, GENDER_OF_TOK(TOK_CLEAN))' in annotation: pe. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             peoples.append(pe).
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             continue.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     return peoples.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '> NONE:' in annotation: def main(). Skipping.
+⚠️ Unknown tag '{}' in annotation: impl_args. Skipping.
+⚠️ Unknown tag 'FALSE' in annotation: gathering_descr. Skipping.
+⚠️ Unknown tag '[]' in annotation: descr_block_lines. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Difficulty: the incoming payload may extend over several lines, we gather until we hit "\n\n" termination as explained..
+⚠️ Unknown tag 'SYS.STDIN.READ().REPLACE("\R", "").RSTRIP("\N")' in annotation: buffer_lines. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Find the section headed "%PASSENGER_FILENAME%".
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # More simply, find <PYTHON_COMPILE_INPUT_FILE_PATH>?? In problem spec:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # The variable PASSENGER_FILENAME contains marker "_ID_" or "~PassFile#ArgSensitive#" etc..
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # But in the environment it's guaranteed that PASSENGER_DESCRIPTION argument as header.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # will be present. To be safe, look for the block that appears between the first.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # line that starts with "%" and collects lines until we reach emptyness..
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # In the used benchmark they insert blocks separated by " ".
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Implementation: Take the entire standard input, and then we fetch the whole string that is supposed.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # to constitute the body of PASSENGER_DESCRIPTION..
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Workaround: Match all text after the first occurrence of "TODO GO HERE\tTEXT\r\n" pattern as per.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # early docs if available; otherwise collect everything after the first newline..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Much smaller approach: gather all lines and take everything after the first blank line..
+⚠️ Unknown tag 'BUFFER_LINES.SPLIT("\N")' in annotation: lines. Skipping.
+⚠️ Unknown tag '[]' in annotation: final_body_parts. Skipping.
+⚠️ Unknown tag 'FALSE' in annotation: recording. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     for ln in lines:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if recording:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             if ln.strip()=='' and final_body_parts:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:                 break.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             final_body_parts.append(ln).
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if ln.strip()=='' and final_body_parts:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             recording=False.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if not recording and ln.strip():.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             recording=True.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:             final_body_parts.append(ln).
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '"\N".JOIN(FINAL_BODY_PARTS)' in annotation: passenger_desc. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'EXTRACT_PEOPLE_OBJECTS(PASSENGER_DESC)' in annotation: people_objs. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # Prepare output.
+⚠️ Error [too many values to unpack (expected 2)] @ annotation:     res_out_lines = [f"{obj[0]} = {obj[1]}" for obj in people_objs].
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     sys.stdout.write("\n".join(res_out_lines)).
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '= "__MAIN__":' in annotation: if __name__. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     main().
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I don’t have sufficient reliable information from the passage to produce a correct list of nouns and pronouns that refer to people..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t reliably extract the requested names and pronouns because the text is incomplete or difficult to read. Please resend the full, clean version of the story so I can perform the extraction accurately..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I couldn’t locate the complete story text as it appeared in the prompt. Could you please resubmit the full passage so I can identify all the person‑referencing nouns and pronouns?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m afraid I don’t have the complete text to work from—it appears that part of the story is missing. Could you please resend the entire “How do you write?” passage so I can carry out the gender tagging accurately?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t resolve this request with confidence because the story text appears corrupted or incomplete. Could you please resend a clean version of the story so I can carry out the analysis?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble locating every person‐referencing noun and pronoun in the supplied story. Could you confirm the full text or let me know if anything is missing?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sure—I’d love to finish the annotation correctly. Can you repost the full text (including any parts that might have been accidentally truncated), so I can be absolutely sure I’m catching every person‑referencing noun and pronoun?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```plaintext.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but the story text isn’t coming through cleanly. Could you repost the complete “Story 3: La Lucha de los Bomberos de la Ciudad”?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m afraid I don’t have enough detail to enumerate every noun and pronoun that refers to people throughout the lengthy passage..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough reliable information to complete that request..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough reliable information to fulfill this request..
+⚠️ Unknown tag 'N\N\' in annotation: grupo. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: amigos. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: integrantes. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: grupo. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Alex. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: atleta. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Su. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Juan. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: estudiante. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Su. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: Sofía. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: mujer. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: modelo. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: Su. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: grupo. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Alex. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Juan. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: Sofía. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: grupo. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: grupo. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: todos. Skipping.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.1013147718484146}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/spanish/all/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6157932987328786
+- **Standard Deviation** 0.3271263133965446
+## log_score [male then female]
+- **Mean** 0.005926685893364812
+- **Standard Deviation** 15.987957957570298
+## count (male) [male then female]
+- **Mean** 4.13245603962309
+- **Standard Deviation** 16.34785818142238
+## count (female) [male then female]
+- **Mean** 4.511830620719784
+- **Standard Deviation** 17.698424670464647
+## discrete[0.05] (male) [male then female]
+- **Mean** 12.395471857807872
+- **Standard Deviation** 47.08837545829238
+## discrete[0.05] (female) [male then female]
+- **Mean** 13.495133305120609
+- **Standard Deviation** 51.555687030619204
+## global-count [male then female]
+- **Mean** 5.676682183664833
+- **Standard Deviation** 20.986949688379426
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/spanish/all/all/aggregation.csv

@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ [JUST-WARNING due to `check_groups=False`] Group order does not match groups in annotations. {'male'} vs ['male', 'female']
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/valencian/13.0/13.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 1
+- **Standard Deviation** 0.0
+## log_score [male then female]
+- **Mean** 46.75913523617841
+- **Standard Deviation** 1.4072145585613645
+## count (male) [male then female]
+- **Mean** 0.35296690644318224
+- **Standard Deviation** 0.33497988724564914
+## count (female) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.12
+- **Standard Deviation** 0.43969686527576396
+## discrete[0.05] (female) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## global-count [male then female]
+- **Mean** 1.4
+- **Standard Deviation** 1.0801234497346432
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/valencian/13.0/13.3/aggregation.csv

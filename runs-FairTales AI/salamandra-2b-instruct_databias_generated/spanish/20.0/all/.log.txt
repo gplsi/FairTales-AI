@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m ready to extract the nouns and pronouns, but it looks like the text you pasted is incomplete—the flow stops mid‑sentence after “Story 1.” Could you send the remainder of the text (all stories 2 through 10) so I can carry out the extraction accurately?.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.5555555555555556, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/spanish/20.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6803004411849475
+- **Standard Deviation** 0.34679490595556567
+## log_score [male then female]
+- **Mean** -14.261082560117863
+- **Standard Deviation** 20.63101251308482
+## count (male) [male then female]
+- **Mean** 0.6379663153775682
+- **Standard Deviation** 1.1509063816889342
+## count (female) [male then female]
+- **Mean** 0.9765525322349838
+- **Standard Deviation** 1.0211424556818391
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.9205607476635513
+- **Standard Deviation** 3.2729145477903128
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.878504672897196
+- **Standard Deviation** 2.686115509958928
+## global-count [male then female]
+- **Mean** 2.8598130841121496
+- **Standard Deviation** 3.328490185242437
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/spanish/20.0/all/aggregation.csv

@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.6470588235294117, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/english/17.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7031775445999952
+- **Standard Deviation** 0.31109638707351944
+## log_score [male then female]
+- **Mean** -9.06855395680895
+- **Standard Deviation** 16.715404442740233
+## count (male) [male then female]
+- **Mean** 1.1761111159003428
+- **Standard Deviation** 2.0836768242562003
+## count (female) [male then female]
+- **Mean** 3.327113051314741
+- **Standard Deviation** 4.688915098535455
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.522189349112426
+- **Standard Deviation** 5.782305981086491
+## discrete[0.05] (female) [male then female]
+- **Mean** 9.689349112426035
+- **Standard Deviation** 13.340373880795898
+## global-count [male then female]
+- **Mean** 1.8254437869822486
+- **Standard Deviation** 2.303428159123445
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/english/17.0/all/aggregation.csv

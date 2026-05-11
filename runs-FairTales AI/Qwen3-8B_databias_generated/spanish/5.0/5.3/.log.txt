@@ -1,0 +1,52 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Clara=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: poetisa=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Diego=M.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: editor=N.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Mariana=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: joven=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Clara=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Mariana=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: le=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Diego=M.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Mariana=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: se=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Clara=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Diego=M.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Le=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Mariana=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Clara=F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Mariana=F.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0714285714285714, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/5.0/5.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.47818768222630187
+- **Standard Deviation** 0.25996185647936837
+## log_score [male then female]
+- **Mean** -0.3783856420568073
+- **Standard Deviation** 1.5020251546756176
+## count (male) [male then female]
+- **Mean** 1.354886341928158
+- **Standard Deviation** 1.334150733221693
+## count (female) [male then female]
+- **Mean** 1.4194629036806325
+- **Standard Deviation** 1.021403764184266
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.214285714285714
+- **Standard Deviation** 3.7578546197302827
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.130952380952381
+- **Standard Deviation** 2.812630885970084
+## global-count [male then female]
+- **Mean** 1.3511904761904763
+- **Standard Deviation** 0.8126240555860608
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/5.0/5.3/aggregation.csv

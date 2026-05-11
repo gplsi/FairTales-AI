@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: teams = N\nplayers = N\nEmily = F\nher = F\nteam = N\nkids = N\nher = F\nher = F\nteammates = N\nJack = M\nplayer = N\nSarah = F\nenthusiast = N\ntrees = N\nEmily = F\nteam = N\nKickstarters = N\ntheir = N\narch-rivals = N\nThunderbolts = N\nteams = N\nKickstarters = N\nJack = M\nhis = M\nteammates = N\nSarah = F\nteam = N\nKickstarters = N\nthemselves = N\nThunderbolts = N\ncrowd = N\ntheir = N\nteams = N\nEmily = F\nteam = N\nKickstarters = N\ntheir = N\nJack = M\nEmily = F\nwe = N\nwe = N\neveryone = N\nwe = N\nEmily = F\nher = F\nwe = N\nshe = F\npeople = N\nwe = N\nwinners = N\npeople = N\nteams = N\ntheir = N\nKickstarters = N\ntheir = N\nopponents = N\nfamily = N.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.2857142857142856, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/english/19.0/19.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7314830247701719
+- **Standard Deviation** 0.2649689354812382
+## log_score [male then female]
+- **Mean** -0.9115775313833147
+- **Standard Deviation** 3.674318049068811
+## count (male) [male then female]
+- **Mean** 0.5474048123582571
+- **Standard Deviation** 0.6941921923033156
+## count (female) [male then female]
+- **Mean** 1.2507191845520866
+- **Standard Deviation** 1.623297641329202
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.6372549019607843
+- **Standard Deviation** 1.8743233429209105
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.8676470588235294
+- **Standard Deviation** 4.147185211117476
+## global-count [male then female]
+- **Mean** 1.4264705882352942
+- **Standard Deviation** 0.876336583175928
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/english/19.0/19.2/aggregation.csv

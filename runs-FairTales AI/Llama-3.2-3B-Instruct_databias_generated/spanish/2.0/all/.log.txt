@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m not completely sure I’ve got every part of the story—there seem to be some gaps in the text you supplied.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you please confirm which sentences or passages should be examined, or let me know if there are any omissions?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble locating all the relevant words—the supplied story appears to be fragmented or corrupted. To give you an accurate list of nouns and pronouns that refer to people, could you please resend the complete, unmodified text?.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.3333333333333333}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/spanish/2.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7270810942002793
+- **Standard Deviation** 0.2937369406341296
+## log_score [male then female]
+- **Mean** 0.9437704011146238
+- **Standard Deviation** 19.790498842413466
+## count (male) [male then female]
+- **Mean** 1.1081992758442931
+- **Standard Deviation** 1.8773359078779999
+## count (female) [male then female]
+- **Mean** 1.490631768975342
+- **Standard Deviation** 2.3634451508409953
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.337037037037037
+- **Standard Deviation** 5.080914716717011
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.475925925925926
+- **Standard Deviation** 6.646478141302696
+## global-count [male then female]
+- **Mean** 2.0407407407407407
+- **Standard Deviation** 2.6387661224142116
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/spanish/2.0/all/aggregation.csv

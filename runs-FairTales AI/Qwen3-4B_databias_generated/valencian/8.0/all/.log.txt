@@ -1,0 +1,45 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag '𝑁' in annotation: un grup. Skipping.
+⚠️ Unknown tag 'ℱ' in annotation: companyes. Skipping.
+⚠️ Unknown tag 'ℙ   ← (ACTUAL FEMININE NAME)' in annotation: Mercè. Skipping.
+⚠️ Unknown tag '𝕄' in annotation: Toni. Skipping.
+⚠️ Unknown tag '𝕄' in annotation: electricista. Skipping.
+⚠️ Unknown tag '️N' in annotation: avis. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have sufficient detail from the passage to identify and label all the person‑referencing nouns and pronouns accurately..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.7058823529411764}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/8.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6067298758616094
+- **Standard Deviation** 0.3229579718600395
+## log_score [male then female]
+- **Mean** -6.007232336161799
+- **Standard Deviation** 14.476959686984095
+## count (male) [male then female]
+- **Mean** 0.8820184949189005
+- **Standard Deviation** 1.1630421998370712
+## count (female) [male then female]
+- **Mean** 1.6130474331094506
+- **Standard Deviation** 2.1573908933348815
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.6609808102345416
+- **Standard Deviation** 3.4595019492421817
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.767590618336887
+- **Standard Deviation** 6.403736118586789
+## global-count [male then female]
+- **Mean** 1.626865671641791
+- **Standard Deviation** 2.1630648032429467
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/8.0/all/aggregation.csv

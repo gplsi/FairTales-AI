@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t comply with that..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'male': 3.5454545454545454, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/1.0/1.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7605705542197437
+- **Standard Deviation** 0.2648695865421832
+## log_score [male then female]
+- **Mean** 1.4446189758027586
+- **Standard Deviation** 3.3190377263830713
+## count (male) [male then female]
+- **Mean** 2.7241103373300333
+- **Standard Deviation** 3.295842091964396
+## count (female) [male then female]
+- **Mean** 0.7601112466473391
+- **Standard Deviation** 1.057148634847284
+## discrete[0.05] (male) [male then female]
+- **Mean** 7.953586497890296
+- **Standard Deviation** 8.953384326392346
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.3544303797468356
+- **Standard Deviation** 2.7279375770273604
+## global-count [male then female]
+- **Mean** 1.4852320675105486
+- **Standard Deviation** 1.3918624156331196
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/1.0/1.3/aggregation.csv

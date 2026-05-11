@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough information to determine the complete list of nouns and pronouns referred to people in the supplied story..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Lo siento, pero debido al formato confuso del texto proporcionado, no puedo extraer ni clasificar correctamente todas las palabras y pronombres referentes a personas según sus criterios indicados..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I couldn’t extract a reliable list of all person‑referencing nouns and pronouns in the provided story..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0344827586206897, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/valencian/1.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6774141607907355
+- **Standard Deviation** 0.29763617297544986
+## log_score [male then female]
+- **Mean** 3.814019152301849
+- **Standard Deviation** 11.830327509392546
+## count (male) [male then female]
+- **Mean** 0.8371475316926665
+- **Standard Deviation** 1.9702443428193566
+## count (female) [male then female]
+- **Mean** 0.8019663275994211
+- **Standard Deviation** 1.9156112408863943
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.463636363636364
+- **Standard Deviation** 4.90395415476583
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.418181818181818
+- **Standard Deviation** 4.777721938851986
+## global-count [male then female]
+- **Mean** 1.778181818181818
+- **Standard Deviation** 2.965170673899207
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/valencian/1.0/all/aggregation.csv

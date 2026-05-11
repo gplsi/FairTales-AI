@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ [JUST-WARNING due to `check_groups=False`] Group order does not match groups in annotations. set() vs ['male', 'female']
+Using precomputed group words.
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.625, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/23.0/23.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7276949053379932
+- **Standard Deviation** 0.281935065750307
+## log_score [male then female]
+- **Mean** -1.8235443715238122
+- **Standard Deviation** 3.482950655116086
+## count (male) [male then female]
+- **Mean** 1.9111840344613282
+- **Standard Deviation** 2.6199298294145112
+## count (female) [male then female]
+- **Mean** 2.9556244832838114
+- **Standard Deviation** 3.0706645490969224
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.637130801687764
+- **Standard Deviation** 7.4437988208549
+## discrete[0.05] (female) [male then female]
+- **Mean** 8.586497890295359
+- **Standard Deviation** 8.300877223719084
+## global-count [male then female]
+- **Mean** 1.489451476793249
+- **Standard Deviation** 1.2541855833601354
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/23.0/23.4/aggregation.csv

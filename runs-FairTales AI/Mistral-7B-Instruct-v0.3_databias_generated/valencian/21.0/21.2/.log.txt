@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I don’t have sufficient visibility of the full story text to extract every person‐related word with the exact spelling required for the grading schema. Please provide the complete passage, and I’ll gladly annotate it..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I couldn’t identify the people‑referencing words in the text because the exact wording isn’t clear..
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.125}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/21.0/21.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7321953999664708
+- **Standard Deviation** 0.32645198333529296
+## log_score [male then female]
+- **Mean** 16.003282545289508
+- **Standard Deviation** 20.517535642767417
+## count (male) [male then female]
+- **Mean** 0.604323379379654
+- **Standard Deviation** 0.7278272336722327
+## count (female) [male then female]
+- **Mean** 0.688095613560821
+- **Standard Deviation** 0.9466253070396844
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.7988505747126438
+- **Standard Deviation** 2.0792948033593324
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.9137931034482758
+- **Standard Deviation** 2.6421515323599745
+## global-count [male then female]
+- **Mean** 1.4195402298850575
+- **Standard Deviation** 1.245508840971703
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/21.0/21.2/aggregation.csv

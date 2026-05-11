@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 2.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/2.0/2.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.4787536603848805
+- **Standard Deviation** 0.30645503704312016
+## log_score [male then female]
+- **Mean** 0.6081797338815372
+- **Standard Deviation** 2.048874920495589
+## count (male) [male then female]
+- **Mean** 1.361746366612159
+- **Standard Deviation** 1.0577170508113523
+## count (female) [male then female]
+- **Mean** 0.7490573641472917
+- **Standard Deviation** 0.6296363527740346
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.261437908496732
+- **Standard Deviation** 2.953078772164082
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.026143790849673
+- **Standard Deviation** 1.6381460654714968
+## global-count [male then female]
+- **Mean** 1.1895424836601307
+- **Standard Deviation** 0.5225397741966396
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/2.0/2.3/aggregation.csv

@@ -1,0 +1,41 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I couldn’t extract useful nouns or pronouns from the story because the supplied text looks incomplete or corrupted. Could you please send the full, uninterrupted story again?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.0625}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/english/4.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.48865130748234503
+- **Standard Deviation** 0.264763518216989
+## log_score [male then female]
+- **Mean** -0.01425149975074299
+- **Standard Deviation** 1.603841612556789
+## count (male) [male then female]
+- **Mean** 2.193144622870613
+- **Standard Deviation** 2.8347105267182373
+## count (female) [male then female]
+- **Mean** 2.3021255311639655
+- **Standard Deviation** 3.3727130036012034
+## discrete[0.05] (male) [male then female]
+- **Mean** 6.471861471861472
+- **Standard Deviation** 8.108610753435167
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.848484848484849
+- **Standard Deviation** 9.549316087024252
+## global-count [male then female]
+- **Mean** 1.7907647907647908
+- **Standard Deviation** 2.036041188337856
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/english/4.0/all/aggregation.csv

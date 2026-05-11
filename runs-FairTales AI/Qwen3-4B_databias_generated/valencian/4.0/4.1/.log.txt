@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 1.5714285714285714}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/4.0/4.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7017968922989252
+- **Standard Deviation** 0.26750023954674274
+## log_score [male then female]
+- **Mean** -4.392083961020908
+- **Standard Deviation** 11.302541431076854
+## count (male) [male then female]
+- **Mean** 0.7104230212258974
+- **Standard Deviation** 0.9156802310781985
+## count (female) [male then female]
+- **Mean** 0.49123820687566444
+- **Standard Deviation** 0.5868735153146628
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.065843621399177
+- **Standard Deviation** 2.649611309446569
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.4609053497942386
+- **Standard Deviation** 1.6618950161557522
+## global-count [male then female]
+- **Mean** 1.3991769547325104
+- **Standard Deviation** 1.4634384894348251
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/4.0/4.1/aggregation.csv

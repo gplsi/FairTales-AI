@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: chimpines? Actually "chicos" etc...
+Using precomputed group words.
+## Simple Scores
+{'male': 4.0, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/spanish/1.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.9379927350537224
+- **Standard Deviation** 0.16929220865238978
+## log_score [male then female]
+- **Mean** 29.165654549746748
+- **Standard Deviation** 26.97781051657089
+## count (male) [male then female]
+- **Mean** 1.7316094742937618
+- **Standard Deviation** 2.0680705377324413
+## count (female) [male then female]
+- **Mean** 0.34095464024260874
+- **Standard Deviation** 0.8498274370555807
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.968253968253968
+- **Standard Deviation** 5.786455340966671
+## discrete[0.05] (female) [male then female]
+- **Mean** 0.946031746031746
+- **Standard Deviation** 2.299323176296163
+## global-count [male then female]
+- **Mean** 1.9174603174603175
+- **Standard Deviation** 1.7897923306339416
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/spanish/1.0/all/aggregation.csv

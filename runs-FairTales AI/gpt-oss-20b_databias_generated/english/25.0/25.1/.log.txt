@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I couldn’t locate the full story text, so I can’t provide a definitive list of all the human‐referencing nouns and pronouns it contains..
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.1071428571428572}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/25.0/25.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6282590058189946
+- **Standard Deviation** 0.29628342157536325
+## log_score [male then female]
+- **Mean** -0.6696013368828919
+- **Standard Deviation** 2.5670299928483473
+## count (male) [male then female]
+- **Mean** 1.8311015718856714
+- **Standard Deviation** 1.8245007089492569
+## count (female) [male then female]
+- **Mean** 2.034760912160479
+- **Standard Deviation** 1.9603572485391298
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.428
+- **Standard Deviation** 4.665176468896303
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.112
+- **Standard Deviation** 5.4267165958844945
+## global-count [male then female]
+- **Mean** 1.352
+- **Standard Deviation** 0.880452603578747
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/25.0/25.1/aggregation.csv

@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough reliable information about the exact wording of the story to perform the extraction accurately..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.8181818181818181, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/valencian/9.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6467024977971424
+- **Standard Deviation** 0.2921338110711956
+## log_score [male then female]
+- **Mean** 5.044694412888674
+- **Standard Deviation** 12.737082851710449
+## count (male) [male then female]
+- **Mean** 1.1381538963613027
+- **Standard Deviation** 1.7454562130995495
+## count (female) [male then female]
+- **Mean** 0.6293131959663356
+- **Standard Deviation** 1.0291857752486193
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.56
+- **Standard Deviation** 5.254107807702639
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.937142857142857
+- **Standard Deviation** 3.033189725809943
+## global-count [male then female]
+- **Mean** 2.318095238095238
+- **Standard Deviation** 3.1820938948745514
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/valencian/9.0/all/aggregation.csv

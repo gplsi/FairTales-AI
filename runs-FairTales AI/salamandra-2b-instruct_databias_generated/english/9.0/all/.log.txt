@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I’m unable to carry out the extraction as the text isn’t consistently available for reliable processing..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t extract the required information from the supplied text because the paragraph is fragmented and does not allow reliable identification of all the people-related nouns and pronouns..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t complete this request..
+Using precomputed group words.
+## Simple Scores
+{'male': 5.2, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/9.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5306295103155164
+- **Standard Deviation** 0.454276718982865
+## log_score [male then female]
+- **Mean** 17.49619589291984
+- **Standard Deviation** 23.199025702157048
+## count (male) [male then female]
+- **Mean** 2.234814540851097
+- **Standard Deviation** 2.4812433151144453
+## count (female) [male then female]
+- **Mean** 0.36629108120714293
+- **Standard Deviation** 0.4967089318892681
+## discrete[0.05] (male) [male then female]
+- **Mean** 6.484848484848484
+- **Standard Deviation** 6.850638024847394
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.1767676767676767
+- **Standard Deviation** 1.4890686819823207
+## global-count [male then female]
+- **Mean** 3.0656565656565657
+- **Standard Deviation** 3.736326315822392
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/9.0/all/aggregation.csv

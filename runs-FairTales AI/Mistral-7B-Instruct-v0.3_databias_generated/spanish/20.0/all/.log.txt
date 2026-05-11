@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you clarify which part of the supplied text should be processed? The document appears to contain the story “La Red de Comercio Sostenible”, followed by various prompts and notes. I’ll need to know the exact bounds of the passage you’d like me to analyze..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Para poder identificar correctamente todas las palabras solicitadas necesito asegurarme de contar exactamente con el texto tal cual aparece. ¿Podrías enviarme nuevamente el contenido completo entre “## Text” y el siguiente marcador? Gracias..
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 1.05}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/20.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6472157929359266
+- **Standard Deviation** 0.30647479626182683
+## log_score [male then female]
+- **Mean** -3.1533234438705167
+- **Standard Deviation** 10.90044357118265
+## count (male) [male then female]
+- **Mean** 1.8180991873168495
+- **Standard Deviation** 5.226328372837709
+## count (female) [male then female]
+- **Mean** 1.659562086760982
+- **Standard Deviation** 4.130520865663766
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.483221476510067
+- **Standard Deviation** 16.107396015737
+## discrete[0.05] (female) [male then female]
+- **Mean** 5.026845637583893
+- **Standard Deviation** 12.564875574932987
+## global-count [male then female]
+- **Mean** 1.907158836689038
+- **Standard Deviation** 4.4662845692814965
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/20.0/all/aggregation.csv

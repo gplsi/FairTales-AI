@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: May I confirm whether the story text posted above is complete—or if there are missing parts toward the end?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but the supplied text isn’t intact in the current view, making it impossible to trace every person-related noun or pronoun accurately..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.8591549295774648, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/14.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6483388418323162
+- **Standard Deviation** 0.2902130274754707
+## log_score [male then female]
+- **Mean** -1.251846700082959
+- **Standard Deviation** 3.9031314346351587
+## count (male) [male then female]
+- **Mean** 1.5413622381316725
+- **Standard Deviation** 2.091605467664385
+## count (female) [male then female]
+- **Mean** 2.8929413761384075
+- **Standard Deviation** 3.7765197536539596
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.550744248985115
+- **Standard Deviation** 6.012954295855082
+## discrete[0.05] (female) [male then female]
+- **Mean** 8.433017591339649
+- **Standard Deviation** 10.460885616126097
+## global-count [male then female]
+- **Mean** 1.884979702300406
+- **Standard Deviation** 2.2321933975545423
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/14.0/all/aggregation.csv

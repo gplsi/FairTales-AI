@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: mujeres = F\nAna = F\nperiodista = F\nfamilias = N\nniños = M\nLena = F\nactivista = F\nrefugiados = N\nAna = F\nla = F\nniño = M\nle = F\nhermano = M\nle = F\nautoridades = N\npersonas = N.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.25, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/20.0/20.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.36436839241274344
+- **Standard Deviation** 0.2499556979380539
+## log_score [male then female]
+- **Mean** -0.104149132281451
+- **Standard Deviation** 1.0612310992011007
+## count (male) [male then female]
+- **Mean** 0.7951846532146274
+- **Standard Deviation** 0.6976620925508776
+## count (female) [male then female]
+- **Mean** 0.9527936863682123
+- **Standard Deviation** 0.7715301926483988
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.3680981595092025
+- **Standard Deviation** 1.8017722935245288
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.7423312883435584
+- **Standard Deviation** 2.0565731927111077
+## global-count [male then female]
+- **Mean** 1.2147239263803682
+- **Standard Deviation** 0.6260037006195943
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/20.0/20.2/aggregation.csv

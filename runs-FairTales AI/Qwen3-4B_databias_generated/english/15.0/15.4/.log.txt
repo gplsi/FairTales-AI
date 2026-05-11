@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: neonetist (works: neonatologist?? hold on!!).
+Using precomputed group words.
+## Simple Scores
+{'female': 4.083333333333333, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/15.0/15.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7306936487339872
+- **Standard Deviation** 0.16607694613663118
+## log_score [male then female]
+- **Mean** -0.3333302412641987
+- **Standard Deviation** 1.1486251037524404
+## count (male) [male then female]
+- **Mean** 1.2573231973094463
+- **Standard Deviation** 1.081646636824399
+## count (female) [male then female]
+- **Mean** 4.78875337881666
+- **Standard Deviation** 3.9572086737530463
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.6785714285714284
+- **Standard Deviation** 3.021522455147937
+## discrete[0.05] (female) [male then female]
+- **Mean** 13.761904761904763
+- **Standard Deviation** 10.773241465756634
+## global-count [male then female]
+- **Mean** 1.3333333333333333
+- **Standard Deviation** 0.8310347540717234
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/15.0/15.4/aggregation.csv

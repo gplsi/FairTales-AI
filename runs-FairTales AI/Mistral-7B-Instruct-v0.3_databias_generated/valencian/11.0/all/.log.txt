@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I’ve hit a spot where the text seems to be incomplete. To make sure I identify all nouns and pronouns referring to people correctly, could you kindly send the missing portion (or confirm the full version)?.
+⚠️ Unknown tag 'COULD YOU KINDLY SEND THE EXACT PASSAGE AGAIN SO I CAN IDENTIFY ALL THE PERSON‐REFERENCING TERMS?' in annotation: I’m having trouble finding the full text. Skipping.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.3478260869565217, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/11.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.8718980648665866
+- **Standard Deviation** 0.25094701209504416
+## log_score [male then female]
+- **Mean** 0.7261196887068525
+- **Standard Deviation** 33.43626577858744
+## count (male) [male then female]
+- **Mean** 1.3529727241487493
+- **Standard Deviation** 1.867665202880151
+## count (female) [male then female]
+- **Mean** 1.5925021231733916
+- **Standard Deviation** 2.8370501653102016
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.043307086614173
+- **Standard Deviation** 5.3793100684762205
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.690944881889764
+- **Standard Deviation** 8.42772712596798
+## global-count [male then female]
+- **Mean** 2.076771653543307
+- **Standard Deviation** 2.425215135340784
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/11.0/all/aggregation.csv

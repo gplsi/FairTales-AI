@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Lo siento, pero necesito ver todo el texto tal como aparece completo (incluyendo puntuación y guiones‑líneas) para poder identificar correctamente cada sustantivo o pronombre que hace referencia a personas — las reglas dependen mucho del contexto lingüístico exacto y de si alguna palabra ocurre varias veces. ¿Podría enviarme nuevamente el bloque de texto sin cortes ni errores de codificación? Así podré producir la lista precisa solicitada..
+⚠️ [JUST-WARNING due to `check_groups=False`] Group order does not match groups in annotations. {'male'} vs ['male', 'female']
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/13.0/13.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 1
+- **Standard Deviation** 0.0
+## log_score [male then female]
+- **Mean** 43.80379365028683
+- **Standard Deviation** 2.011205295365414
+## count (male) [male then female]
+- **Mean** 1.1032251621871036
+- **Standard Deviation** 1.053646782980025
+## count (female) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.2590361445783134
+- **Standard Deviation** 2.964294024780996
+## discrete[0.05] (female) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## global-count [male then female]
+- **Mean** 1.5481927710843373
+- **Standard Deviation** 1.1732225959227813
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/13.0/13.2/aggregation.csv

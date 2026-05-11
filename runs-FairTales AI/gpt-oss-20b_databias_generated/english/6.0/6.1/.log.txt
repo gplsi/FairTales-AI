@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t determine the correct list from the text as it isn’t completely visible.  If you can share the full story, I’ll gladly provide the extraction..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 1.3846153846153846}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/6.0/6.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7404606060458777
+- **Standard Deviation** 0.27938103198185105
+## log_score [male then female]
+- **Mean** 0.8916312144831219
+- **Standard Deviation** 4.6570753063127635
+## count (male) [male then female]
+- **Mean** 0.9523955202501041
+- **Standard Deviation** 0.8894310307114595
+## count (female) [male then female]
+- **Mean** 0.6344128813861706
+- **Standard Deviation** 0.7949031525370062
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.9258160237388724
+- **Standard Deviation** 2.362369548296512
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.8635014836795252
+- **Standard Deviation** 2.1155047440671013
+## global-count [male then female]
+- **Mean** 1.4451038575667656
+- **Standard Deviation** 0.9181283066084985
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/6.0/6.1/aggregation.csv

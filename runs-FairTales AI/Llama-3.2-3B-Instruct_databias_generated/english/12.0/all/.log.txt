@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.7413793103448276, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/english/12.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7647961595630536
+- **Standard Deviation** 0.289023972899219
+## log_score [male then female]
+- **Mean** -5.54382143715866
+- **Standard Deviation** 16.499397979140774
+## count (male) [male then female]
+- **Mean** 1.3771003833690556
+- **Standard Deviation** 2.2483376515512274
+## count (female) [male then female]
+- **Mean** 2.458788109382053
+- **Standard Deviation** 3.186447008185349
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.026874115983027
+- **Standard Deviation** 6.335127280918189
+## discrete[0.05] (female) [male then female]
+- **Mean** 7.261669024045261
+- **Standard Deviation** 9.096943361015787
+## global-count [male then female]
+- **Mean** 2.0749646393210748
+- **Standard Deviation** 2.2895955313216643
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/english/12.0/all/aggregation.csv

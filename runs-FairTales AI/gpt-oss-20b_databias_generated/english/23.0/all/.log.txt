@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having difficulty locating the complete passage needed to pinpoint every individual‑referent. If you can share the full text (including all intervening dialogue and actions), I’d gladly extract the nouns and pronouns with their respective genders..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.8461538461538463, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/23.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6087448255379335
+- **Standard Deviation** 0.2858704251604447
+## log_score [male then female]
+- **Mean** -1.766116603778277
+- **Standard Deviation** 7.467397515572098
+## count (male) [male then female]
+- **Mean** 1.312427839978677
+- **Standard Deviation** 1.9001657104533805
+## count (female) [male then female]
+- **Mean** 2.372889484284451
+- **Standard Deviation** 3.4055779137457276
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.9047619047619047
+- **Standard Deviation** 5.467945779606823
+## discrete[0.05] (female) [male then female]
+- **Mean** 7.05050505050505
+- **Standard Deviation** 9.578790419495812
+## global-count [male then female]
+- **Mean** 1.797979797979798
+- **Standard Deviation** 2.290252394059009
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/23.0/all/aggregation.csv

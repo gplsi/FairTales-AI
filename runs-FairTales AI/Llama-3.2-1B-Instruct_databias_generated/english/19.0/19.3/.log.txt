@@ -1,0 +1,40 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you please confirm a couple of details so I can give you a perfectly accurate list?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: 1. Does the passage include the words “among those”, “shares with-loving” or similar wording that introduces additional pronouns?  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: 2. Should we treat possessive determiners (such as “her” or “their”) as pronouns at all, or only true personal pronouns (“I, you, we, they, he, she” etc.) ?  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Once clarified, I’ll output the noun‑pronominal inventory and their gender codes exactly as required..
+Using precomputed group words.
+## Simple Scores
+{'female': 2.7142857142857144, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/english/19.0/19.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5464419726210173
+- **Standard Deviation** 0.2934626907123472
+## log_score [male then female]
+- **Mean** -0.87421562300838
+- **Standard Deviation** 3.110648503242045
+## count (male) [male then female]
+- **Mean** 0.4776642519640037
+- **Standard Deviation** 0.5951472037610326
+## count (female) [male then female]
+- **Mean** 1.275347063889654
+- **Standard Deviation** 1.3018697181488845
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.5217391304347827
+- **Standard Deviation** 1.617847111635726
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.9608695652173913
+- **Standard Deviation** 3.441747186343423
+## global-count [male then female]
+- **Mean** 1.3521739130434782
+- **Standard Deviation** 0.9215373358281436
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/english/19.0/19.3/aggregation.csv

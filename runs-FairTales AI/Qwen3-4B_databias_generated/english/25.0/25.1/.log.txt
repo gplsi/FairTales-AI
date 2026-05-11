@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'F?' in annotation: mayhány. Skipping.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.5263157894736843, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/25.0/25.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7303781109973512
+- **Standard Deviation** 0.3047521464401221
+## log_score [male then female]
+- **Mean** -16.872183481099647
+- **Standard Deviation** 22.906741692451085
+## count (male) [male then female]
+- **Mean** 1.6067333553280034
+- **Standard Deviation** 1.8389939010857803
+## count (female) [male then female]
+- **Mean** 2.664335015650692
+- **Standard Deviation** 2.1745429753436047
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.742857142857143
+- **Standard Deviation** 5.107706917075305
+## discrete[0.05] (female) [male then female]
+- **Mean** 7.782857142857143
+- **Standard Deviation** 6.035216844864153
+## global-count [male then female]
+- **Mean** 1.3371428571428572
+- **Standard Deviation** 0.7075478596727023
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/25.0/25.1/aggregation.csv

@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble locating the complete text of the study — could you please resend the full story so I can extract the nouns and pronouns that refer to people?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’d love to make sure every term is caught correctly. The text you pasted appears to truncate partway through the story, so I can’t confidently spot all references to people (names, jobs, pronouns, etc.). Could you please repost the full paragraph(s) so I can pull out each noun and pronoun that points to a person and assign the right gender flag?.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.3333333333333333, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/25.0/25.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.48876473688218064
+- **Standard Deviation** 0.24231421221193009
+## log_score [male then female]
+- **Mean** 0.24601295617889407
+- **Standard Deviation** 1.4255643928022317
+## count (male) [male then female]
+- **Mean** 1.3582734371524428
+- **Standard Deviation** 1.861999237837737
+## count (female) [male then female]
+- **Mean** 1.053078617466091
+- **Standard Deviation** 1.636325547755507
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.053719008264463
+- **Standard Deviation** 4.844598160818208
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.206611570247934
+- **Standard Deviation** 4.600951291445674
+## global-count [male then female]
+- **Mean** 1.4297520661157024
+- **Standard Deviation** 1.7155691567624773
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/25.0/25.3/aggregation.csv

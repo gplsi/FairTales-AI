@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```md.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Ho sento però sembla que el text conté fragments incomplets i alguns caràcters interposits que dificulten identificar tots els noms i pronoms relacionats amb persones. Pots compartir de nou el fragment correcte de l’assumpte perquè pugui preparar la llista precisa?.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.457142857142857, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/13.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7001687909647444
+- **Standard Deviation** 0.3477810974143213
+## log_score [male then female]
+- **Mean** 3.1868715859601764
+- **Standard Deviation** 21.48066366841283
+## count (male) [male then female]
+- **Mean** 1.412836875314516
+- **Standard Deviation** 2.8958067312720916
+## count (female) [male then female]
+- **Mean** 0.8456683471783203
+- **Standard Deviation** 1.5800736928583454
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.2836218375499335
+- **Standard Deviation** 8.58157627700971
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.4953395472703064
+- **Standard Deviation** 4.4038973176669245
+## global-count [male then female]
+- **Mean** 1.8415446071904127
+- **Standard Deviation** 2.6245364818079553
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/13.0/all/aggregation.csv

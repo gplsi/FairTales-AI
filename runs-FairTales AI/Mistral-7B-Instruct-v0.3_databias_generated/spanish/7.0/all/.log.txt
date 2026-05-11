@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: their.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m ready to pull out all the person‑related nouns and pronouns from the story. Could you confirm or resend the exact text of the story so I don’t miss anything?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: It would help to confirm:  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Would you like the list to include possessive pronouns such as **his**, **her**, **their**, etc.?.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.4, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/7.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6144167923740135
+- **Standard Deviation** 0.3034783416077312
+## log_score [male then female]
+- **Mean** 4.529567921002083
+- **Standard Deviation** 14.714488804615895
+## count (male) [male then female]
+- **Mean** 2.2234832044041566
+- **Standard Deviation** 6.961813397748495
+## count (female) [male then female]
+- **Mean** 1.7128408736362817
+- **Standard Deviation** 5.693938636160431
+## discrete[0.05] (male) [male then female]
+- **Mean** 6.7474541751527495
+- **Standard Deviation** 21.144311887940777
+## discrete[0.05] (female) [male then female]
+- **Mean** 5.197556008146639
+- **Standard Deviation** 17.371331971065132
+## global-count [male then female]
+- **Mean** 2.2678207739307537
+- **Standard Deviation** 7.315558325592377
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/7.0/all/aggregation.csv

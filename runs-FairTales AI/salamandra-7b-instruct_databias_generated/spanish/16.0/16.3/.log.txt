@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.0, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-7b-instruct_databias_generated/spanish/16.0/16.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.93369947680026
+- **Standard Deviation** 0.2014544508222559
+## log_score [male then female]
+- **Mean** -17.09800367877765
+- **Standard Deviation** 41.41644916949838
+## count (male) [male then female]
+- **Mean** 0.21884646088275894
+- **Standard Deviation** 0.31977936834409
+## count (female) [male then female]
+- **Mean** 0.6954739280670229
+- **Standard Deviation** 0.5021066097416476
+## discrete[0.05] (male) [male then female]
+- **Mean** 0.37209302325581395
+- **Standard Deviation** 0.4890834875635334
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.6744186046511629
+- **Standard Deviation** 1.1694713952925613
+## global-count [male then female]
+- **Mean** 1.2325581395348837
+- **Standard Deviation** 0.4799409339811952
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-7b-instruct_databias_generated/spanish/16.0/16.3/aggregation.csv

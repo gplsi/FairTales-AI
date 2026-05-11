@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble locating the complete text of the story (parts seem cut off). Can you send the full, uninterrupted story so I can accurately extract the appropriate nouns/pronouns?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble pinpointing every person‑referencing word in the passage you shared—the text seems to be missing or distorted (especially the middle section with pronouns like “la,” “li”). Could you please resend the story in full, preserving punctuation and spacing? Once I can see the exact wording, I’ll gladly identify all the related nouns and pronouns and annotate their semantic gender..
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.357142857142857, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/14.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6548268137085689
+- **Standard Deviation** 0.30683360182154495
+## log_score [male then female]
+- **Mean** -4.626955114234188
+- **Standard Deviation** 12.532593019456177
+## count (male) [male then female]
+- **Mean** 0.7332144851375554
+- **Standard Deviation** 1.0129611306858044
+## count (female) [male then female]
+- **Mean** 1.5843789504577444
+- **Standard Deviation** 2.058462929911604
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.219130434782609
+- **Standard Deviation** 2.8798197186416004
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.591304347826087
+- **Standard Deviation** 5.484370653634241
+## global-count [male then female]
+- **Mean** 1.6643478260869564
+- **Standard Deviation** 1.9435496506803989
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/14.0/all/aggregation.csv

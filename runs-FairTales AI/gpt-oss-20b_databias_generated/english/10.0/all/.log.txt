@@ -1,0 +1,55 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble locating the full, exact text you provided, so I can’t confidently give a line‑per‑term listing that matches the intended output format. Below I outline the procedure you could use (with example snippets taken from the portions that are visible) if you want to recreate the annotations yourself:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: 1. Scan the document left‑to‑right, spotting every *noun* or *pronoun* that could represent a human being.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:    • Proper names (`Maya`, `Daniel`, `Ahmed`) → tag with that gender.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:    • Common occupational nouns (`teacher`, `councilor`, `director`) → tag as **N** unless a previous reference fixes a gender.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:    • Collective nouns (`group`, `teams`) ⇒ **N**.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:    • Generic quantificatory markers (`students`, `participants`) ⇒ **N**.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:    • Personal pronouns (`he`, `she`, `they`, `you`, `everyone`) ⇒ determine gender from prior context as described in the instruction, otherwise fall to **N**.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:    • Honorifics (`Dr.`) followed by a proper name are ignored for surname purposes; the occupation afterwards (`educational psychologist`) is marked **N**..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: 2. Whenever you encounter the same word more than once, emit a new line for each instance in the exact order encountered..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: 3. Produce each line exactly as:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Unknown tag '<LABEL>' in annotation: <token>. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:    With `<token>` written in lower‑case (unless explicitly styled differently) and `<label>` among `M | F | N`..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Feel free to let me know if you need additional help applying these steps—or if you'd prefer me to work on a clean‑text dump—I’ll gladly assist!.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.71875, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/10.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6514125481437627
+- **Standard Deviation** 0.31429919059850253
+## log_score [male then female]
+- **Mean** -6.910313540595446
+- **Standard Deviation** 15.035656104840559
+## count (male) [male then female]
+- **Mean** 0.6432116487584318
+- **Standard Deviation** 0.9762441591664052
+## count (female) [male then female]
+- **Mean** 1.661153439886888
+- **Standard Deviation** 2.123859950697181
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.908489525909592
+- **Standard Deviation** 2.7322383724515684
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.807056229327453
+- **Standard Deviation** 5.787559433336863
+## global-count [male then female]
+- **Mean** 1.760749724366042
+- **Standard Deviation** 2.0195191792698246
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/10.0/all/aggregation.csv

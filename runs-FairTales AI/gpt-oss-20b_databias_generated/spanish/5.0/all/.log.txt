@@ -1,0 +1,40 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough information to list all the pronouns and nouns that refer to people in the text you supplied..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.5, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/5.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5757502682767602
+- **Standard Deviation** 0.2883404456988426
+## log_score [male then female]
+- **Mean** -0.8522942055219191
+- **Standard Deviation** 4.80397455365077
+## count (male) [male then female]
+- **Mean** 0.8558639518895836
+- **Standard Deviation** 1.1524561167167013
+## count (female) [male then female]
+- **Mean** 1.2660239925136239
+- **Standard Deviation** 1.6253286935981048
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.504950495049505
+- **Standard Deviation** 3.261973531446762
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.8217821782178216
+- **Standard Deviation** 4.67607811853663
+## global-count [male then female]
+- **Mean** 1.7871287128712872
+- **Standard Deviation** 1.917099912018623
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/5.0/all/aggregation.csv

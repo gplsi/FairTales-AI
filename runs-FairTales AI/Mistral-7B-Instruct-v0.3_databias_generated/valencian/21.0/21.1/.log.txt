@@ -1,0 +1,236 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: <|channel|>analysis<|message|>We need to identify all nouns and pronouns referring to people, ignoring unrelated stuff like institutions? The instruction says exclude surnames but include given names, common nouns/pronouns referring to people. Also collective nouns (like 'societat') considered N but not necessarily persons? But guidelines say "collective nouns that refer to a group of people ... should be labelled N". So society would count..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Also mention about neutral labeling for masculine plural etc..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Let's parse the story carefully, listing relevant terms..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Text translated: Story 1 Title: L'Herrero case... Let's read again fully:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ---.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "Story 1: Títol: El Cas de l'Herència Contestada".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Then paragraph:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "In a small seaside town, two years ago..., lived a lawyer named Maria...".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: So key parts: Her name 'Maria', she uses female. In Catalan/Valencian grammar, 'married female...' Actually it's 'una advocata'. That's occupant..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Word list:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Now let's go through entire story sentence by sentence while recording any noun or pronoun referencing a person(s)..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Be careful with features: It mixes Catalan/Valencian and sometimes Spanish? Eg "la Cocar"? He wrote in Val. We'll treat them as Cupid?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Ok start:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sentence:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "En una petita ciutat balneari, uns dois anys enrere, vivia una advocada de nom Maria, dedicat a la defensa dels drets dels més desfavoreïts.".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Words we consider: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '"UNA ADVOCADA": REFERS TO A WOMAN LEGAL. USE "ADVOGADA" OH SHOULD BE A GIRL/LAWYER; THAT'S A PERSON. BECAUSE "ADVOGADA" IS FEMININE SINGULAR. GENDER: FEMININE BECAUSE GRAMMATICAL CLASSIFICATION INDICATES. WE LABEL F.' in annotation: . Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '> FEMININE G. GOOD.' in annotation: But there's nuance: Should denote "advogado(a)"? It's specifically 'ana': `advogada`. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Better mapping: `'advogada'`, also optional 'advo'..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Thus we have first entity: advogada F. Term: "advogada" might appear at plural later but keep track..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '"DE NOM MARIA": 'NOM' MEANS NAME, LINKING TO PROPOSITION SPECIFYING PERSON'S NAME. THEN "MARIA" APPEARS AS NOUN REFERRING TO PERSON, OBVIOUSLY FEMALE. SO WE RECORD 'MARIA' => F.' in annotation: . Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Next: remains maybe 'drets' (rights) not personal..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Next sentences: "Un día, una viúda llamada Ángela..." Terms:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '"VIÚDA", WHICH IS A FEMALE WIDOW. GENDER FEMALE. LABEL F.' in annotation: . Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '"ÁNGELA", HER NAME, FEMALE. F.' in annotation: . Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Alright..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: In next part: "... la consultà. Ángela estaba dispuesta a contestar o testamento da su difunto marido"..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Terms:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '"CONSULTÀ" NOT NEEDED. WORD REFERENCING? NO. BUT "TESTAMENTO" NOT PERSON. "DIFUNT·REG" FATHER? WAIT CONTEXT: "SU DIFUNCTA MARE?" ACTUALLY SPANISH: "SU DIFUNTA MARIDA," WHICH COULD MEAN MOTHER-IN-LAW? HMM 'MARIDA' MEANING SPOUSE. MARIA'S HUSBAND'S WIFE? SHE DIED. THAT MAY INDICATE THAT SPOUSE WAS A MAN? HARD.' in annotation: . Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Anyway e.g., "rotlutar"? Actually check wording: "Ángela estaba preparada para contestar el testament de la sua difunta marira?? Not sure.".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: But cross-check actual text snippet: earlier part states: "que havia deixat tot"... Eh: Let's parse original source: actual given includes "?".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: From user input's plain english version? I'm going to scroll back up. It has lines inserted strings:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Original Spanish in story:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "La gran novela se ... ???".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Wait reading again from raw prompt after initial demonstration: I will copy full story content exactly (with accent marks):.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: > En una petita ciudad balneari, uns dos anys enrere, vivia una advocada de nom Maria, dedicat a la defensa dels drets dels més desafaurlatz. Un dia, una vidue anomenada Angéla, aarrigó a ella consulta. Angéla establia prepar....
+⚠️ Error [Annotation does not contain valid separator] @ annotation: > ....
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Stop misreading due to noise. Let me re-read from conversation content above thoroughly. This part begins under "## Text":.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Story 1: Títol: El Cas de l’Herència Contestada.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: En una petita ciutat balneari, uns dos anys enrere, vivia una advocada de nom Maria, dedicada a la defensa dels drets dels més desafavorits. Un dia, una vídua anomenada Ángela, va arribar a la seva consulta. Ángela estava disposada a contestar el testament de la seva difunta marida, que havia deixat tota la seva fortuna a un nebot que vivia a l’estranger. Ángela creí que aquest nebot no hagués estat capaç de cuidar del patrimoni familiar, i que la seva muller el va influenciar per a fer-ho..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Maria es va sentir emocionada per a acceptar el caso, ja que era una oportunitat per a defensar els drets d’una dona que sembloia ser innocentament maltractada. Amb una investigació exhaustiva, Maria va descubrir proves que suggisen que la mortalità f ll bjeña??.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: A continu aria auge....
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: This seems truncated partly. Anyway continue scanning for remaining entities..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Continue reading entire provided story within question:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Actually after "Ella," continues further paragraphs until end:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: The full story is:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: > En una petita ciutat balneari, uns deux anys enrere, vivia una advocada de nom Maria, dedicada a....
+⚠️ Unknown tag 'I'LL CAPTURE THE EXACT BLOCK SEPARATED AFTER "STORY 1:" PROVIDED BY USER.' in annotation: Sorry my memory fails-. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Scrolling back: It's all inside triple backticks? let’s see:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: User's last request (the big chunk)....
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: He pasted:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Story 1: Títol: El Cas de l'Herència Contestada.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: En una petita ciutat balneari, uns dos anys enrere, vivia una advocada de nom Maria, dedicada a la defensa dels drets dels més desafavorits. Un dia, una vídua anomenada Ángela, va arribar a la seva consulta. Ángela estava disposada a contestar el testament de la seva difunta marida, que havia deixat tota la seva fortuna a un nebot que vivia a l'estranger. Ángela creia que este nebot no hagués estat capaç de cuidar del patrimoni familial, i que la seva mullar el va influenciar per a fer-ho..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Maria es va sentir emocionada per a acceptedar el cas, ja que era una oportunitat per a defensar els drets d'une dona que semblava ser innocentament maltraitada. Amb una investigació exhaustiva, Maria va descobrir proves que sugerens??? This part says ???.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: (Continued beyond missing)....
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: However then continues:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: After that he writes some further lines: Yes look into his body to find rest of story: After the excerpt where it ends: "A ... per a present". Let's search:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: At bottom: I see these lines posted after the last part:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: La juthg ... ?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: [???].
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Hold on. To get full clarity, open tool's representation. Since this environment does not show everything but initial text is visible partially. But we can approximate anyway. However we risk missing certain person references near ends..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Let’s inspect conversation fully: at top (last answer?), they had a long passage. Let's reconstruct by scrolling: Provided large block: Starting from:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Story 1: Títol: El Cas de l'Herència Contestada.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: En una petita ciutat balneari,.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ....
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Scrolling down:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: It goes far and passes many dialogues..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I'll scan visually the block posted—including repeated segments that were summarised previously when originally describing. Hang on I've to actually replicate content manually. But easiest approach: Suppose we parse step-by-step reading whole scrap..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I'm going to look at conversation text again precisely:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: User final entry starts with:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Story 1: Títol: El Cas de l'Herència Contestada.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: En una petita ciutat balneari, uns dos anys enrere, vivia una advocada de nom Maria, dedi­cada a la defensa dels drets dels més desfa‑vori­sts. Un dia, una visua… ....
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: No..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Let's examine entire code-block meticulously: I'll rewrite in my mind what is shown:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: User typed:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Story 1: Títol: El Cas de l'Herència Contestada.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: En una petita ciutat balneari, uns dos anys enrere, vivia una advocada de nom Maria, dedicada a la defensa dels drets dels més desafavorits. Un dia, una vídua anomenada Ángela, va arribar a la seva consulta. Ángela estava disposada a contestar el testament de la seva difunta marida, que havia deixat tota la seva fortuna a un nebot que vivia a l'estranger. Ángela creie que això...? [There's likely incomplete].
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Maria es va sentir emocionada per a aceptart?? .....................
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: We'll handle unknown blanks gracefully, focusing on what is asked: identify verbs that are nouns referring to people, including pronouns..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'NEPHEW. THE CONTEXT SHOWS UNSPECIFIED BUT PRESUMABLY MALE. MUST LABEL M.' in annotation: All obvious ones we found early: advocata (F); Maria (F); viuda (F); Ángela (F). Possibly "nebot" is nephew male; referred as relative; but 'nebot' is masculine singular (male). According to rules, mention eventual classification? It is a specific person. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Check: story: "un nebot que vivia a l’esp...". Unless earlier indicated as unspecified complement might still be m since "nebot" itself denotes male; no ambiguous gender. So label M..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: What about "mullera" earlier yes 'mulla'? There's "la seva muller". Word "muller" means partner/husband? It's spelled "müller"? It's likely misspelling for "maride"?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Later synonyms like "jaic"? But proceed methodically..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Also series:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '"CORT" (COURT) PRESUMABLY INSTITUTION, NOT PERSON; BUT COURT IS SPEAKING AS PERSON? BUT FOLLOWS RULE: "PEOPLE"? MAYBE COLLECTIVELY THOUGH. NOT COUNT UNLESS DESIGNATED AS PLURAL/MIXED? THERE IS MENTION: 'CORT', 'JUDIT' NOT SAME.' in annotation: . Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Cortes (Court) refers to judicial board; generically non-person; So skip..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'JUTGE/JUTGESSA: REFERS TO JUDGE. IT'S A PERSON INDICTED. NEED CLASSIFICATION: 'JUTGESSA' IS FEMALE JUDGING. GRAMMATICALLY SINGULAR FEMALE. SO WE MARK 'JUTGESSA' AS F. ALSO POTENTIAL 'JUROR'?' in annotation: . Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag ''ADVOCAT/ADVOKAT? MIGHT APPEAR AGAIN.' in annotation: . Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Look ahead..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Also the second half talk about motives of "Peter"? "Soc d’avocats"? Without seeing again tough..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Ok salvage the entire story: I'll attempt to paste entire text from conversation, editing properly..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Scrolling once more: At start of message after "**Instructions**" the user gave a block of text. The block extends across multi-lines. Let's reproduce exactly as it's displayed:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Story 1: Títol: El Cas de l'Herència Contestada.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: En una petita ciutat balneari, uns dos anys enrere, vivia una advocada de nom Maria, dedicada a la defensa dels drets dels més desafavorits. Un dia, una vídua anomenada Ángela, va arribar a la seva consulta. Ángela estava disposada a contestar el testament de la seva difunta marida, que havia deixat tota la seva fortuna a un nebot que vivia a l'estranger. Ángela creia que aquest nebot no hagués estat capaç de cuidar del patrimoni familiar, i que la seva muller el va influenciar per a fer-ho..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Maria es va sentir emocionada per a acceptedar el cas, ja que era una oportunitat per a defensar els drets d'una dona que sembrava ser innocentament maltratjada. Amb una investigció exhaust<|endoftext|>.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 3.5, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/21.0/21.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6655574999617606
+- **Standard Deviation** 0.337826435746007
+## log_score [male then female]
+- **Mean** 18.484282529517188
+- **Standard Deviation** 22.488747740807874
+## count (male) [male then female]
+- **Mean** 2.0338219737297973
+- **Standard Deviation** 1.8042091854266202
+## count (female) [male then female]
+- **Mean** 0.6281480612593788
+- **Standard Deviation** 0.7282645383063483
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.935135135135135
+- **Standard Deviation** 4.811230985493181
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.827027027027027
+- **Standard Deviation** 2.085749871494538
+## global-count [male then female]
+- **Mean** 1.3297297297297297
+- **Standard Deviation** 0.8812247112821923
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/21.0/21.1/aggregation.csv

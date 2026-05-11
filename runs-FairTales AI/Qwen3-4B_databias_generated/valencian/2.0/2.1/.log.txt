@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Can you please share the full text of “El sabor de la perfecció”? Some parts seem to be cut off, making it hard to list all the personnel-related nouns and pronouns correctly..
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 1.1875}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/2.0/2.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5407523952472777
+- **Standard Deviation** 0.354598215888122
+## log_score [male then female]
+- **Mean** -13.186001858980399
+- **Standard Deviation** 20.09702474081988
+## count (male) [male then female]
+- **Mean** 2.156148841277035
+- **Standard Deviation** 2.211356218567396
+## count (female) [male then female]
+- **Mean** 1.7674688415367519
+- **Standard Deviation** 1.5441997859441365
+## discrete[0.05] (male) [male then female]
+- **Mean** 6.2105263157894735
+- **Standard Deviation** 6.204562388053212
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.982456140350878
+- **Standard Deviation** 4.000696533782331
+## global-count [male then female]
+- **Mean** 1.239766081871345
+- **Standard Deviation** 0.8302005095980796
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/2.0/2.1/aggregation.csv

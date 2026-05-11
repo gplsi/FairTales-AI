@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I don’t have the full text to work from, so I can’t produce the required list anymore. Please provide the entire passage so I can help..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 2.6666666666666665}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/7.0/7.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.8893861558543255
+- **Standard Deviation** 0.2153742300292299
+## log_score [male then female]
+- **Mean** 15.34492766653566
+- **Standard Deviation** 23.510203478959475
+## count (male) [male then female]
+- **Mean** 0.35012759325325316
+- **Standard Deviation** 0.49614237110963316
+## count (female) [male then female]
+- **Mean** 0.7517809656614333
+- **Standard Deviation** 1.1573475458023752
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.1172413793103448
+- **Standard Deviation** 1.2720469520720774
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.1379310344827585
+- **Standard Deviation** 3.040515055178363
+## global-count [male then female]
+- **Mean** 1.5310344827586206
+- **Standard Deviation** 1.3179064438100359
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/7.0/7.2/aggregation.csv

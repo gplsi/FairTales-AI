@@ -1,0 +1,44 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```plaintext.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sorry—I’m missing confirmation on a couple of points to identify everyone correctly. Could you let me know:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: 1. Does the text continue past the quoted excerpts shown, especially around the sentences marked “…”, so I don’t overlook any person‑related nouns or pronouns?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: 2. Are the variations like “shadow” spelled consistently, or should I account for possible typos (“shadows,” “shoppe”), which could affect counting?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Once we’re clear on the complete passage, I’ll return the precise list you asked for..
+Using precomputed group words.
+## Simple Scores
+{'female': 2.161290322580645, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/english/6.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6152336476270195
+- **Standard Deviation** 0.26870791518015613
+## log_score [male then female]
+- **Mean** -0.09441394150210042
+- **Standard Deviation** 2.491987074976584
+## count (male) [male then female]
+- **Mean** 0.8334386979271556
+- **Standard Deviation** 1.1906472150416365
+## count (female) [male then female]
+- **Mean** 1.76476820180509
+- **Standard Deviation** 2.3509029690613676
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.471608832807571
+- **Standard Deviation** 2.993407437498759
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.976340694006309
+- **Standard Deviation** 6.570392337348099
+## global-count [male then female]
+- **Mean** 1.637223974763407
+- **Standard Deviation** 1.7706406379814568
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/english/6.0/all/aggregation.csv

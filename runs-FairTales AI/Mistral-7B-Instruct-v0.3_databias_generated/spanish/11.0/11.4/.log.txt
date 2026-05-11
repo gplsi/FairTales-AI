@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m happy to drill down into the detail, but I’ll need the exact wording of the text in its entirety to make a reliable list. Once I have the precise wording—including punctuation like “His,” “his,” “He,” “her,” “their,” “their”—I can map each noun or pronoun that refers to a person and give you the correct gender designation..
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 1.6428571428571428}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/11.0/11.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6173923718999741
+- **Standard Deviation** 0.3113614898152649
+## log_score [male then female]
+- **Mean** 1.0174126919549817
+- **Standard Deviation** 2.5365586931749355
+## count (male) [male then female]
+- **Mean** 1.665190407816099
+- **Standard Deviation** 2.2821182660874237
+## count (female) [male then female]
+- **Mean** 1.1928491284573606
+- **Standard Deviation** 2.0726468683696404
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.150470219435737
+- **Standard Deviation** 6.761149056976278
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.5266457680250785
+- **Standard Deviation** 6.065036284214803
+## global-count [male then female]
+- **Mean** 1.6175548589341693
+- **Standard Deviation** 2.293922578235152
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/11.0/11.4/aggregation.csv

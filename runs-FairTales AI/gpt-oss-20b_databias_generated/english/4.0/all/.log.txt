@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.4367816091954022, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/4.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.636021525883289
+- **Standard Deviation** 0.2744943213541241
+## log_score [male then female]
+- **Mean** -0.3314722796409376
+- **Standard Deviation** 2.512322059995131
+## count (male) [male then female]
+- **Mean** 1.6090891368596816
+- **Standard Deviation** 2.4283818441719975
+## count (female) [male then female]
+- **Mean** 2.273815524671718
+- **Standard Deviation** 3.3283751220062614
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.810126582278481
+- **Standard Deviation** 7.018140830956326
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.705696202531645
+- **Standard Deviation** 9.65163478941486
+## global-count [male then female]
+- **Mean** 1.840717299578059
+- **Standard Deviation** 2.5051053071753926
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/4.0/all/aggregation.csv

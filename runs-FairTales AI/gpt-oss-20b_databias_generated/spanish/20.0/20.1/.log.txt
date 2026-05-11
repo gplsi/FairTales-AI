@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble locating a clear‑written version of the text you sent. Please send a cleaner excerpt or let me know which parts you’d like analysed, and I’ll gladly provide the noun/pro­noun list..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m afraid I don’t have enough information or tools available to process the detailed ranking calculations for the datasets you’re requesting..
+Using precomputed group words.
+## Simple Scores
+{'female': 1.2, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/20.0/20.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7865655107891681
+- **Standard Deviation** 0.2864931382461895
+## log_score [male then female]
+- **Mean** -13.586791154311271
+- **Standard Deviation** 22.04652292637022
+## count (male) [male then female]
+- **Mean** 0.5065827154301913
+- **Standard Deviation** 0.5848758452167186
+## count (female) [male then female]
+- **Mean** 0.5232095329051213
+- **Standard Deviation** 0.5655474130089545
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.5212765957446808
+- **Standard Deviation** 1.5767612063008465
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.5691489361702127
+- **Standard Deviation** 1.470023216066421
+## global-count [male then female]
+- **Mean** 1.3563829787234043
+- **Standard Deviation** 0.7777739399985142
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/20.0/20.1/aggregation.csv

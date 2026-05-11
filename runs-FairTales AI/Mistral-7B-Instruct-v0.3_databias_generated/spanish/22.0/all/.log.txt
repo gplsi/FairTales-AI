@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m afraid I couldn’t find the complete text to analyse, so I’m not able to extract the nouns and pronouns and tag their genders. Could you please resend the full passage?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t comply with that..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough reliable information to extract every noun and pronoun from the story..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough reliable information to perform the extraction correctly..
+Using precomputed group words.
+## Simple Scores
+{'male': 1.2291666666666667, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/22.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7149240294413937
+- **Standard Deviation** 0.2958329812604306
+## log_score [male then female]
+- **Mean** -2.6022509899935056
+- **Standard Deviation** 15.049955564316525
+## count (male) [male then female]
+- **Mean** 1.4670325840163505
+- **Standard Deviation** 3.2072085059153235
+## count (female) [male then female]
+- **Mean** 1.4736561030558437
+- **Standard Deviation** 4.5184998592732795
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.36784140969163
+- **Standard Deviation** 9.666725396940214
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.461453744493392
+- **Standard Deviation** 13.94032212343908
+## global-count [male then female]
+- **Mean** 2.145374449339207
+- **Standard Deviation** 6.2486876745890765
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/22.0/all/aggregation.csv

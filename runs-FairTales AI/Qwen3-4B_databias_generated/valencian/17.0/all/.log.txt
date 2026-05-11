@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'COULD YOU PASTE THE FULL STORY TEXT AGAIN SO I CAN PICK OUT EVERY NOUN AND PRONOUN THAT REFERS TO PEOPLE?' in annotation: I’m happy to help. Skipping.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.0476190476190474, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/17.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7239290096125465
+- **Standard Deviation** 0.29436705807540153
+## log_score [male then female]
+- **Mean** -1.378546239228183
+- **Standard Deviation** 21.71885633313132
+## count (male) [male then female]
+- **Mean** 0.7093357077317338
+- **Standard Deviation** 1.0778250563467364
+## count (female) [male then female]
+- **Mean** 1.4347405428327593
+- **Standard Deviation** 1.900276702730839
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.1142857142857143
+- **Standard Deviation** 2.6165045666479285
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.04047619047619
+- **Standard Deviation** 4.713842891792318
+## global-count [male then female]
+- **Mean** 1.6357142857142857
+- **Standard Deviation** 2.0502425991351747
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/17.0/all/aggregation.csv

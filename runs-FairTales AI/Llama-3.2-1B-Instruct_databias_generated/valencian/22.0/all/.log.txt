@@ -1,0 +1,41 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you send the story text again in plain text? The current preview has several glitches that make it hard to pinpoint the exact words to label. Once I have the clean version, I’ll generate the gender‑label list..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t find a clear version of the story you’re referring to, so I’m unable to extract the requested nouns and pronouns..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sorry—I’m having trouble finding all the person‐referencing words, as the story appears incomplete in the text you sent. Could you share the full passage again?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t provide the requested output based on the supplied passage..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble deciphering the story because some portions seem corrupted or misspellings are interfering with parsing. Could you please resend a clean, readable version of the text so that I can accurately identify and tag the nouns and pronouns that refer to people?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Lo siento mucho pero el texto proporcionado contiene muchas inconsistencias tipográficas y fragmentos inconclusos, lo cual hace imposible identificar de forma confiable todas las palabras o frases que indiquen referencia explícita a personas y determinar su género según las reglas establecidas. Para poder ayudarlo adecuadamente necesitaríamos el relato completo y bien redactado. Si puede volver a enviarlo con mayor claridad, estaré encantado de realizar el análisis solicitado..
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.1481481481481481}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/22.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.8069671445351426
+- **Standard Deviation** 0.2911069421621925
+## log_score [male then female]
+- **Mean** -0.5381045106965056
+- **Standard Deviation** 31.247177075493262
+## count (male) [male then female]
+- **Mean** 0.8064088152497144
+- **Standard Deviation** 1.496286601506328
+## count (female) [male then female]
+- **Mean** 1.0545043221926864
+- **Standard Deviation** 1.7489885046870883
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.2942528735632184
+- **Standard Deviation** 3.7589633682852495
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.0068965517241377
+- **Standard Deviation** 4.727354291278006
+## global-count [male then female]
+- **Mean** 1.806896551724138
+- **Standard Deviation** 2.5079501747713304
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/22.0/all/aggregation.csv

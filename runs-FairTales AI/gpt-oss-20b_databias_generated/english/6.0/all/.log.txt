@@ -1,0 +1,44 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t determine the correct list from the text as it isn’t completely visible.  If you can share the full story, I’ll gladly provide the extraction..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.8703703703703705, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/6.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.656514349484107
+- **Standard Deviation** 0.27960864828245996
+## log_score [male then female]
+- **Mean** -0.22553731607814415
+- **Standard Deviation** 4.238409443640048
+## count (male) [male then female]
+- **Mean** 1.051584628186366
+- **Standard Deviation** 1.4803232833584594
+## count (female) [male then female]
+- **Mean** 1.8557069935759987
+- **Standard Deviation** 2.9546402951602646
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.155858930602958
+- **Standard Deviation** 4.138772628263052
+## discrete[0.05] (female) [male then female]
+- **Mean** 5.4300341296928325
+- **Standard Deviation** 8.256939312467289
+## global-count [male then female]
+- **Mean** 2.026166097838453
+- **Standard Deviation** 2.5381818192011263
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/6.0/all/aggregation.csv

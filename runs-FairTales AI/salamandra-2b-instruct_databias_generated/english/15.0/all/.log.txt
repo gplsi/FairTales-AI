@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you please share the full, uninterrupted text of the story? I’d like to make sure I capture every person‐referenced noun and pronoun accurately..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I'm working off the text you pasted, but it seems a few parts (especially around the pronoun‑heavy passages) didn’t copy over completely.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you please confirm that the block beginning “Story 3:” is intact—or send the missing segments—so I can give you the exact list of person–referencing nouns and pronouns with their correct gender tags?.
+Using precomputed group words.
+## Simple Scores
+{'female': 5.4, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/15.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.917483870886033
+- **Standard Deviation** 0.21230463185591875
+## log_score [male then female]
+- **Mean** -25.026036622546012
+- **Standard Deviation** 29.62893920825773
+## count (male) [male then female]
+- **Mean** 0.7522734940206769
+- **Standard Deviation** 2.207491759510326
+## count (female) [male then female]
+- **Mean** 3.8473459790490456
+- **Standard Deviation** 5.960205873591908
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.1575492341356672
+- **Standard Deviation** 5.7891793450667075
+## discrete[0.05] (female) [male then female]
+- **Mean** 11.045951859956237
+- **Standard Deviation** 16.982191072428922
+## global-count [male then female]
+- **Mean** 2.089715536105033
+- **Standard Deviation** 2.723887855709516
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/15.0/all/aggregation.csv

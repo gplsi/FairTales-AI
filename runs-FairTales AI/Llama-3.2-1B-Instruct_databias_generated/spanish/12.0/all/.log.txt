@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.1607142857142858}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/spanish/12.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7106289060063051
+- **Standard Deviation** 0.30879141693232465
+## log_score [male then female]
+- **Mean** -2.8119741058327827
+- **Standard Deviation** 24.942112242459473
+## count (male) [male then female]
+- **Mean** 1.5472019958722245
+- **Standard Deviation** 2.4804210180092032
+## count (female) [male then female]
+- **Mean** 1.801216419610512
+- **Standard Deviation** 2.998527737872794
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.709734513274336
+- **Standard Deviation** 7.511739802367348
+## discrete[0.05] (female) [male then female]
+- **Mean** 5.511504424778761
+- **Standard Deviation** 8.746546960120945
+## global-count [male then female]
+- **Mean** 2.1256637168141594
+- **Standard Deviation** 2.9118484648858
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/spanish/12.0/all/aggregation.csv

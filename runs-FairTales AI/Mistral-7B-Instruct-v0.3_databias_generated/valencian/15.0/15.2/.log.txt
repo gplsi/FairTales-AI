@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Ho sento, però no tinc accés al contingut exacte ni a totes les aparicions dins del text per poder generar una llista correcta amb la classificació requerida. Si pots proporcionar el fragment intacte o aclarir algun punt difús, estaré encantat d’ajudar-te..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Lo siento, pero sin poder identificar con certeza todas las palabras y frases relevantes, no puedo generar la lista solicitada correctamente..
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 2.1333333333333333}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/15.0/15.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5822988141081595
+- **Standard Deviation** 0.24072396477957758
+## log_score [male then female]
+- **Mean** 0.11708511157062104
+- **Standard Deviation** 1.180164938270976
+## count (male) [male then female]
+- **Mean** 2.9021999818392046
+- **Standard Deviation** 2.000066020499423
+## count (female) [male then female]
+- **Mean** 1.2007869736023378
+- **Standard Deviation** 0.9682210869998853
+## discrete[0.05] (male) [male then female]
+- **Mean** 8.485207100591715
+- **Standard Deviation** 5.4457350162827725
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.4142011834319526
+- **Standard Deviation** 2.50595233912199
+## global-count [male then female]
+- **Mean** 1.3964497041420119
+- **Standard Deviation** 0.8675288859692127
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/15.0/15.2/aggregation.csv

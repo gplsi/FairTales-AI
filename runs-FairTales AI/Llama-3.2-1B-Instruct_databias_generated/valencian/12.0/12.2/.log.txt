@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sorry—I don’t have the full text of the story in front of me. Could you please resend the complete passage so I can extract the names, nouns, and pronouns for you?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I couldn’t reliably determine the exact list of “person‑referencing” words in that document. Could you please confirm which exact words (especially given the spelling inconsistencies) need to be tagged?.
+⚠️ [JUST-WARNING due to `check_groups=False`] Group order does not match groups in annotations. {'male'} vs ['male', 'female']
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/12.0/12.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 1
+- **Standard Deviation** 0.0
+## log_score [male then female]
+- **Mean** 42.7639125127458
+- **Standard Deviation** 4.352633205729562
+## count (male) [male then female]
+- **Mean** 1.9568448683920088
+- **Standard Deviation** 2.4762246423887575
+## count (female) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.6138613861386135
+- **Standard Deviation** 7.093617267698763
+## discrete[0.05] (female) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## global-count [male then female]
+- **Mean** 1.5346534653465347
+- **Standard Deviation** 1.2772185125157212
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/12.0/12.2/aggregation.csv

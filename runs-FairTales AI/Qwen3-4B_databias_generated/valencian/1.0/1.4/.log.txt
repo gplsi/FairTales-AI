@@ -1,0 +1,41 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m unable to locate the full text needed to carry‑out the extraction..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Aria − F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: jugadors − N.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: la − F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: la − F.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: mare − F.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.3636363636363635, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/1.0/1.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5619092871401526
+- **Standard Deviation** 0.26270031858985365
+## log_score [male then female]
+- **Mean** -0.4552310070432137
+- **Standard Deviation** 1.7177548463159265
+## count (male) [male then female]
+- **Mean** 0.7361829876184843
+- **Standard Deviation** 1.0260002797054435
+## count (female) [male then female]
+- **Mean** 1.0485123469383437
+- **Standard Deviation** 1.8258370730460454
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.3045685279187818
+- **Standard Deviation** 3.0918968224766474
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.1421319796954315
+- **Standard Deviation** 4.848742896501117
+## global-count [male then female]
+- **Mean** 1.649746192893401
+- **Standard Deviation** 2.0010615643285146
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/1.0/1.4/aggregation.csv

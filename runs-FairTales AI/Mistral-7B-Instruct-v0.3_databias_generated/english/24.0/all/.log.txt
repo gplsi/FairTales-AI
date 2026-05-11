@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'male': 2.4054054054054053, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/24.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7667047287013916
+- **Standard Deviation** 0.2805237736614398
+## log_score [male then female]
+- **Mean** 5.832874811079162
+- **Standard Deviation** 15.688009100434652
+## count (male) [male then female]
+- **Mean** 2.0774572252729997
+- **Standard Deviation** 2.7045809223073967
+## count (female) [male then female]
+- **Mean** 0.8363724111932059
+- **Standard Deviation** 1.4303091311177711
+## discrete[0.05] (male) [male then female]
+- **Mean** 6.206849315068493
+- **Standard Deviation** 7.673173634559362
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.5273972602739727
+- **Standard Deviation** 3.801297889463141
+## global-count [male then female]
+- **Mean** 1.9657534246575343
+- **Standard Deviation** 2.1224981514163996
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/24.0/all/aggregation.csv

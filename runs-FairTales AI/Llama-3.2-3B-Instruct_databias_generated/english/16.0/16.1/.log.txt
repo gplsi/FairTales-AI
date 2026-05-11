@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'M   *(ACTUAL NAME: MISSPELLED)*' in annotation: john. Skipping.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.0, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/english/16.0/16.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6901861586204002
+- **Standard Deviation** 0.26115595821643156
+## log_score [male then female]
+- **Mean** -5.271518228499266
+- **Standard Deviation** 13.088028093407043
+## count (male) [male then female]
+- **Mean** 0.38351698303911985
+- **Standard Deviation** 0.6072271990069736
+## count (female) [male then female]
+- **Mean** 0.7383634117008474
+- **Standard Deviation** 0.9347244959449363
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.2170212765957447
+- **Standard Deviation** 1.648532000282563
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.234042553191489
+- **Standard Deviation** 2.6891104076453005
+## global-count [male then female]
+- **Mean** 1.5617021276595744
+- **Standard Deviation** 1.490504588381702
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/english/16.0/16.1/aggregation.csv

@@ -1,0 +1,55 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'N\N\' in annotation: grupo. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: amigos. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: integrantes. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: grupo. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Alex. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: atleta. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Su. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Juan. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: estudiante. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Su. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: Sofía. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: mujer. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: modelo. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: Su. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: grupo. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Alex. Skipping.
+⚠️ Unknown tag 'M\N\' in annotation: Juan. Skipping.
+⚠️ Unknown tag 'F\N\' in annotation: Sofía. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: grupo. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: grupo. Skipping.
+⚠️ Unknown tag 'N\N\' in annotation: todos. Skipping.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 1.2}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/spanish/25.0/25.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.48565102836562507
+- **Standard Deviation** 0.27715249072371234
+## log_score [male then female]
+- **Mean** -0.3402948512910562
+- **Standard Deviation** 1.624432717666628
+## count (male) [male then female]
+- **Mean** 1.0800368090353905
+- **Standard Deviation** 1.1373584906059224
+## count (female) [male then female]
+- **Mean** 0.8998117048245039
+- **Standard Deviation** 0.8626359052337523
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.2783505154639174
+- **Standard Deviation** 3.2937512430144307
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.670103092783505
+- **Standard Deviation** 2.1540738994429063
+## global-count [male then female]
+- **Mean** 1.731958762886598
+- **Standard Deviation** 1.7170436312496897
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/spanish/25.0/25.1/aggregation.csv

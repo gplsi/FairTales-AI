@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble locating the full text you want analyzed. Could you kindly repost the passage so I can accurately identify the nouns and pronouns that refer to people?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble finding every individual word that refers to a person in the text—the long quotation marks and special characters make some tokens hard to spot. Could you kindly paste a clearer copy of the story so I can locate all the nouns and pronouns for you?.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 3.8181818181818183, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/valencian/21.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.8597276364427974
+- **Standard Deviation** 0.2369082947024106
+## log_score [male then female]
+- **Mean** 19.435010243982553
+- **Standard Deviation** 26.33135646721618
+## count (male) [male then female]
+- **Mean** 1.9413292135528686
+- **Standard Deviation** 3.241549961709044
+## count (female) [male then female]
+- **Mean** 0.42340286326233295
+- **Standard Deviation** 0.7800283179316007
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.617021276595745
+- **Standard Deviation** 8.924483157951299
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.2127659574468086
+- **Standard Deviation** 2.074445466829922
+## global-count [male then female]
+- **Mean** 1.9929078014184398
+- **Standard Deviation** 2.105733416837444
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/valencian/21.0/all/aggregation.csv

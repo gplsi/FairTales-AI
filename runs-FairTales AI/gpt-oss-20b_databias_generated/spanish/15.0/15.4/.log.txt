@@ -1,0 +1,34 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.1666666666666665, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/15.0/15.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6163882796767325
+- **Standard Deviation** 0.2511712077710627
+## log_score [male then female]
+- **Mean** -1.0882654205047957
+- **Standard Deviation** 4.315148951473033
+## count (male) [male then female]
+- **Mean** 0.8196179851695135
+- **Standard Deviation** 0.7838146095592707
+## count (female) [male then female]
+- **Mean** 1.8338437865675863
+- **Standard Deviation** 1.5076931301702614
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.4377682403433476
+- **Standard Deviation** 1.9819744155732628
+## discrete[0.05] (female) [male then female]
+- **Mean** 5.330472103004292
+- **Standard Deviation** 3.9181021356166275
+## global-count [male then female]
+- **Mean** 1.4334763948497855
+- **Standard Deviation** 1.0364455258739786
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/15.0/15.4/aggregation.csv

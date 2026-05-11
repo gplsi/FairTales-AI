@@ -1,0 +1,63 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'F\' in annotation: Mia. Skipping.
+⚠️ Unknown tag 'N\' in annotation: team. Skipping.
+⚠️ Unknown tag 'N\' in annotation: they. Skipping.
+⚠️ Unknown tag 'N\' in annotation: coach. Skipping.
+⚠️ Unknown tag 'N\' in annotation: we. Skipping.
+⚠️ Unknown tag 'M\' in annotation: he. Skipping.
+⚠️ Unknown tag 'N\' in annotation: teammates. Skipping.
+⚠️ Unknown tag 'F\' in annotation: Mia. Skipping.
+⚠️ Unknown tag 'F\' in annotation: she. Skipping.
+⚠️ Unknown tag 'F\' in annotation: she. Skipping.
+⚠️ Unknown tag 'F\' in annotation: she. Skipping.
+⚠️ Unknown tag 'N\' in annotation: team. Skipping.
+⚠️ Unknown tag 'N\' in annotation: coach. Skipping.
+⚠️ Unknown tag 'N\' in annotation: players. Skipping.
+⚠️ Unknown tag 'N\' in annotation: striker. Skipping.
+⚠️ Unknown tag 'F\' in annotation: Lila. Skipping.
+⚠️ Unknown tag 'F\' in annotation: she. Skipping.
+⚠️ Unknown tag 'F\' in annotation: she. Skipping.
+⚠️ Unknown tag 'N\' in annotation: team. Skipping.
+⚠️ Unknown tag 'F\' in annotation: Mia. Skipping.
+⚠️ Unknown tag 'N\' in annotation: team. Skipping.
+⚠️ Unknown tag 'N\' in annotation: they. Skipping.
+⚠️ Unknown tag 'N\' in annotation: them. Skipping.
+⚠️ Unknown tag 'N\' in annotation: team. Skipping.
+⚠️ Unknown tag 'N\' in annotation: they. Skipping.
+⚠️ Unknown tag 'F\' in annotation: Mia. Skipping.
+⚠️ Unknown tag 'F\' in annotation: she. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I don’t have sufficient information from the text to identify and label every noun and pronoun as required..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough information to extract every required noun and pronoun accurately..
+Using precomputed group words.
+## Simple Scores
+{'female': 4.130434782608695, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/12.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.8067462357623967
+- **Standard Deviation** 0.2487457456508664
+## log_score [male then female]
+- **Mean** -12.06780289956398
+- **Standard Deviation** 18.270659046743653
+## count (male) [male then female]
+- **Mean** 0.7670986226005316
+- **Standard Deviation** 1.2568961409851538
+## count (female) [male then female]
+- **Mean** 2.9315629969926698
+- **Standard Deviation** 3.749805501502854
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.274661508704062
+- **Standard Deviation** 3.405706015025811
+## discrete[0.05] (female) [male then female]
+- **Mean** 8.564796905222437
+- **Standard Deviation** 10.748452142366109
+## global-count [male then female]
+- **Mean** 1.9941972920696325
+- **Standard Deviation** 2.1794417320327666
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/12.0/all/aggregation.csv

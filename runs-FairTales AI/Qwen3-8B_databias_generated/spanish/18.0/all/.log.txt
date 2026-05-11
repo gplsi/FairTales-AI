@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: mateo ’ M  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: joven ’ M  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: profesional ’ N  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: diego   M  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Lo siento, pero necesito confirmar algunos detalles del texto (“Persona” ✓ “Padecimiento”) antes de poder realizar la extracción correctamente. ¿Podrías volver a enviar exactamente todas las líneas que aparecen bajo **"## Text"**?.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 1.375}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/18.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5645586518223995
+- **Standard Deviation** 0.2752325219107943
+## log_score [male then female]
+- **Mean** 0.2533260099095755
+- **Standard Deviation** 2.2670284304801958
+## count (male) [male then female]
+- **Mean** 1.4295616053747182
+- **Standard Deviation** 1.4856303938871613
+## count (female) [male then female]
+- **Mean** 1.0174601000554102
+- **Standard Deviation** 1.2863687919994973
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.254988913525499
+- **Standard Deviation** 4.195679331816526
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.9955654101995566
+- **Standard Deviation** 3.31058609474395
+## global-count [male then female]
+- **Mean** 1.6119733924611974
+- **Standard Deviation** 1.4384369168423445
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/18.0/all/aggregation.csv

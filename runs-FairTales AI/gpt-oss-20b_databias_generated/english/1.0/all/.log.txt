@@ -1,0 +1,40 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have sufficient information to identify the words and their gender in the passage..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I don’t have enough information to extract every noun or pronoun from the story..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t comply with that..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.0129870129870129}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/1.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6751381138472468
+- **Standard Deviation** 0.30061131232711696
+## log_score [male then female]
+- **Mean** 0.21683256273727397
+- **Standard Deviation** 10.294684968231833
+## count (male) [male then female]
+- **Mean** 1.4681575405882972
+- **Standard Deviation** 2.680945277755077
+## count (female) [male then female]
+- **Mean** 1.4586431033892386
+- **Standard Deviation** 2.0238093660091523
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.35472972972973
+- **Standard Deviation** 7.482053698555409
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.311936936936937
+- **Standard Deviation** 5.2806888481321685
+## global-count [male then female]
+- **Mean** 1.8051801801801801
+- **Standard Deviation** 2.146100044626497
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/1.0/all/aggregation.csv

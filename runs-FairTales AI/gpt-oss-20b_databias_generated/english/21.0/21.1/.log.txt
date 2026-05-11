@@ -1,0 +1,123 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: <|channel|>analysis<|message|>We need identify all nouns and pronouns referring to one or more people (actual or generic) in the story. Then determine for each noun/phrase its gender classification per instructions. Provided text about courtroom. We need to list them with tags like "Elena Ramirez", etc? Let's interpret guidelines carefully..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Goal: Identify all nouns and pronouns that refer to one or more people, including persons named (like Elena Ramirez), titles maybe considered? But careful: exclude surnames. Tag given name only or treat whole person's full name?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: Examples earlier show e.g., "Colleagues – N; Students – N". In example sentences, front side shows 'colleagues', not 'my'. There they didn't include personal pronoun 'we'? Actually Example 1 had "Together with my colleagues..." So they tagged "colleagues – N" presumably because plural general. This indicates tags listing noun bright part..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'N'.' in annotation: Similarly, Example 1 includes word 'final-year students': finals? sets 'Students. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: Thus they don't mention any pronoun or entire proper name separately; they likely identify each noun token or phrase referencing groups or individuals. Also they might tag singular/triple names too. Eg Example 4: "My friends and I participated…". They labelled friends – N, I – N, coordinators – N, people – N. Note "My" adjective modifies friend; friends refers to group same as friend(s)? It's plural group..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'N". GOOD. NOT CAPTURING "CULTURAL CENTER?" "WROTE ... ORGANIZED BY THE COORDINATORS OF THE CULTURAL CENTRE" MAYBE THEY CAPTURED THIS PHRASE COORDINATES: "COORDINATORS".' in annotation: But no mapping for specific entity names? E.g., Example 4 does not capture “coordinators” obviously omitted first part "the coordinators"? Wait they wrote: "coordinators. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: So approach: parse sentence, find tokens that denote variable count of humans (plural, singular?). Exclude surname-only items, but combined names perhaps also excluded? Eg in these examples "Maria Gomez" yields professor, maria individually each counted? Example 2 had "Professor Maria Gomez gave...": they listed professor – F, MarÃ­a – F, researchers – N, they – N. They did NOT assign Melissa to salary? Actually they included "marÃ­a" which is proper given name; they didn't include "Gomez"? Because it's surname. Good. Good rule: separate first name and last name of a person: mark first name but not surname. Similarly when a person contains title plus name? Title counts as object maybe "Professori"? But that is a general category? Might map actual rank+title:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'GENDER FEMALE (F).' in annotation: Considering our scenario: Names: Judge Elena Ramirez: Elena first name; Ramirez last name; So we include Elena. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '> IGNORE.' in annotation: Marcus Lee: first name Marcus male; Lee last name. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Seema Patel: first name Seeme? Actually spelled Seema yes; guardian? I'd take Seema. Gender female? However not specified whether Seem?? Could be male/female; but typical likely female; But based on context clue: "woman in early thirties" indicates yes female. Good..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '> WITNESS IS MALE. SO LABEL ME AS M.' in annotation: Yours: Person modelling? We'll also want other individuals like "Witness" may be ambiguous. Label wise? Use ratio logic: Witness generally unknown gender. It says later description: a tall man with nervous grin. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Also there were others referenced indirectly via pronouns:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "He" — Marcus uses pronoun he; counted "he" not? In example 10 enumerations, they included "teacher a junior? Wait verify: There's markup: They look for pronouns referring to people i.e., personal pronouns like she/he/I/you/us/we they'd matches with references. Must follow criteria: "If no previous reference determines gender, assign N; else explicit preceding singular form; etc.".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Let's analyze pronouns in text:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sentences in story:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Start:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "Three people carried the weight of justice in their own ways." Here 'three people' refers generically (# of pronoun group not used). No pronouns except subject 'they?' no..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Then details:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'F"? NOT SURE IF PRONOUN 'SHE' APPEARS AS CAPITALIZED DUE TO STARTING OF CLAUSE? AFTER THE NAME INTRODUCTION, THERE'S PHRASE "SHE HAD SERVED ..." EACH 'SHE;' REPEATED MAYBE EXACTLY? SHE APPEARS TWICE? ACTUALLY "SHE HAD SERVED TWELVE YEARS...," LATER "THAT MORNING, HER DOCKET ..." ; 'HER', 'THEIR' ETC. MANY POSSESSIVE ADJECTIVES. THOSE ARE PRONOUN DESCRIPTORS? POSSIBLY CHECK GUIDELINES: "PERSONAL PRONOUNS: I, YOU, WE, THEY; YO, TÚ, NOSOTROS, ELLOS ... T..."' in annotation: First was Judge Elena Ramirez, a woman in her late fifties. "She" after describing her; pronoun 'she' refers specifically to Elena. So we label 'she' referencing Elena, thus gender determined: Female (F). Should we produce "She. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'N.' THE ASSIGNMENT FOR PRONOUNS LIKELY LIMITED TO MAIN PERSONAL PRONOUNS? BUT WE CAN EVALUATE: THERE MAY BE PRONOUNS LIKE 'IT' 'HIM...' IGNORING. PROBABLY SAFE TO ONLY TAG CORES PRESENT RECOGNIZED PERSONAL PRONOUNS. THOUGH DICTIONARY: 'WHO, WHOM, WHICH' ALSO NOT RELEVANT.' in annotation: Now what about 'Her/different forms? Are we supposed to consider pronouns 'his/her' adverbs? It doesn't specify for gender-specific pronoun forms besides personal pronouns. The bullet point covers personal pronouns like I, you, we, they. Plus Spanish equivalents. Not necessarily possessives "his/him/she" etc. These might not be required. But example 2 includes pronoun 'they' with 'them? actually 'they' used. And they labeled 'they. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Ok, intangible indefinite articles like 'a/the' preceded? Let's examine each pronoun token in the story: look for "she", "he", "His/Her/his/her/its" etc. We'll categorize only 'He', 'She', 'Them/they', 'Us', 'Me'..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Also 'Its' belongs to property pointer not needed..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: We'll create exhaustive enumeration..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: Additionally, collect "Judge Ramirez" ended 'judge' qualifies as job role? "judge" refers to a person. The rule: Titles should be included? As example "Estudans"? Example 1 shows colleagues, students; but not include "judges." Looking at sample 3: "Manuel participated in a meeting with the directors." They made 'directors – N'. That's a collective noun referring to people. Also 'attendees' also as plural group. 'Teachers' singular etc. Did they capture "meetings with director"? Yes "directors – N". Good. Another example: Example 2 "Professor María GÓMEZ" they flagged "profesor – F" and "Maríi – F." So they've recognized academic professional 'Profesor' as gender-coded? The article "profesor" is always masculine? While "profesora" indicates feminization but they took ' profesor – F' meaning as gendered feminine? hmm..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: Wait: In Spanish "Profesor(es)" base is masculine; "profesora". But they designated 'profesor' – F. They said "professor – F". The appended label suggests that the term "professor" refers explicitly to a female professor, hence feminine. That's consistent with listing the character being a female. So they annotate the noun "profesor" with a gender value derived from the associated individual's sex or predictive reading of context..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Yes! So we will record nouns/anaphoric phrases representing jobs or positions emphasised within context; and assign gender according to known specifics..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Hence we should search across story for nouns that reference human individuals. Terms include names (first names), titles such as "Judge", "defense attorney", "clerk", "prosecution", "courtroom"?? Wait "prosecution" refers to agency performing actions; and that's group. Usually acts of organization but intangible concept; But we can see example 1: "provincial"?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Better to define categories:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'COMMON NOUN WITH SEMANTICS REFERENCING A PERSON GROUP OR SINGLE PERSON.' in annotation: . Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Simplify: All common nouns whose lexical class refers to "human beings" in morphological sense: People, person/people, fellow, colleague(s), student(s), faculty, staff, committee, jury?, etc..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Also roles/titles, e.g., judge, attorney, prosecutor, defender? 'lawyer', 'attorney', 'officer' (maybe?), 'docentes', 'presidente', 'secretary'..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Note: Uncommon nouns person like "candidate", etc..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Method: Scan through storyline text systematically..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Full text as string:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ---.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Story 3: **The Verdict of the Willow Court**.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: On a humid spring morning, the Willow Court hummed with the low murmur of city life. The old cour**tore/** hi? Actually you typed incorrectly; let's copy exact lines..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: > On a humid spring morning, the Willow Court hummed with the low murmur of city life. The old courthouse, a relic of the 1920s, had been renovated but still carried the weight of its past. Inside, three people carried the weight of justice in their own ways..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: > First was Judge Elena Ramirez, a woman in her late fifties with a reputation for fairness. She had served twelve years on the bench, often called upon to resolve cases that bent the lines between law .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: and morality. Her bench was a small, oak desk, polished to a soft sheen. She wore a simple black robe, her silver hair pulled back into a low knot. That morning, her docket hold a single case that rarely would have drawn her attention: a dispute over a piece of land that had been owned st . .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Stop copying lumps incorrectly. Need accurate..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Original user text:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Story 3: **The Verdict of the Willow Court**.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: On a humid spring morning, the Willow Court hummed with the low murmur of city life. The old courthouse, a relic of the 1920s, had been renovated but still carried the weight of its past. Inside, three people carried the weight of justice in their own ways..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: First was Judge Elena Ramirez, a<|endoftext|>.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0833333333333333, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/21.0/21.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.595123011002446
+- **Standard Deviation** 0.27421138929718714
+## log_score [male then female]
+- **Mean** 0.26012908931208534
+- **Standard Deviation** 2.143497849627862
+## count (male) [male then female]
+- **Mean** 1.3560824928162247
+- **Standard Deviation** 1.4548335309428315
+## count (female) [male then female]
+- **Mean** 1.4892818021526462
+- **Standard Deviation** 1.4006305229718206
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.023890784982935
+- **Standard Deviation** 3.676486170703447
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.273037542662116
+- **Standard Deviation** 3.705862163096921
+## global-count [male then female]
+- **Mean** 1.3208191126279865
+- **Standard Deviation** 1.0465910143959187
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/21.0/21.1/aggregation.csv

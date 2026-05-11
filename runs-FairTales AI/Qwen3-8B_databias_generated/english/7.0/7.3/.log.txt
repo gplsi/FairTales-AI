@@ -1,0 +1,34 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+Using precomputed group words.
+## Simple Scores
+{'female': 3.875, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/english/7.0/7.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7627871239072215
+- **Standard Deviation** 0.24053982453484518
+## log_score [male then female]
+- **Mean** -15.079309841906259
+- **Standard Deviation** 20.992821877934123
+## count (male) [male then female]
+- **Mean** 0.7484212124944181
+- **Standard Deviation** 0.9322226989878113
+## count (female) [male then female]
+- **Mean** 2.87384236045068
+- **Standard Deviation** 2.437088495379717
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.1270718232044197
+- **Standard Deviation** 2.2706794725445048
+## discrete[0.05] (female) [male then female]
+- **Mean** 8.314917127071823
+- **Standard Deviation** 6.459725537580656
+## global-count [male then female]
+- **Mean** 1.3756906077348066
+- **Standard Deviation** 0.9956936127199447
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/english/7.0/7.3/aggregation.csv

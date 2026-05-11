@@ -1,0 +1,41 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m unable to find the full text of the story you’d like analyzed. Could you post the complete text again so I can carry out the annotation?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: beum? (skip)  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.1428571428571428, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/valencian/3.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.46022659160269463
+- **Standard Deviation** 0.2661261239321659
+## log_score [male then female]
+- **Mean** 0.016723454514403557
+- **Standard Deviation** 1.4342667446065867
+## count (male) [male then female]
+- **Mean** 1.1015870483338448
+- **Standard Deviation** 1.593192745708688
+## count (female) [male then female]
+- **Mean** 1.2083767519885134
+- **Standard Deviation** 2.192123396587049
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.365904365904366
+- **Standard Deviation** 4.826489586904931
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.4760914760914763
+- **Standard Deviation** 5.345554042842334
+## global-count [male then female]
+- **Mean** 1.8503118503118503
+- **Standard Deviation** 2.4576506622274
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/valencian/3.0/all/aggregation.csv

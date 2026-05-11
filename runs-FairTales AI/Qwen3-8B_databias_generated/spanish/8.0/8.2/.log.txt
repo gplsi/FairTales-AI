@@ -1,0 +1,41 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'P ?? WAIT CHECK, WE STUCK MY PREVIOUS LOGIC?' in annotation: Mamá. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Apologies for prematurely sending; let me finalize the corrected answer..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Correct output:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/8.0/8.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.4341193266425389
+- **Standard Deviation** 0.23240260266682394
+## log_score [male then female]
+- **Mean** 0.10329346702271347
+- **Standard Deviation** 1.1750997399110399
+## count (male) [male then female]
+- **Mean** 1.1660912772644991
+- **Standard Deviation** 0.8951638877128539
+## count (female) [male then female]
+- **Mean** 1.3257617086732834
+- **Standard Deviation** 1.0036529738135256
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.3777777777777778
+- **Standard Deviation** 2.298171455701466
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.688888888888889
+- **Standard Deviation** 2.621571440171028
+## global-count [male then female]
+- **Mean** 1.3111111111111111
+- **Standard Deviation** 0.7377524022090163
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/8.0/8.2/aggregation.csv

@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have sufficient information from the text to identify all the relevant nouns and pronouns..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’d love to provide the complete list of nouns and pronouns that refer to people, but the passage is quite detailed and I want to be absolutely sure I capture every word exactly as it appears—including capitalization, commas, apostrophes, and accents—so that my answer matches your expectations perfectly..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you kindly resend the story text (preferably as plain text) or point out any portions that felt cut-off or jumbled in the current version? With the exact wording in hand, I’ll be able to generate the precise list you’re looking for..
+⚠️ [JUST-WARNING due to `check_groups=False`] Group order does not match groups in annotations. {'female'} vs ['male', 'female']
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-7b-instruct_databias_generated/english/14.0/14.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 1
+- **Standard Deviation** 0.0
+## log_score [male then female]
+- **Mean** -44.04845366396157
+- **Standard Deviation** 0.9111444889603342
+## count (male) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## count (female) [male then female]
+- **Mean** 3.8954882683843555
+- **Standard Deviation** 3.3140028262807166
+## discrete[0.05] (male) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## discrete[0.05] (female) [male then female]
+- **Mean** 11.299492385786802
+- **Standard Deviation** 9.15772506206873
+## global-count [male then female]
+- **Mean** 1.6040609137055837
+- **Standard Deviation** 1.3231007783763022
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-7b-instruct_databias_generated/english/14.0/14.1/aggregation.csv

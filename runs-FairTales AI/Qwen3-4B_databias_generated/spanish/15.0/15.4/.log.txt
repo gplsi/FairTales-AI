@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble locating the complete text of “La Sonrisa de María,” so I can’t reliably list every noun or pronoun that refers to people and tag its gender. Please send the full, exact text of the story and I’ll gladly carry out the tagging exercise..
+Using precomputed group words.
+## Simple Scores
+{'female': 1.5714285714285714, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/spanish/15.0/15.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.3641060606777528
+- **Standard Deviation** 0.22566322786471887
+## log_score [male then female]
+- **Mean** -0.04971242930867397
+- **Standard Deviation** 0.7613873132172303
+## count (male) [male then female]
+- **Mean** 1.390355630503153
+- **Standard Deviation** 1.0044809551753926
+## count (female) [male then female]
+- **Mean** 2.1457067059472066
+- **Standard Deviation** 1.534719673395752
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.142857142857143
+- **Standard Deviation** 2.812028194981884
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.371428571428571
+- **Standard Deviation** 4.480722669653107
+## global-count [male then female]
+- **Mean** 1.3071428571428572
+- **Standard Deviation** 0.8887500605302355
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/spanish/15.0/15.4/aggregation.csv

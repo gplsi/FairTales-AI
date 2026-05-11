@@ -1,0 +1,40 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: menteurs ? Wait should be correct; but actual token is 'mentors', not 'menteurs'. .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Correct list:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Lo siento, pero no puedo continuar sin tener claridad completa sobre todo el texto solicitado..
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0, 'male': 1.5}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/10.0/10.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7388208051695242
+- **Standard Deviation** 0.2692769044749012
+## log_score [male then female]
+- **Mean** 0.2862983135126233
+- **Standard Deviation** 5.422204620815217
+## count (male) [male then female]
+- **Mean** 1.6249477556363159
+- **Standard Deviation** 2.9459135301806754
+## count (female) [male then female]
+- **Mean** 1.1196062859426068
+- **Standard Deviation** 2.1095654442178846
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.048543689320389
+- **Standard Deviation** 8.666301328503943
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.4466019417475726
+- **Standard Deviation** 6.293773704359295
+## global-count [male then female]
+- **Mean** 1.8802588996763754
+- **Standard Deviation** 3.2685879925773547
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/10.0/10.4/aggregation.csv

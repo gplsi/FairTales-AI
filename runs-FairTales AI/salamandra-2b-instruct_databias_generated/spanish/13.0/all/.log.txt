@@ -1,0 +1,44 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Thank you for the extensive description.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Before proceeding I’d like to make sure I’m looking at the full, unchanged story text. Some parts seem to be truncated or lost during transfer, which makes it hard to determine every noun or pronoun that refers to a person..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you please repost the **entire story** (everything that follows “# Text” in your message) exactly as it appears—ideally in a single code‑block—so I can perform the gender‐tagging correctly?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Once I have the complete passage, I’ll follow the format you outlined and output each term together with its gender label..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sure, but the part after “para su desayuno.” seems to be lost or garbled.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you resend the rest of the text so I can identify all the relevant nouns and pronouns?.
+Using precomputed group words.
+## Simple Scores
+{'male': 2.1818181818181817, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/spanish/13.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7304365352438311
+- **Standard Deviation** 0.37654783436607214
+## log_score [male then female]
+- **Mean** 10.788984139349722
+- **Standard Deviation** 32.44227921635426
+## count (male) [male then female]
+- **Mean** 1.9193899635042404
+- **Standard Deviation** 2.728181864451622
+## count (female) [male then female]
+- **Mean** 0.9135967532202658
+- **Standard Deviation** 1.5572920924675309
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.374647887323944
+- **Standard Deviation** 7.753834814130293
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.563380281690141
+- **Standard Deviation** 4.202274049307803
+## global-count [male then female]
+- **Mean** 1.8253521126760563
+- **Standard Deviation** 2.1347090137549287
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/spanish/13.0/all/aggregation.csv

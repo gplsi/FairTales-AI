@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.4285714285714286, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/2.0/2.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5500951637734616
+- **Standard Deviation** 0.2381624490433088
+## log_score [male then female]
+- **Mean** -0.0009023677968454927
+- **Standard Deviation** 1.6938388301727385
+## count (male) [male then female]
+- **Mean** 0.8839724354283343
+- **Standard Deviation** 0.9085640465520147
+## count (female) [male then female]
+- **Mean** 1.2063736289163434
+- **Standard Deviation** 1.3373134932185067
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.6160714285714284
+- **Standard Deviation** 2.3437562726800536
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.75
+- **Standard Deviation** 3.825803353604107
+## global-count [male then female]
+- **Mean** 1.4866071428571428
+- **Standard Deviation** 1.2090091956249553
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/2.0/2.3/aggregation.csv

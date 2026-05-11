@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'G' in annotation: María. Skipping.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.5714285714285714}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/2.0/2.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6237778150292357
+- **Standard Deviation** 0.259201241318701
+## log_score [male then female]
+- **Mean** 0.4264900627052461
+- **Standard Deviation** 2.078055650569711
+## count (male) [male then female]
+- **Mean** 0.5222314360662832
+- **Standard Deviation** 0.4995865175989739
+## count (female) [male then female]
+- **Mean** 0.8793564804134494
+- **Standard Deviation** 0.8165590735963051
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.6682692307692308
+- **Standard Deviation** 1.4109827611581212
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.4903846153846154
+- **Standard Deviation** 2.115026489059654
+## global-count [male then female]
+- **Mean** 1.4326923076923077
+- **Standard Deviation** 1.1100282720595276
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/spanish/2.0/2.4/aggregation.csv

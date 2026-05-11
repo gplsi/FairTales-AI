@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 6.75, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/valencian/15.0/15.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.8466805500969726
+- **Standard Deviation** 0.2105171904440537
+## log_score [male then female]
+- **Mean** -5.592948767787474
+- **Standard Deviation** 12.386470344693716
+## count (male) [male then female]
+- **Mean** 0.34905434385188266
+- **Standard Deviation** 0.6808218635786117
+## count (female) [male then female]
+- **Mean** 2.577053828635685
+- **Standard Deviation** 3.464258668472758
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.0320512820512822
+- **Standard Deviation** 1.7205395695119627
+## discrete[0.05] (female) [male then female]
+- **Mean** 7.666666666666667
+- **Standard Deviation** 9.529806099867681
+## global-count [male then female]
+- **Mean** 1.5576923076923077
+- **Standard Deviation** 1.778873817771612
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/valencian/15.0/15.3/aggregation.csv

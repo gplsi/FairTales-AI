@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sorry, but I don’t have enough information to determine the correct mappings..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I don’t have enough reliable information from the text to produce the detailed list of every noun and pronoun that refers to people along with their correct gender tags..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you kindly resend the whole story exactly as it appears? I need the full text to be confident of identifying every noun or pronoun that refers to a person..
+Using precomputed group words.
+## Simple Scores
+{'male': 2.3636363636363638, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/2.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.8796141213328577
+- **Standard Deviation** 0.24242665193912072
+## log_score [male then female]
+- **Mean** 19.423930056354905
+- **Standard Deviation** 30.323014323884358
+## count (male) [male then female]
+- **Mean** 3.0771257714572773
+- **Standard Deviation** 4.741180840059577
+## count (female) [male then female]
+- **Mean** 1.0714281678751767
+- **Standard Deviation** 1.918505806821154
+## discrete[0.05] (male) [male then female]
+- **Mean** 8.936386768447838
+- **Standard Deviation** 14.22786588085149
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.035623409669211
+- **Standard Deviation** 5.257041262669504
+## global-count [male then female]
+- **Mean** 2.295165394402036
+- **Standard Deviation** 2.718868693983939
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/2.0/all/aggregation.csv

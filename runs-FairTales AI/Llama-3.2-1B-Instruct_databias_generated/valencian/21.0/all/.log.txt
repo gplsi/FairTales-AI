@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you confirm the person‑referencing words (eg. Andoni, Lucà) and any pronouns that should be listed?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have sufficient information to generate the desired list..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—some parts of the story appear garbled or incomplete, making it hard to pull out all person‐related nouns and pronouns accurately. Could you kindly send a clearer, typo–free version of the text (especially around the sections mentioning “mens”, “president’, ‘Maria’ etc.)? Once I have the full passage I’ll gladly generate the list..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I couldn’t locate the full text of the story you’re asking about, so I’m not able to perform the tagging task right now. Please resend the passage or confirm that the content is intact, and I’ll gladly help..
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0909090909090908, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/21.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.82851440928079
+- **Standard Deviation** 0.285853402156108
+## log_score [male then female]
+- **Mean** -21.160200164024893
+- **Standard Deviation** 22.215362877377302
+## count (male) [male then female]
+- **Mean** 0.7060221723019677
+- **Standard Deviation** 1.3854113742059775
+## count (female) [male then female]
+- **Mean** 0.9153394085322125
+- **Standard Deviation** 1.1687429812856398
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.0829103214890017
+- **Standard Deviation** 4.052397782407273
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.6869712351945854
+- **Standard Deviation** 3.2886784936755986
+## global-count [male then female]
+- **Mean** 1.5380710659898478
+- **Standard Deviation** 1.6949043275910378
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/21.0/all/aggregation.csv

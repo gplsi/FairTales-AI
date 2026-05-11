@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough information to extract the required list accurately..
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.25}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-7b-instruct_databias_generated/english/9.0/9.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.4029548216160951
+- **Standard Deviation** 0.2800263854339235
+## log_score [male then female]
+- **Mean** 0.11475653769662512
+- **Standard Deviation** 1.3734031480565347
+## count (male) [male then female]
+- **Mean** 1.6793898093947248
+- **Standard Deviation** 1.3561471558963136
+## count (female) [male then female]
+- **Mean** 2.146453245284926
+- **Standard Deviation** 1.8497486851735232
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.883928571428571
+- **Standard Deviation** 3.728984441885615
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.241071428571429
+- **Standard Deviation** 4.60365216497872
+## global-count [male then female]
+- **Mean** 1.8839285714285714
+- **Standard Deviation** 1.5289726617102741
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-7b-instruct_databias_generated/english/9.0/9.2/aggregation.csv

@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but the passage you supplied isn’t clear enough for me to identify all the noun‑and‑pronoun instances that refer to people. Would you mind sending the text again—or confirming the exact wording? Once I have a readable version, I’ll gladly annotate each entry with its gender..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m afraid I can’t provide the requested extraction..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 3.0, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/valencian/5.0/5.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 1
+- **Standard Deviation** 0.0
+## log_score [male then female]
+- **Mean** 8.077081533257171
+- **Standard Deviation** 48.13542044694391
+## count (male) [male then female]
+- **Mean** 0.6209943598955104
+- **Standard Deviation** 0.6333775749674364
+## count (female) [male then female]
+- **Mean** 0.25355936078270225
+- **Standard Deviation** 0.3626575266761321
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.8275862068965518
+- **Standard Deviation** 1.8335945477441957
+## discrete[0.05] (female) [male then female]
+- **Mean** 0.4482758620689655
+- **Standard Deviation** 0.572351471472339
+## global-count [male then female]
+- **Mean** 1.103448275862069
+- **Standard Deviation** 0.30993404669460345
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/valencian/5.0/5.1/aggregation.csv

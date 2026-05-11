@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'R' in annotation: Téo. Skipping.
+⚠️ Unknown tag 'R' in annotation: Téo. Skipping.
+⚠️ Unknown tag 'W' in annotation: jugadores. Skipping.
+⚠️ Unknown tag 'G' in annotation: creadores. Skipping.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.0625, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/spanish/4.0/4.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.48714439386742764
+- **Standard Deviation** 0.2946717390338452
+## log_score [male then female]
+- **Mean** 0.283616766014909
+- **Standard Deviation** 1.844537369827157
+## count (male) [male then female]
+- **Mean** 1.0458536292422844
+- **Standard Deviation** 0.9212390439821138
+## count (female) [male then female]
+- **Mean** 1.1272826652086456
+- **Standard Deviation** 0.925162643177143
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.232142857142857
+- **Standard Deviation** 2.7690866955518714
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.4151785714285716
+- **Standard Deviation** 2.952834309818753
+## global-count [male then female]
+- **Mean** 1.4330357142857142
+- **Standard Deviation** 1.1771279475897243
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/spanish/4.0/4.1/aggregation.csv

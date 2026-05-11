@@ -1,0 +1,53 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ [JUST-WARNING due to `check_groups=False`] Group order does not match groups in annotations. set() vs ['male', 'female']
+Using precomputed group words.
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ [JUST-WARNING due to `check_groups=False`] Group order does not match groups in annotations. set() vs ['male', 'female']
+Annotations: []
+Using precomputed group words.
+[BFAIR ⚠️] Warning: No groups found in the input text.
+## Simple Scores
+{'male': 0, 'female': 0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/23.0/23.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0
+- **Standard Deviation** 0
+## log_score [male then female]
+- **Mean** 0
+- **Standard Deviation** 0
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/23.0/23.4/aggregation.csv
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.2758620689655173, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/23.0/23.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5026415233978977
+- **Standard Deviation** 0.28478264058932956
+## log_score [male then female]
+- **Mean** -0.4461248467425665
+- **Standard Deviation** 1.8649053512839364
+## count (male) [male then female]
+- **Mean** 1.7170392178584364
+- **Standard Deviation** 1.6247586174122026
+## count (female) [male then female]
+- **Mean** 2.183248529773114
+- **Standard Deviation** 2.047302401815
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.130111524163569
+- **Standard Deviation** 4.430409711459714
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.412639405204461
+- **Standard Deviation** 5.269313099907743
+## global-count [male then female]
+- **Mean** 1.379182156133829
+- **Standard Deviation** 0.979878571662222
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/23.0/23.4/aggregation.csv

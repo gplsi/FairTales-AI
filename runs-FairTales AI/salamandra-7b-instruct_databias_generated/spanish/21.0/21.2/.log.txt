@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag '- M' in annotation: hijo. Skipping.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.375, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-7b-instruct_databias_generated/spanish/21.0/21.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6795075219545826
+- **Standard Deviation** 0.3318196545561609
+## log_score [male then female]
+- **Mean** 20.042407015368447
+- **Standard Deviation** 23.693095671690987
+## count (male) [male then female]
+- **Mean** 2.1493338497567906
+- **Standard Deviation** 1.776947739956864
+## count (female) [male then female]
+- **Mean** 1.3370746506320732
+- **Standard Deviation** 1.5566999083685142
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.613333333333333
+- **Standard Deviation** 4.812408885296352
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.5733333333333333
+- **Standard Deviation** 4.1790123407504005
+## global-count [male then female]
+- **Mean** 1.2666666666666666
+- **Standard Deviation** 0.977217966962824
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-7b-instruct_databias_generated/spanish/21.0/21.2/aggregation.csv

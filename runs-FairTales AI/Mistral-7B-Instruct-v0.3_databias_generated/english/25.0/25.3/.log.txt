@@ -1,0 +1,34 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.4, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/25.0/25.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7633871128042594
+- **Standard Deviation** 0.297863302038869
+## log_score [male then female]
+- **Mean** 0.14913905985621767
+- **Standard Deviation** 7.344090283126066
+## count (male) [male then female]
+- **Mean** 0.7445126064201582
+- **Standard Deviation** 1.0210932564551298
+## count (female) [male then female]
+- **Mean** 1.031023210853106
+- **Standard Deviation** 1.2104411796567494
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.204
+- **Standard Deviation** 2.6846252720641703
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.02
+- **Standard Deviation** 3.1526746469813336
+## global-count [male then female]
+- **Mean** 1.416
+- **Standard Deviation** 1.1206997240500882
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/25.0/25.3/aggregation.csv

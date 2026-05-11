@@ -1,0 +1,44 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I apologize—I’m having difficulty extracting the exact list of all person‐referencing nouns and pronouns from the supplied story..
+⚠️ Unknown tag '?' in annotation: amarra. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: amaré ?^am? er? Wait scribble.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sorry—I’m missing the full, unedited version of the story.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you kindly send the complete text again so I can spot‑check all the names and pronouns accurately?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have access to the full text of the story you’re asking me to analyse.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Please resend the entire story (including any lines that were cut off) and I’ll gladly carry out the noun‑and‑pronoun identification for you..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```txt.
+⚠️ Unknown tag 'P' in annotation: mother. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.6875, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/15.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7022801994229267
+- **Standard Deviation** 0.2872494660088773
+## log_score [male then female]
+- **Mean** -1.8553801604912068
+- **Standard Deviation** 6.808780141656435
+## count (male) [male then female]
+- **Mean** 1.511038459013936
+- **Standard Deviation** 2.577975540927311
+## count (female) [male then female]
+- **Mean** 3.9217084993279765
+- **Standard Deviation** 5.684830591221429
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.470588235294118
+- **Standard Deviation** 6.970541726104778
+## discrete[0.05] (female) [male then female]
+- **Mean** 11.34375
+- **Standard Deviation** 15.853653845073403
+## global-count [male then female]
+- **Mean** 2.1525735294117645
+- **Standard Deviation** 3.205754608463467
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/english/15.0/all/aggregation.csv

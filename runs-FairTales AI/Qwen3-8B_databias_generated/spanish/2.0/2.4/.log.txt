@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'V' in annotation: Elena. Skipping.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.375, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/2.0/2.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.4261323627929819
+- **Standard Deviation** 0.27029956427670687
+## log_score [male then female]
+- **Mean** 0.06843386909184968
+- **Standard Deviation** 1.3192550454837724
+## count (male) [male then female]
+- **Mean** 0.797280070357318
+- **Standard Deviation** 0.558749016405056
+## count (female) [male then female]
+- **Mean** 1.0326967322538212
+- **Standard Deviation** 0.7097367336146077
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.271604938271605
+- **Standard Deviation** 1.431780767414549
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.0246913580246915
+- **Standard Deviation** 1.8346242605613774
+## global-count [male then female]
+- **Mean** 1.154320987654321
+- **Standard Deviation** 0.42544806712177224
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-8B_databias_generated/spanish/2.0/2.4/aggregation.csv

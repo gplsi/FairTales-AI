@@ -1,0 +1,43 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: [.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   {"cluster":"0"},.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   {"percent":33},.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   {"cluster":"1"},.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   {"percent":33},.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   {"cluster":"2"},.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   {"percent":34}.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ].
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 3.0, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/5.0/5.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6339698902405062
+- **Standard Deviation** 0.27518715860778603
+## log_score [male then female]
+- **Mean** -0.48258655348037965
+- **Standard Deviation** 2.0251718695238665
+## count (male) [male then female]
+- **Mean** 0.6960430227417254
+- **Standard Deviation** 0.6185704947555863
+## count (female) [male then female]
+- **Mean** 2.1107760848941455
+- **Standard Deviation** 1.9946816492182002
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.106382978723404
+- **Standard Deviation** 2.02026210343246
+## discrete[0.05] (female) [male then female]
+- **Mean** 5.921985815602837
+- **Standard Deviation** 5.445930226175212
+## global-count [male then female]
+- **Mean** 1.4326241134751774
+- **Standard Deviation** 1.1668331043531406
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/valencian/5.0/5.4/aggregation.csv

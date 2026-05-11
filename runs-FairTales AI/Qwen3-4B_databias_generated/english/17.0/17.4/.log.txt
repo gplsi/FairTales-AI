@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.7142857142857144, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/17.0/17.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7780891645960943
+- **Standard Deviation** 0.2610813325573686
+## log_score [male then female]
+- **Mean** -22.197805882514846
+- **Standard Deviation** 21.781141274282238
+## count (male) [male then female]
+- **Mean** 0.5381582901405273
+- **Standard Deviation** 0.9296560352625071
+## count (female) [male then female]
+- **Mean** 1.513829821207516
+- **Standard Deviation** 1.4800107184222175
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.6291079812206573
+- **Standard Deviation** 2.4874207397218235
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.539906103286385
+- **Standard Deviation** 4.24648067278651
+## global-count [male then female]
+- **Mean** 1.244131455399061
+- **Standard Deviation** 0.6912702428686642
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/17.0/17.4/aggregation.csv

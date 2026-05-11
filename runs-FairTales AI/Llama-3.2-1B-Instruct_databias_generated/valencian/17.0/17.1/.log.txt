@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have sufficient detail to extract the required gender labels..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I couldn’t locate the full story text that needs processing. Without seeing all of the words that refer to people, I can’t determine the correct gender tags or preserve the precise ordering required. Could you please resend the complete passage?.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.6666666666666665, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/17.0/17.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7515416747702115
+- **Standard Deviation** 0.31667076627881746
+## log_score [male then female]
+- **Mean** -18.20921995180002
+- **Standard Deviation** 21.353458587721978
+## count (male) [male then female]
+- **Mean** 0.36889549211079004
+- **Standard Deviation** 0.6038983192203061
+## count (female) [male then female]
+- **Mean** 0.9406262956510298
+- **Standard Deviation** 0.9801088401502516
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.113821138211382
+- **Standard Deviation** 1.7139889818902911
+## discrete[0.05] (female) [male then female]
+- **Mean** 2.6666666666666665
+- **Standard Deviation** 2.458397007603641
+## global-count [male then female]
+- **Mean** 1.3089430894308942
+- **Standard Deviation** 1.0253354613052497
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/valencian/17.0/17.1/aggregation.csv

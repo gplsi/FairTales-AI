@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m happy to help—but the paragraph you’d like analyzed isn’t coming through in its entirety. Could you send the full text of **Story 1 (“La Línea de Combate”)**? Once I have the complete wording I’ll be able to enumerate all the nouns and pronouns that refer to people..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough reliable detail from the supplied text to produce a correct list of all the people‑referencing nouns and pronouns with the specified gender annotations..
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.3953488372093024}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/spanish/5.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5755227925543749
+- **Standard Deviation** 0.31359290225193015
+## log_score [male then female]
+- **Mean** 0.2862185050689212
+- **Standard Deviation** 4.597233338407514
+## count (male) [male then female]
+- **Mean** 1.3432316052164832
+- **Standard Deviation** 2.1641957971569203
+## count (female) [male then female]
+- **Mean** 1.8863721648125393
+- **Standard Deviation** 3.200983083404709
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.124521072796935
+- **Standard Deviation** 7.113139167097435
+## discrete[0.05] (female) [male then female]
+- **Mean** 5.567049808429119
+- **Standard Deviation** 9.222578617005256
+## global-count [male then female]
+- **Mean** 2.335249042145594
+- **Standard Deviation** 3.301349522704971
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/spanish/5.0/all/aggregation.csv

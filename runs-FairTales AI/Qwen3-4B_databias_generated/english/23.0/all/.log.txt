@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough detail from the story to produce a reliable list of all person‑referencing nouns and pronouns with the exact spelling and gender annotations required..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but the passage you sent looks heavily corrupted and I couldn’t reliably trace every person‐related noun and pronoun. If you provide a clean version of the text, I’d gladly perform the extraction for you..
+Using precomputed group words.
+## Simple Scores
+{'female': 2.5, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/23.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7156651967015891
+- **Standard Deviation** 0.2582609531119801
+## log_score [male then female]
+- **Mean** -6.081788250657036
+- **Standard Deviation** 14.369703639487886
+## count (male) [male then female]
+- **Mean** 1.3653484218823826
+- **Standard Deviation** 2.0244894538233376
+## count (female) [male then female]
+- **Mean** 3.364470179682116
+- **Standard Deviation** 4.782313921269863
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.082774049217003
+- **Standard Deviation** 5.5633202494293545
+## discrete[0.05] (female) [male then female]
+- **Mean** 9.718120805369127
+- **Standard Deviation** 13.20470795420243
+## global-count [male then female]
+- **Mean** 1.7069351230425056
+- **Standard Deviation** 1.841602259292643
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/23.0/all/aggregation.csv

@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I couldn’t locate the full story text, so I can’t provide a definitive list of all the human‐referencing nouns and pronouns it contains..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I wasn’t able to retrieve the full, original story wording, and I don’t have all of the words needed to make an accurate, item‑by‑item gender catalogue. If you can resend the complete passage, I’ll gladly work through it and give you the detailed table you asked for..
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0, 'female': 1.10989010989011}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/25.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6047047007204769
+- **Standard Deviation** 0.2763415269272921
+## log_score [male then female]
+- **Mean** -0.06206085729432501
+- **Standard Deviation** 2.5083861813455606
+## count (male) [male then female]
+- **Mean** 2.0402435778070616
+- **Standard Deviation** 2.52374504626911
+## count (female) [male then female]
+- **Mean** 2.25826634094347
+- **Standard Deviation** 2.7471093974646728
+## discrete[0.05] (male) [male then female]
+- **Mean** 6.058981233243967
+- **Standard Deviation** 6.693220533373465
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.663538873994638
+- **Standard Deviation** 7.56063172118038
+## global-count [male then female]
+- **Mean** 1.8806970509383378
+- **Standard Deviation** 1.9017413558653924
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/25.0/all/aggregation.csv

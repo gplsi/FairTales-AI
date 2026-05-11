@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble locating the exact wording of **Story 3** in the message. Could you please repost the full text (including all accented characters and punctuation) so I can identify everyone who needs a gender annotation?.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.0952380952380953, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/valencian/12.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7539557790036459
+- **Standard Deviation** 0.2883211302484426
+## log_score [male then female]
+- **Mean** -0.11416380281888959
+- **Standard Deviation** 25.840520040693914
+## count (male) [male then female]
+- **Mean** 0.5760984047914267
+- **Standard Deviation** 1.087775412776806
+## count (female) [male then female]
+- **Mean** 1.1035090445196707
+- **Standard Deviation** 2.0459668560218165
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.7332155477031803
+- **Standard Deviation** 3.1071472126766966
+## discrete[0.05] (female) [male then female]
+- **Mean** 3.2402826855123674
+- **Standard Deviation** 5.142452421860401
+## global-count [male then female]
+- **Mean** 1.8392226148409894
+- **Standard Deviation** 2.805925858887964
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/valencian/12.0/all/aggregation.csv

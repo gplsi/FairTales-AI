@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I couldn’t locate a clear, complete version of the story, so I’m unable to generate the required list. If you provide a full, uninterrupted text, I’d be happy to finish the annotation.|.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but the input text isn’t sufficiently detailed for me to reliably extract every person-related noun and pronoun as required..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.6944444444444444, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/13.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6322257966487853
+- **Standard Deviation** 0.284490045728817
+## log_score [male then female]
+- **Mean** -1.5951352840594264
+- **Standard Deviation** 6.853298817543248
+## count (male) [male then female]
+- **Mean** 1.2235057005783108
+- **Standard Deviation** 1.640886612314405
+## count (female) [male then female]
+- **Mean** 2.0635397365057084
+- **Standard Deviation** 2.225278218065245
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.642116182572614
+- **Standard Deviation** 4.555590643266945
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.0062240663900415
+- **Standard Deviation** 6.258366168436967
+## global-count [male then female]
+- **Mean** 1.7738589211618256
+- **Standard Deviation** 1.7885935013864225
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/english/13.0/all/aggregation.csv

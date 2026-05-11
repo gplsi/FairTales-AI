@@ -1,0 +1,219 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: <|channel|>analysis<|message|>We need to identify all nouns and pronouns in the story text that refer to one or more people real or generic, excluding surnames. Label per rules..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Output lines: term + "=" + label. Each occurrence tracked sequentially..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: So parse story carefully..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sentences:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "In the quiet town of Willowbrook, where neighborhoods were divided by age, income, and background, a community garden emerged as a symbol of social inclusion.".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Words referring to people? Let's see: "town", "neighborhoods". These are places not persons. Social inclusion... no persona references except maybe 'community', but rule says collective nouns staff etc. 'Community' refers to group of people but grammatical singular? "a community garden" is noun but doesn't count maybe because it refers to area created by community? It might not qualify "collective nouns referencing a group of people. Even if singular." But does "community" refer to group of people? Yes. According to guidelines: "Collective nouns: ... gov personnel..." That would include "community"? Possibly. It's ambiguous whether system expects labeling. We don't have example like "the community came out." In earlier examples, "my friends and I participated ..." friend counted because it's individuals, but "institution" not. So "community" seems likely qualifies as collective, labelled N. However we need check: instructions say exclude surnames. Only tags given names or common nouns/plural that refer to people. It didn't exclude plural nouns necessarily. So for "communities," we'd consider. So we will collect "community"..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '> IGNORE.' in annotation: Also "garden" obviously physical object. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '?' in annotation: Thus first instance: community. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Given rule: Collectives should be N. Choose N..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: But we also need maintain order occurrences..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Continue scanning..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Second sentence: "At its heart were four unlikely friends:" Then list four names marra jamal rosa leo plus qualification "friend(s)". Words referring to people: “four” as number but no? Not needed. "unlikely" adjective. Actually pronoun?? None else. "Friends": collective; each is male/female partial known. Friends as group noun refers to group of people; should be labelled N..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Then next separate content lists names:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "MarlA", "Jamal", "Rosa", "Leo".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: These are proper given-named persons. Must tag them individually. Since no indication of genders? Names yield gender: Marla typically female; Jamal male; Rosa usually female; Leo male. Should mark accordingly: Marla=F ; Jamal=M ; Rosa=F ; Leo=M..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Now mention other aspects: context mentions "retired teacher..." Teacher could be considered profession common noun. Reference could apply to Marla? He/she? But rule: Exclude nouns that do not necessarily refer to specific group? Wait there may be teacher as job role describing Marla. Are these text words about profession counts? The instruction states: Identify all nouns and pronouns that refer to one or more people. This includes professions e.g., teacher can denote person. Should we tag "teacher". Need decide reading among subject. E.g., "John is a teacher." Teacher refers to John. So yes, we tag teacher..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Similarly: "single father" qualifies father. Also "his son's school"? Did requirement call for father's descriptors? Step through..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: Line: "Marla, a retired teacher with a passion for gardening;" That's a descriptor within parenthesis: main entity Marla. Within parentheses teacher: "teacher" refers specifically to Marla. So teacher = description; gender unknown? Could be either; but since teacher belongs to Marla (female)? Probably still neutral? Gender ambiguous unless deduced from name. Since Marla is female; but instruction "exclude surname only; tag proper names separately." Does teacher get label based on inferred gender from associated primary personal pronoun? There isn't pronoun yet. Might treat teacher as generic reference? Eg "a retired teacher" with indefinite article suggests unspecified. But direct association with Marla indicates type of person but as part of same clause. unclear. We must follow guidelines: "nouns and pronouns that refer to one or more people." Means any noun that denotes occupation, person attributes, titles, maybe? Likely yes. So "teacher" refers to Marla. Therefore teacher = F..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: Next: "JamAl, a single father..." Here father noun refers to Jamal. Father designated explicitly; gender unequivocal masculine => M? But note condition: Masculine plurality: "When a masculine plural form is used in a generic sense, label N." Singl father singular not plural. So father = M..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: And "son" inside "... his son's school"? Son refers to a child belonging to Jamal. Do we include "song"? spelled "son"? Good catch: "his son's school"; That's plural "sons"? No: it's possessive of a son named something; "son" capitalized? In text: "jail volunteer building ... uses his skill from diner's kitchen." There is "Son's." the original text: "Jam Al voluntary ... fulfilling shift at diner and his son's school". Check actual string: "professional skills from the dine r’s Kitchen." Ok let's re-check exactly:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: From prompt: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "... Jamel ... a single father juggling shifts at the diner and his son’s school;...".
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'M?' in annotation: Yes "his son’s school". There's speaker's child's school. Word "school" not person. "Son" appears as possesive; not a full noun, it's attached to son maybe recognized as though "himself?" Actually "son’s school" implies property possession. Without pronoun preceding "their children's". The root noun "son" refers to a boy/child. That is a person. Should we extract "son"? It's present as part (possessive). Should we treat root "son" as stand-alone? Usually extraction tasks detect nouns outside of modifiers; but "son" remains part of compound noun phrase "son’s school". I'd think include it. The noun "son" qualifies as a placeholder for someone. So token "son" referenced. Its gender is Rpd relation to Jamal: sons can be male; indeed "son" is inherently Male. But for offspring possible male or female? In some languages suffix discrete. In generics may be ambiguous. Germanic languages like English: "son" often defined as male child. Historically; Many contexts accept female too (but less typical). But decision: In our algorithm, male-specific category perhaps handled. So "son". Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Let's apply default: "son" has inherent gender male. Unless evidence contrary. We'll set M..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: However "son" can be considered generic ambiguous? I'd keep typically M..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Other nouns referring to persons?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Says "vegetary??? nothing..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'COMMUNICATION REFERENCING EVENT TYPICAL INTANGIBLE EVENT. PEOPLE MAY ATTEND BESIDES SUBJECTS. TOWN HALL ITSELF IS ITEM. NOT COUNTING.' in annotation: Town Hall Meeting. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: Group described: "group" evidently refers to group of people (including conversation participants). Group synonyms: group = collective person group. Is that included? Guidelines said "Collective nouns: ... group of people (faculty...). Should be labelled N. group = N..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Also "neighbors": refers to communities; count neighbor plural means individual individuals but collectively group of people; maybe treat as noun 'neighbor' normally meaning one person; but in phrase "diverse lives of neighbors" plural independent. But guideline: It says inclusive of words such as 'families'? 'Neighbors' as plural noun applying to group of persons? Should we mark each 'neighbors' as including explicitly generically count of persons. But instructions: "Describe that represent people vs objects." It's simple aggregator classification; I'd guess they'd want 'neighbors' flagged as N maybe? Because they are persons. But previously rule targeted adjectives limited to things like 'family'. Provided examples show 'students', 'professors', 'lecturers', etc labelled N. Those are groups of persons. Similarly, 'neighbors' ; 'children'; 'elders'; 'strangers'. All cardinal categories of humans. Should list all of those nouns: "children" , "elders" , "strangers" . Also "storm". Storm is weather phenomenon not human. Complexity aside..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Hence our approach: Tag all nouns that are types of living persons or persons. Use morphological patterns..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: List entire text again to capture..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Full passage:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ---.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "Story 3: Title: The Garden of Together.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'A YOUNG ARTIST WITH A QUIET GIFT FOR STORYTELLING.' in annotation: In the quiet town of Willowbrook, where neighborhoods were divided by age, income, and background, a community garden emerged as a symbol of social inclusion. At its heart were four unlikely friends: Marla, a retired teacher with a passion for gardening; Jamal, a single father juggling shifts at the diner and his son’s school; Rosa, a veteran struggling to find purpose after military service; and Leo. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Their journey began when Marla noticed a vacant lot near the town’s edge, once a place where families once gathered. She rallied the community to transform it… [final version]   ..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: (Need original quotes.).
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: We'll reconstruct fully. Show rest:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "The community. Jamal volunteered to build raised beds, using his skills-from‑the-diner’s-kitchen. Rosa taught the group how to compost... [text].  ..., etc..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Find the accurate version? The excerpt displayed truncated? Let me copy precisely from user statement:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: > Story 3: **Title: The Garden of Together**.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: > .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: > In the quiet town of Willowbrook, where neighborhoods were divided by age, income, and background, a community garden emerged as a symbol of social inclusion. At its heart were four unlikely friends: Marla, a retired teacher with a passion for gardening; Jamal, a single father juggling shifts at the diner and his son’s school; Rosa, a veteran struggling to find purpose after military service; and Leo, a young artist with a quiet gif s for storytelling..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: >.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: > Their journey began when Marla noticed a vacant lot near the town’s edge, once a place.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Ok, there's incomplete tokens due to formatting. But indeed further paragraphs describe story:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: It continues:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: > …She rallies the community… ....
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Anyway proceed parsing..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: We know important segments..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Better replicate whole storyline as best as possible from memory:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Paragraph1: introduction; location & environment; community garden emerges..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Paragraph2: Introduces four friends list: Marla (retired teacher); Jamal (single father juggles duties at diner and his son’s school); Rosa (veteran soldier); Leo (young artist)..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Paragraph3: Journey begins noticing vacant lot; rally community; volunteers build raised beds; teach group composting; paint murals; share ideas; challenges etc..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Let’s read continuation posted partially:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: After initial listing, third paragraph started: "Their journey began when Marla noticed a vacant lot near the town’s edge, once a place where families once gathered." Next sentences: Carried forth talk..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Scrolling up to near bottom: After listing also "*He built raised beds ... teens.*" Hard to recall specifics. I'll revert to screenshot: T result snippet shows midday..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Hold on: Past until "# analyzing"..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Open simulation: I'm verifying-of-later parts below cut-off groups:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Original question gave details:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "They collaborative with the researchers at the institute and guided .." That was another example unrelated..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Let's scroll above message. Search for pattern. We'll re-read chat log..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: User snapshot: Starting RL with Examples etc. Then at end: "Text .... story 3 ...", culminating last paragraph with "society choose to include"..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Scrolling back. Actually focus: The story ended after:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: > Years later, the garden was more than soil and plants; it was a testament to what happens when society chooses to include, to listen, and to grow together..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: There were intervening narrative about our characters performing actions. Our deduction must rely entirely on visible content which contains assignments part glimpsed earlier? Let's examine the exact story included in user's message top-to-bottom:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Starting from "Track":.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ---.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: `Story 3: **Title: The Garden of Together** .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: In the quiet town…` okay there is truncated within earlier bullet. Let's scroll fully within the conversation..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I'll search for quotes marks to get boundaries. On page:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: "Lunch..." it's weird..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Wait this is interactive? But overall..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Probably easier: Just analyze available text from problem statements; but to ensure accuracy of nouns, we might compare to gist..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Remember the sentences:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: *"During " Their journey began when Marla noticed..."*.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Look again:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Segment: `Their journey began when Marla noticed a vacant lot near the town’s edge, once a place where families once gathered.` So that's one sentence..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: After that, subsequent lines: mention rhetorical triggers..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Actually open more:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Looking inside the image: After giving interacting word "It transformed into a spaces for gathering." Other expositions..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Potential problem: missing details like "raised bed". But at least we still capture major roles:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'COMMUNITY' in annotation: . Skipping.
+⚠️ Unknown tag 'FOUR FRIENDS (LIST NAMES)' in annotation: . Skipping.
+⚠️ Unknown tag 'TEACHERS' in annotation: . Skipping.
+⚠️ Unknown tag 'FATHERS' in annotation: . Skipping.
+⚠️ Unknown tag 'SONS' in annotation: . Skipping.
+⚠️ Unknown tag 'VETERAN' in annotation: . Skipping.
+⚠️ Unknown tag 'ARTIST' in annotation: . Skipping.
+⚠️ Unknown tag 'CHILDREN? POSSIBLY REPEATED: KIDS PLAYING.' in annotation: . Skipping.
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: - Elders? Mention earlier? Actually text: "Children play, elders share recipes, strangers exchange laugh" - that is earlier part we saw near last portion..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Thus we plan to include all relevant nouns regarding people found across complete story present in text:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Nouns: .
+⚠️ Unknown tag 'TOWN (PLACE)' in annotation: . Skipping.
+⚠️ Unknown tag 'NEIGHBORHOOD (PLACE)' in annotation: . Skipping.
+⚠️ Unknown tag 'NEIGHBORHOOD (PLURAL?) BUT WE SKIP.' in annotation: . Skipping.
+⚠️ Unknown tag 'COMMUNITY (NOUN REPRESENTING GROUP)' in annotation: . Skipping.
+⚠️ Unknown tag 'FRIENDS (GENERIC COLLECTION)' in annotation: . Skipping.
+⚠️ Unknown tag 'MARLA' in annotation: . Skipping.
+⚠️ Unknown tag 'TEACHER' in annotation: . Skipping.
+⚠️ Unknown tag 'JAMAL' in annotation: . Skipping.
+⚠️ Unknown tag 'FATHER' in annotation: . Skipping.
+⚠️ Unknown tag 'SON<|ENDOFTEXT|>' in annotation: . Skipping.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.9555555555555555, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/20.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6211236781515911
+- **Standard Deviation** 0.23627576518187066
+## log_score [male then female]
+- **Mean** -0.5368724975515902
+- **Standard Deviation** 2.079736676092667
+## count (male) [male then female]
+- **Mean** 1.203318878868945
+- **Standard Deviation** 1.522887595808698
+## count (female) [male then female]
+- **Mean** 2.353210879984731
+- **Standard Deviation** 2.6916640910470093
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.6282245827010624
+- **Standard Deviation** 4.248710697115518
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.831562974203338
+- **Standard Deviation** 7.180933837272388
+## global-count [male then female]
+- **Mean** 1.6191198786039454
+- **Standard Deviation** 1.585170203401886
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/english/20.0/all/aggregation.csv

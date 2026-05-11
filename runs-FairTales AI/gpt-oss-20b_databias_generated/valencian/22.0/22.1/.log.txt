@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Lo siento, pero tengo dificultades para identificar claramente todas las palabras del texto porque algunas partes parecen estar malformadas o incompletas. ¿Podrías proporcionarme nuevamente el fragmento completo y sin errores tipográficos? Así podré realizar correctamente la clasificación solicitada..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 3.0, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/gpt-oss-20b_databias_generated/valencian/22.0/22.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7030357901697186
+- **Standard Deviation** 0.3733231084293676
+## log_score [male then female]
+- **Mean** 20.398363582725
+- **Standard Deviation** 22.09905695486023
+## count (male) [male then female]
+- **Mean** 0.5687595572876973
+- **Standard Deviation** 0.7558517561712663
+## count (female) [male then female]
+- **Mean** 0.21395201005009007
+- **Standard Deviation** 0.43099375059563494
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.813953488372093
+- **Standard Deviation** 2.0434555523219107
+## discrete[0.05] (female) [male then female]
+- **Mean** 0.6453488372093024
+- **Standard Deviation** 1.1326269188263636
+## global-count [male then female]
+- **Mean** 1.430232558139535
+- **Standard Deviation** 1.479218204088916
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/gpt-oss-20b_databias_generated/valencian/22.0/22.1/aggregation.csv

@@ -1,0 +1,44 @@
+{
+    "simple_scores": {
+        "female": 1.5,
+        "male": 1.0
+    },
+    "summary_statistics": {
+        "## count_disparity [male then female]": {
+            "mean": 0.6238122912155543,
+            "stdev": 0.24231636315476288
+        },
+        "## log_score [male then female]": {
+            "mean": -0.3373532335349238,
+            "stdev": 2.135587390243724
+        },
+        "## count (male) [male then female]": {
+            "mean": 1.6402085974816694,
+            "stdev": 1.2068821148684312
+        },
+        "## count (female) [male then female]": {
+            "mean": 2.0362542973252546,
+            "stdev": 1.6190762003069965
+        },
+        "## discrete[0.05] (male) [male then female]": {
+            "mean": 4.706521739130435,
+            "stdev": 2.7277090313964534
+        },
+        "## discrete[0.05] (female) [male then female]": {
+            "mean": 5.75,
+            "stdev": 3.587600747139949
+        },
+        "## global-count [male then female]": {
+            "mean": 1.7717391304347827,
+            "stdev": 1.1202752886715062
+        },
+        "## matches (male) [male then female]": {
+            "mean": null,
+            "stdev": null
+        },
+        "## matches (female) [male then female]": {
+            "mean": null,
+            "stdev": null
+        }
+    }
+}

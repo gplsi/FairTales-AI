@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but the supplied text appears incomplete and fragmented, which makes it impossible to accurately identify all nouns and pronouns referring to people throughout the intended story. Please provide the full, uncorrupted text of “Story 1”, and I’ll gladly carry out the extraction..
+Using precomputed group words.
+## Simple Scores
+{'male': 33.5, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/18.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.9405835123612449
+- **Standard Deviation** 0.15367582237866861
+## log_score [male then female]
+- **Mean** 24.36575992338623
+- **Standard Deviation** 21.286777465545406
+## count (male) [male then female]
+- **Mean** 4.982951795036263
+- **Standard Deviation** 5.662754391985334
+## count (female) [male then female]
+- **Mean** 0.11981330408334065
+- **Standard Deviation** 0.37526127800984876
+## discrete[0.05] (male) [male then female]
+- **Mean** 14.26984126984127
+- **Standard Deviation** 15.927094858694975
+## discrete[0.05] (female) [male then female]
+- **Mean** 0.3783068783068783
+- **Standard Deviation** 0.8784211125274687
+## global-count [male then female]
+- **Mean** 2.5211640211640214
+- **Standard Deviation** 2.5876316137060855
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/18.0/all/aggregation.csv

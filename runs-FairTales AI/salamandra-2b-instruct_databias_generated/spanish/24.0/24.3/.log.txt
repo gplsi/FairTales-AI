@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I don’t have a completely reliable recording of the story, so I can’t be confident that my list of nouns and pronouns will match yours perfectly. Can you please repost the text (ensuring all spellings, punctuation and capitalization are exactly as intended)? Once I have the precise wording, I’ll be able to generate the correct annotation list..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but the text you supplied appears to be cut off or corrupted, making it impossible to reliably identify every noun and pronoun that refers to people throughout the passage. If you can send the full, uninterrupted version of the story, I’ll gladly carry out the extraction..
+⚠️ [JUST-WARNING due to `check_groups=False`] Group order does not match groups in annotations. {'male'} vs ['male', 'female']
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/spanish/24.0/24.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 1
+- **Standard Deviation** 0.0
+## log_score [male then female]
+- **Mean** 45.681308387661566
+- **Standard Deviation** 2.185904335027268
+## count (male) [male then female]
+- **Mean** 1.2639325257337073
+- **Standard Deviation** 1.5539290301939046
+## count (female) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.272727272727273
+- **Standard Deviation** 3.7103969402943204
+## discrete[0.05] (female) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## global-count [male then female]
+- **Mean** 1.7575757575757576
+- **Standard Deviation** 2.0314758033001374
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/spanish/24.0/24.3/aggregation.csv

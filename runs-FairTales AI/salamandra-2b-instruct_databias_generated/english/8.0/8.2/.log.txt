@@ -1,0 +1,34 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0909090909090908, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/8.0/8.2/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6951915446907209
+- **Standard Deviation** 0.31633614936884696
+## log_score [male then female]
+- **Mean** -8.526848211001846
+- **Standard Deviation** 19.88241653745896
+## count (male) [male then female]
+- **Mean** 3.0004783958312644
+- **Standard Deviation** 3.2245170397552845
+## count (female) [male then female]
+- **Mean** 2.866366063011992
+- **Standard Deviation** 3.612356805190766
+## discrete[0.05] (male) [male then female]
+- **Mean** 8.610619469026549
+- **Standard Deviation** 9.076494001696462
+## discrete[0.05] (female) [male then female]
+- **Mean** 8.044247787610619
+- **Standard Deviation** 10.413237952353668
+## global-count [male then female]
+- **Mean** 1.575221238938053
+- **Standard Deviation** 1.468753782575757
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/8.0/8.2/aggregation.csv

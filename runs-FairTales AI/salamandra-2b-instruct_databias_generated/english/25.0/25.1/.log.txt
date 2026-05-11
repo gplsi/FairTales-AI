@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m unable to locate sufficient details from the story to generate the detailed gender mappings required..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have access to the complete text of **Story 3**.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Without knowing every word and its position, I cannot safely identify and label all of the nouns and pronouns that refer to people. Please provide the full text so that I can analyse it accurately..
+⚠️ [JUST-WARNING due to `check_groups=False`] Group order does not match groups in annotations. {'male'} vs ['male', 'female']
+Using precomputed group words.
+## Simple Scores
+{'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/25.0/25.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 1
+- **Standard Deviation** 0.0
+## log_score [male then female]
+- **Mean** 44.76080713123021
+- **Standard Deviation** 1.1128597486376175
+## count (male) [male then female]
+- **Mean** 5.01163707647615
+- **Standard Deviation** 3.2746344289438842
+## count (female) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## discrete[0.05] (male) [male then female]
+- **Mean** 14.40495867768595
+- **Standard Deviation** 8.767913579634833
+## discrete[0.05] (female) [male then female]
+- **Mean** 0
+- **Standard Deviation** 0.0
+## global-count [male then female]
+- **Mean** 2
+- **Standard Deviation** 4.440345331915826
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/25.0/25.1/aggregation.csv

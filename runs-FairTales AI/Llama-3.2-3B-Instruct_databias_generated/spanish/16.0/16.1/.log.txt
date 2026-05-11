@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sorry—I’m having trouble parsing the text; several portions look corrupted or unclear. Could you please resend the passage so I can give you the correct noun–gender listing?.
+Using precomputed group words.
+## Simple Scores
+{'male': 5.0, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/spanish/16.0/16.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.8488787660503077
+- **Standard Deviation** 0.20819965123711084
+## log_score [male then female]
+- **Mean** 16.151210310895138
+- **Standard Deviation** 22.135739123818983
+## count (male) [male then female]
+- **Mean** 1.7916687435971668
+- **Standard Deviation** 1.6359245301655134
+## count (female) [male then female]
+- **Mean** 0.3486729948602943
+- **Standard Deviation** 0.4928638811426207
+## discrete[0.05] (male) [male then female]
+- **Mean** 5.3895348837209305
+- **Standard Deviation** 4.634539261713796
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.1104651162790697
+- **Standard Deviation** 1.3396804253443668
+## global-count [male then female]
+- **Mean** 1.4186046511627908
+- **Standard Deviation** 0.9907775466162044
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/spanish/16.0/16.1/aggregation.csv

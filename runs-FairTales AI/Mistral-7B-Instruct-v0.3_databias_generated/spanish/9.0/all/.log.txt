@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [too many values to unpack (expected 2)] @ annotation: {"response_text":"Ava = F\nLeo = M\nMia = F\nNexus = N\nanalyst = F\nactors = N\nattackers = N\nclients = N\ncoder = M\ngroup = N\nhackers = N\nindividuals = N\nteam = N\nthey = N\nthem = N"}.
+⚠️ Unknown tag 'THE NECESSARY INFORMATION ISN’T SUFFICIENTLY CLEAR.' in annotation: Cannot provide the detailed list. Skipping.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.255813953488372, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/9.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6035581476271105
+- **Standard Deviation** 0.31732766217914565
+## log_score [male then female]
+- **Mean** -2.2593688265958156
+- **Standard Deviation** 8.912964848540305
+## count (male) [male then female]
+- **Mean** 1.1532937817924962
+- **Standard Deviation** 3.0727610965691676
+## count (female) [male then female]
+- **Mean** 1.4058667482391995
+- **Standard Deviation** 3.577986159099453
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.4590818363273454
+- **Standard Deviation** 9.099451760021395
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.144710578842315
+- **Standard Deviation** 10.474745661322688
+## global-count [male then female]
+- **Mean** 2.029940119760479
+- **Standard Deviation** 5.576558418291211
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/9.0/all/aggregation.csv

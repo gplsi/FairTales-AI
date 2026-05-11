@@ -1,0 +1,36 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'M   *(ACTUAL NAME: MISSPELLED)*' in annotation: john. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Ray? Actually second Ray ??? Wait duplicated maybe error; continue:.
+Using precomputed group words.
+## Simple Scores
+{'female': 1.5, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/english/16.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.6139790461862339
+- **Standard Deviation** 0.29026045973694636
+## log_score [male then female]
+- **Mean** -1.2471766754771743
+- **Standard Deviation** 6.868080559268941
+## count (male) [male then female]
+- **Mean** 1.032087878511653
+- **Standard Deviation** 1.319415654848222
+## count (female) [male then female]
+- **Mean** 1.6142196108872295
+- **Standard Deviation** 1.9155053381602705
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.0828402366863905
+- **Standard Deviation** 3.511960715790068
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.781065088757397
+- **Standard Deviation** 5.129088812751297
+## global-count [male then female]
+- **Mean** 1.9363905325443787
+- **Standard Deviation** 1.864389401743224
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/english/16.0/all/aggregation.csv

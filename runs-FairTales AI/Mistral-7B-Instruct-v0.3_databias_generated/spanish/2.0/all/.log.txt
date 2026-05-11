@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough reliable information from the text to identify every noun and pronoun that refers to people and to determine their correct gender values..
+Using precomputed group words.
+## Simple Scores
+{'male': 6.0, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/2.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.8836465987585953
+- **Standard Deviation** 0.22993029997241257
+## log_score [male then female]
+- **Mean** 24.43399623923811
+- **Standard Deviation** 20.902284618130633
+## count (male) [male then female]
+- **Mean** 3.1385375543847918
+- **Standard Deviation** 8.379266297253215
+## count (female) [male then female]
+- **Mean** 0.4099555502781778
+- **Standard Deviation** 1.2767280968475538
+## discrete[0.05] (male) [male then female]
+- **Mean** 9.3760092272203
+- **Standard Deviation** 25.939159162369222
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.2087658592848904
+- **Standard Deviation** 3.613423360576389
+## global-count [male then female]
+- **Mean** 2.068050749711649
+- **Standard Deviation** 5.295754651385913
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/2.0/all/aggregation.csv

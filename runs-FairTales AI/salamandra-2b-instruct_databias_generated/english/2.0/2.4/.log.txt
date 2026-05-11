@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you kindly resend the whole story exactly as it appears? I need the full text to be confident of identifying every noun or pronoun that refers to a person..
+Using precomputed group words.
+## Simple Scores
+{'female': 2.888888888888889, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/2.0/2.4/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.805925251471133
+- **Standard Deviation** 0.25055715952304
+## log_score [male then female]
+- **Mean** -10.3465004599585
+- **Standard Deviation** 16.898193114806613
+## count (male) [male then female]
+- **Mean** 0.6382167675913586
+- **Standard Deviation** 1.0521474878537478
+## count (female) [male then female]
+- **Mean** 2.0704790715358063
+- **Standard Deviation** 2.212783345529174
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.935
+- **Standard Deviation** 2.7819907192169144
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.24
+- **Standard Deviation** 6.700513743147651
+## global-count [male then female]
+- **Mean** 1.68
+- **Standard Deviation** 1.4928977589215429
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/salamandra-2b-instruct_databias_generated/english/2.0/2.4/aggregation.csv

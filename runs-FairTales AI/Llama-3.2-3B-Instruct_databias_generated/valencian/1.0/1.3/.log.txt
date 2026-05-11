@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m having trouble extracting all the person‑related nouns and pronouns from the passage as written, mainly because the text isn’t completely legible in the transcript I received. Could you confirm the exact wording (or provide the excerpt again in clearer form) so I can carry out the tagging accurately?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough information to carry out the request..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 2.3333333333333335, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/valencian/1.0/1.3/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.913071527091819
+- **Standard Deviation** 0.21093762979103645
+## log_score [male then female]
+- **Mean** 16.659826899028182
+- **Standard Deviation** 30.98498166471309
+## count (male) [male then female]
+- **Mean** 1.0945582003536374
+- **Standard Deviation** 1.1871618345522024
+## count (female) [male then female]
+- **Mean** 0.4230849154646718
+- **Standard Deviation** 0.5930040164961469
+## discrete[0.05] (male) [male then female]
+- **Mean** 3.1630434782608696
+- **Standard Deviation** 3.564479204329759
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.2771739130434783
+- **Standard Deviation** 1.6838417731871245
+## global-count [male then female]
+- **Mean** 1.4184782608695652
+- **Standard Deviation** 1.0369595475957412
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-3B-Instruct_databias_generated/valencian/1.0/1.3/aggregation.csv

@@ -1,0 +1,38 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but the passage as supplied isn’t legible enough for me to trace every person‐related noun and pronoun accurately and give the gender tags that you’re asking for. I’d need a clearer rendering of the text to do the exercise faithfully..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I don’t have access to the complete story to reliably identify all the nouns and pronouns that refer to people..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I can’t identify the nouns and pronouns from the story as the text appears to be incomplete. Please provide the full, uninterrupted passage so I can perform the analysis accurately..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry, but I don’t have enough reliable information about the complete passage to enumerate every human‑related noun or pronoun correctly..
+Using precomputed group words.
+## Simple Scores
+{'female': 1.2771084337349397, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/english/5.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.49887265039408873
+- **Standard Deviation** 0.3114271233093208
+## log_score [male then female]
+- **Mean** 4.228647800440432
+- **Standard Deviation** 12.548223233566976
+## count (male) [male then female]
+- **Mean** 1.6759914839564523
+- **Standard Deviation** 2.5582051432497095
+## count (female) [male then female]
+- **Mean** 2.1276992202275777
+- **Standard Deviation** 3.136121164193203
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.9825
+- **Standard Deviation** 6.993627977692476
+## discrete[0.05] (female) [male then female]
+- **Mean** 6.25
+- **Standard Deviation** 8.545981057801402
+## global-count [male then female]
+- **Mean** 1.80375
+- **Standard Deviation** 2.0304899776745504
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Llama-3.2-1B-Instruct_databias_generated/english/5.0/all/aggregation.csv

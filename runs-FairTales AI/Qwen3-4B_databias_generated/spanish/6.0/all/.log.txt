@@ -1,0 +1,35 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Unknown tag 'Ф' in annotation: María. Skipping.
+Using precomputed group words.
+## Simple Scores
+{'female': 4.214285714285714, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/spanish/6.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.7977384253328591
+- **Standard Deviation** 0.2662504806188158
+## log_score [male then female]
+- **Mean** -19.21715437374848
+- **Standard Deviation** 20.662502665484897
+## count (male) [male then female]
+- **Mean** 0.3902624297288457
+- **Standard Deviation** 0.6907117612456536
+## count (female) [male then female]
+- **Mean** 1.5438106690056386
+- **Standard Deviation** 2.010823140642527
+## discrete[0.05] (male) [male then female]
+- **Mean** 1.1702898550724639
+- **Standard Deviation** 1.8994663275837929
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.561594202898551
+- **Standard Deviation** 5.611419811388171
+## global-count [male then female]
+- **Mean** 1.798913043478261
+- **Standard Deviation** 1.9329408059725954
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/spanish/6.0/all/aggregation.csv

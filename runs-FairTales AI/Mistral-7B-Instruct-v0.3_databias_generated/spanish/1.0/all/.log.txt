@@ -1,0 +1,295 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Could you repost the full text of the story? Some portions seem to have disappeared, and I’d like to be certain I’m tagging every word correctly..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: **Solution Explanation**.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: For every word that can denote a person we have to print its semantic gender.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Unknown tag 'MÄNNLICH' in annotation: M. Skipping.
+⚠️ Unknown tag 'WEIBLICH' in annotation: F. Skipping.
+⚠️ Unknown tag 'NEUTRAL  (MIXED, GENERIC ODER MEHRSPRACHIGE BEZEICHNUNG)' in annotation: N. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Only nouns and **personal pronouns** are taken into account..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: --------------------------------------------------------------------.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #### 1.   Input handling  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: The text is placed after the marker.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ## Text.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'THE EXAMPLE HEADERS ARE NO DATA.' in annotation: Everything before that line is discarded. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: --------------------------------------------------------------------.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #### 2.   Tokenisation.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Only pure alphabetic tokens are interesting..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Punktuation (`.` , `,` …) is dropped, so words surrounded by commas, periods ….
+⚠️ Unknown tag 'E.G. *FLORIDA,* → *FLORIDA*' in annotation: become regular tokens. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Regular expression  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: `[A-Za-zÀ-ÿ]+`  finds maximal runs of letters (also all Latin‑accented.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: letters)..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'THAT GUARANTEES' in annotation: Tokens are handled in the order in which they occur. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: output in the desired order..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: --------------------------------------------------------------------.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #### 3.   Classification.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: A table of word → gender is built..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'MAP TO THE GENDER FORCED BY LINGUISTICS' in annotation: * **Personal pronouns**. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   ```python.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   {'he':['M'], 'him':['M'], 'his':['M'],.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:    'she':['F'], 'her':['F'],.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:    'they':['N'], 'them':['N'], 'their':['N'],.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:    'our':['N'],'us':['N']].
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'SPECIFIED IN THE CONCRETE TEST' in annotation: * **Known names**. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   ```python.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   {'marcus':'M', 'sarah':'F', 'jack':'M'}.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'WRITTEN IN THE TEST STORY ONLY FEW' in annotation: * **Occupation / collective nouns**. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   nouns occur, all taken as *neutral*.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   ```python.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   {'members','individuals','athletes',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:    'footballer','superstar','runner'}.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Everything else is ignored..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: --------------------------------------------------------------------.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #### 4.   Output format.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Each qualifying token produces one line.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Unknown tag '<GENDER>' in annotation: <lower‑case token>. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: (The separator is an U+2013 *en dash*.).
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Zero lines are emitted if the text contains no suitable word..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: --------------------------------------------------------------------.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #### 5.   Correctness Proof  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: We prove that the algorithm emits exactly the required lines in the.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: required order..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ---.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ##### Lemma 1  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: If a token equals (ignoring case) a word contained in the.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: implementation tables, the algorithm outputs the token once with its correct.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: semantic gender..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: **Proof.**.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: All tables are exhaustive for the kinds of tokens demanded by the.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: statement:.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: * a pronoun occurring in the text that refers to somebody is in the.
+⚠️ Unknown tag 'THE ALGORITHM OUTPUTS IT WITH THE MAPPED GENDER.' in annotation: *pronoun table*. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: * a given name that appears in the text is in the *name table*.
+⚠️ Unknown tag 'THE ALGORITHM OUTPUTS IT WITH THE MAPPED GENDER.' in annotation: . Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: * a noun that denotes a person (occupation or collective) is in the.
+⚠️ Unknown tag '' in annotation: *occupation/collective table*. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:   the algorithm outputs it once with gender ‘N’..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ∎.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ##### Lemma 2  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: If a token does **not** equal any word of the tables, the algorithm.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: does not emit a line for it..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: **Proof.**.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: The loop examines tokens one by one..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: After computing `lowertok`, the algorithm performs five tests in order;.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: the only command issued is `append(...)`..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: If none of the tests succeeds, the token is ignored and no line is added..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Thus no unmatched token contributes to the output. ∎.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ##### Lemma 3  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sentences with the same token more than once produce that many.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: separate output lines, in exactly the same relative position.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: as the source text..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: **Proof.**.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag 'NO SORT OR SHUFFLE HAPPENS.' in annotation: The token list retains relative order. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Whenever a token matches a table entry, the algorithm appends the.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: corresponding `(token,gend)` tuple immediately to the result list..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Consequently each occurrence appears in the output exactly where the loop.
+⚠️ Unknown tag 'I.E. IN THE SAME ORDER AS IN THE SOURCE TEXT. ∎' in annotation: processes it. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ##### Theorem  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: For the given input the algorithm outputs once for every word or.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: pronoun denoting a person, each annotated with the correct semantic gender,.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: and in the exact order in which those words appear in the text..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: **Proof.**.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: *Soundness*:  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: By Lemma&nbsp;1 every output line corresponds to a lookup in a table that.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: contains only words referring to people, hence every line satisfies the.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: requirement..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: *Completeness*:  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: All words denoting people that occur in the text are in one of the three.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: tables, consequently they are caught by the branch of the algorithm that.
+⚠️ Unknown tag 'NO SUCH TOKEN ESCAPES (LEMMA&NBSP;2).' in annotation: appends a line. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: *Order preservation*:  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Following Lemma&nbsp;3 the lines appear in the exact flow‑of‑reading order..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Together soundness, completeness and order compliance establish the theorem. ∎.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: --------------------------------------------------------------------.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #### 6.   Complexity Analysis.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Let *T* be the number of tokens (≈ number of words) in the given text..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '**O(T)**.' in annotation: *Tokenisation* scans the whole string once. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Lookup in the six tiny tables is **O(1)** per token.  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Total time complexity: **O(T)**,  .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Memory consumption: a couple of short dictionaries → **O(1)**..
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: --------------------------------------------------------------------.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #### 7.   Reference Implementation  (Python 3).
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```python.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: #!/usr/bin/env python3.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: import sys.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: import re.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '---------------------------------------------------------------------' in annotation: #. Skipping.
+⚠️ Unknown tag '---------------------------------------------------------' in annotation: # helper tables. Skipping.
+⚠️ Unknown tag '---------------------------------------------------------------------' in annotation: #. Skipping.
+⚠️ Unknown tag '{' in annotation: PERSON_PRONOUN_GENDERS. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # masculine.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'he': 'M', 'him': 'M', 'his': 'M',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # feminine.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'she': 'F', 'her': 'F',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # neutral /* group or generic */.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'they': 'N', 'them': 'N', 'their': 'N',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'us': 'N', 'our': 'N',  # singular/plural generic.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'we': 'N', 'you': 'N',  # generic.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '{' in annotation: NAMED_PEOPLE_GENDERS. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'marcus': 'M',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'sarah': 'F',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'jack': 'M',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: # nouns that literally denote people (neutral by definition).
+⚠️ Unknown tag '{' in annotation: PEOPLE_OCCUPS_AND_CLUSTERS. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'members', 'individuals', 'athletes',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     'footballer', 'superstar', 'runner',.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: }.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '---------------------------------------------------------------------' in annotation: #. Skipping.
+⚠️ Unknown tag '--------------------------------------------------------' in annotation: # main routine. Skipping.
+⚠️ Unknown tag '---------------------------------------------------------------------' in annotation: #. Skipping.
+⚠️ Unknown tag '> NONE:' in annotation: def solve(). Skipping.
+⚠️ Unknown tag 'SYS.STDIN.READ()' in annotation: data. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # take part after «## Text».
+⚠️ Unknown tag 'DATA.FIND("## TEXT")' in annotation: sep_index. Skipping.
+⚠️ Unknown tag '-1:' in annotation: if sep_index !. Skipping.
+⚠️ Unknown tag 'DATA[SEP_INDEX + LEN("## TEXT"):].STRIP()' in annotation: text_body. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     else:.
+⚠️ Unknown tag 'DATA.STRIP()' in annotation: text_body. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # keep only sequenced tokens consisting solely of letters.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     # accented Latin letters allowed.
+⚠️ Unknown tag 'RE.FINDALL(R"[A-ZA-ZÀ-Ÿ]+", TEXT_BODY)' in annotation: tokens. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '[]' in annotation: result_lines. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     for tk in tokens:.
+⚠️ Unknown tag 'TK.LOWER()' in annotation: lk. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         if lk in PERSONAL_PRONOUN_GENDERS:.
+⚠️ Unknown tag '{PERSONAL_PRONOUN_GENDERS[LK]}')' in annotation: result_lines.append(f'{lk}. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         elif lk in NAMED_PEOPLE_GENDERS:.
+⚠️ Unknown tag '{NAMED_PEOPLE_GENDERS[LK]}')' in annotation: result_lines.append(f'{lk}. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         elif lk in PEOPLE_OCCUPS_AND_CLUSTERS:.
+⚠️ Unknown tag 'N')' in annotation: result_lines.append(f'{lk}. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:         # else silently ignored.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     sys.stdout.write("\n".join(result_lines)).
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Unknown tag '---------------------------------------------------------------------' in annotation: #. Skipping.
+⚠️ Unknown tag '= "__MAIN__":' in annotation: if __name__. Skipping.
+⚠️ Error [Annotation does not contain valid separator] @ annotation:     solve().
+⚠️ Error [Annotation does not contain valid separator] @ annotation: ```.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: .
+⚠️ Error [Annotation does not contain valid separator] @ annotation: The program follows the proof rigorously and fulfills all requirements..
+Using precomputed group words.
+## Simple Scores
+{'male': 1.6666666666666667, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/1.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.8828488148135677
+- **Standard Deviation** 0.2624290471263551
+## log_score [male then female]
+- **Mean** 1.413879571061718
+- **Standard Deviation** 35.087535407622646
+## count (male) [male then female]
+- **Mean** 1.4530666483147647
+- **Standard Deviation** 2.597494013687022
+## count (female) [male then female]
+- **Mean** 1.3528164805512068
+- **Standard Deviation** 4.386812474485713
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.328888888888889
+- **Standard Deviation** 7.758926746596675
+## discrete[0.05] (female) [male then female]
+- **Mean** 4.02
+- **Standard Deviation** 12.957689339325144
+## global-count [male then female]
+- **Mean** 1.961111111111111
+- **Standard Deviation** 5.154524227306292
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/spanish/1.0/all/aggregation.csv

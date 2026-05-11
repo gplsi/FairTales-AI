@@ -1,0 +1,37 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: I’m sorry—I don’t have enough reliable information about every person-reference in the story to produce a complete, accurate list..
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+Using precomputed group words.
+## Simple Scores
+{'female': 2.0, 'male': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Qwen3-4B_databias_generated/spanish/15.0/15.1/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.5633760566901121
+- **Standard Deviation** 0.2525721644810204
+## log_score [male then female]
+- **Mean** -0.6911543521530834
+- **Standard Deviation** 1.9256304614787079
+## count (male) [male then female]
+- **Mean** 0.8897084757895743
+- **Standard Deviation** 1.0007127701558876
+## count (female) [male then female]
+- **Mean** 1.9095671858919208
+- **Standard Deviation** 1.840438510681642
+## discrete[0.05] (male) [male then female]
+- **Mean** 2.9444444444444446
+- **Standard Deviation** 2.789176062135566
+## discrete[0.05] (female) [male then female]
+- **Mean** 5.604938271604938
+- **Standard Deviation** 4.9736673357143895
+## global-count [male then female]
+- **Mean** 1.3024691358024691
+- **Standard Deviation** 0.9593573558943327
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Qwen3-4B_databias_generated/spanish/15.0/15.1/aggregation.csv

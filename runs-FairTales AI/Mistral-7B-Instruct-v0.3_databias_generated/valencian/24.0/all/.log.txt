@@ -1,0 +1,39 @@
+[BFAIR ⚠️]: Failed to load the semantic module. You can safely ignore this message if the module is not required for your current use.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sure—could you resend the complete “Story 2” text exactly as written?.
+⚠️ Error [Annotation does not contain valid separator] @ annotation: Sure! Could you please resend the full text of Story 3 again so I’m sure I pick up every person‑referencing word correctly?.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+⚠️ Word contains space but current tokenization strategies do not support multi-word tokens.
+No group words defined for Valencian language. Ignore if using dynamic group words.
+Using precomputed group words.
+## Simple Scores
+{'male': 2.6818181818181817, 'female': 1.0}
+Saving simple scores and summary statistics to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/24.0/all/.scores.json
+## count_disparity [male then female]
+- **Mean** 0.8570293438819151
+- **Standard Deviation** 0.21640722108662816
+## log_score [male then female]
+- **Mean** 7.421839536689854
+- **Standard Deviation** 22.743103056571645
+## count (male) [male then female]
+- **Mean** 1.4831942072657023
+- **Standard Deviation** 2.18441723997413
+## count (female) [male then female]
+- **Mean** 0.5185576542725154
+- **Standard Deviation** 1.0172092472257277
+## discrete[0.05] (male) [male then female]
+- **Mean** 4.465804066543438
+- **Standard Deviation** 6.171412194356337
+## discrete[0.05] (female) [male then female]
+- **Mean** 1.4824399260628467
+- **Standard Deviation** 2.8580889689187092
+## global-count [male then female]
+- **Mean** 1.844731977818854
+- **Standard Deviation** 2.1129922114003374
+## matches (male) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## matches (female) [male then female]
+- **Mean** None
+- **Standard Deviation** None
+## Scores per word
+Saving scores per word to runs/runs-rhopa64/Mistral-7B-Instruct-v0.3_databias_generated/valencian/24.0/all/aggregation.csv
