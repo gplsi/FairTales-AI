@@ -1,914 +1,1002 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>A multilingual and multidomain framework for measuring gender bias in large language models</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --ink: #202124;
-        --muted: #5f6368;
-        --line: #d7dce2;
-        --paper: #ffffff;
-        --soft: #f6f8fa;
-        --nav: #263238;
-        --accent: #1b6b5b;
-        --accent-2: #8a4d12;
-        --focus: #0b57d0;
-      }
 
-      * {
-        box-sizing: border-box;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A multilingual and multidomain framework for measuring gender bias in large language models</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202124;
+      --muted: #5f6368;
+      --line: #d7dce2;
+      --paper: #ffffff;
+      --soft: #f6f8fa;
+      --nav: #263238;
+      --accent: #1b6b5b;
+      --accent-2: #8a4d12;
+      --focus: #0b57d0;
+    }
 
-      body {
-        margin: 0;
-        background: var(--paper);
-        color: var(--ink);
-        font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          "Segoe UI", sans-serif;
-        line-height: 1.5;
-        overflow-wrap: anywhere;
-        overflow-x: hidden;
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      a {
-        color: var(--focus);
-        text-decoration-thickness: 1px;
-        text-underline-offset: 3px;
-      }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+      overflow-x: hidden;
+    }
 
-      a:focus,
-      button:focus,
-      select:focus {
-        outline: 3px solid color-mix(in srgb, var(--focus) 35%, transparent);
-        outline-offset: 2px;
-      }
+    a {
+      color: var(--focus);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
 
-      header {
-        background: var(--nav);
-        color: #f7fafc;
-        border-bottom: 5px solid var(--accent);
-      }
+    a:focus,
+    button:focus,
+    select:focus {
+      outline: 3px solid color-mix(in srgb, var(--focus) 35%, transparent);
+      outline-offset: 2px;
+    }
+
+    header {
+      background: var(--nav);
+      color: #f7fafc;
+      border-bottom: 5px solid var(--accent);
+    }
+
+    .header-inner,
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      padding: 34px 0 26px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: #b8c6d1;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.8rem);
+      line-height: 1.04;
+      letter-spacing: 0;
+      overflow-wrap: break-word;
+    }
+
+    .lede {
+      margin: 16px 0 0;
+      color: #d8e1e8;
+      font-size: 1.08rem;
+    }
+
+    nav {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 6px;
+      padding: 7px 12px;
+      color: #f7fafc;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    main {
+      padding: 28px 0 56px;
+    }
+
+    section {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child {
+      border-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.65rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+      overflow-wrap: break-word;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 1.12rem;
+      line-height: 1.25;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    code {
+      padding: 0.1rem 0.28rem;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--soft);
+      font-size: 0.92em;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+      white-space: normal;
+      word-break: break-all;
+    }
+
+    .summary-grid,
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .data-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .summary-item,
+    .data-item,
+    figure {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .summary-item {
+      padding: 16px;
+    }
+
+    .summary-number {
+      display: block;
+      color: var(--accent);
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .summary-label {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+    }
+
+    .data-item {
+      padding: 16px;
+    }
+
+    .data-item ul {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .data-item a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+      min-height: 34px;
+      border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+      border-radius: 6px;
+      padding: 7px 10px;
+      background: color-mix(in srgb, var(--accent) 8%, #fff);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .data-item a:hover {
+      border-color: var(--accent);
+      background: color-mix(in srgb, var(--accent) 14%, #fff);
+    }
+
+    .file-guide {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      margin-top: 18px;
+      padding: 18px;
+      background: var(--paper);
+    }
+
+    .file-guide ul {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .file-guide li {
+      padding-left: 4px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      gap: 12px;
+      margin: 18px 0 20px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+
+    label {
+      display: grid;
+      gap: 5px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    select,
+    button {
+      min-height: 38px;
+      border: 1px solid #aeb7c2;
+      border-radius: 6px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+    }
+
+    select {
+      min-width: 190px;
+      padding: 6px 34px 6px 10px;
+    }
+
+    button {
+      padding: 7px 12px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: var(--focus);
+    }
+
+    .gallery-section {
+      margin-top: 28px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    figure {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    figure[hidden] {
+      display: none;
+    }
+
+    figure a {
+      display: block;
+      background: #eef2f5;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      padding: 12px 14px 14px;
+    }
+
+    .caption-title {
+      display: block;
+      font-weight: 800;
+    }
+
+    .caption-meta {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .caption-copy {
+      display: block;
+      margin-top: 8px;
+      color: #3c4043;
+      font-size: 0.95rem;
+    }
+
+    .note {
+      border-left: 4px solid var(--accent-2);
+      padding: 10px 14px;
+      background: #fff8ef;
+      color: #4a3420;
+    }
+
+    .footer-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 620px) {
 
       .header-inner,
       main {
-        width: min(1180px, calc(100% - 32px));
-        margin: 0 auto;
+        width: min(calc(100% - 24px), 366px);
+        max-width: 366px;
+        margin-left: 12px;
+        margin-right: 12px;
       }
 
       .header-inner {
-        padding: 34px 0 26px;
-      }
-
-      .eyebrow {
-        margin: 0 0 8px;
-        color: #b8c6d1;
-        font-size: 0.82rem;
-        font-weight: 700;
-        letter-spacing: 0;
-        text-transform: uppercase;
+        padding-top: 26px;
       }
 
       h1 {
-        margin: 0;
-        font-size: clamp(2rem, 4vw, 3.8rem);
-        line-height: 1.04;
-        letter-spacing: 0;
-        overflow-wrap: break-word;
+        font-size: 1.38rem;
+        line-height: 1.16;
+        overflow-wrap: anywhere;
       }
 
       .lede {
-        margin: 16px 0 0;
-        color: #d8e1e8;
-        font-size: 1.08rem;
-      }
-
-      nav {
-        margin-top: 24px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      nav a {
-        display: inline-flex;
-        align-items: center;
-        min-height: 36px;
-        border: 1px solid rgba(255, 255, 255, 0.22);
-        border-radius: 6px;
-        padding: 7px 12px;
-        color: #f7fafc;
-        text-decoration: none;
-      }
-
-      nav a:hover {
-        background: rgba(255, 255, 255, 0.1);
-      }
-
-      main {
-        padding: 28px 0 56px;
-      }
-
-      section {
-        padding: 28px 0;
-        border-bottom: 1px solid var(--line);
-      }
-
-      section:last-child {
-        border-bottom: 0;
-      }
-
-      h2 {
-        margin: 0 0 14px;
-        font-size: 1.65rem;
-        line-height: 1.2;
-        letter-spacing: 0;
-        overflow-wrap: break-word;
-      }
-
-      h3 {
-        margin: 0 0 10px;
-        font-size: 1.12rem;
-        line-height: 1.25;
-        letter-spacing: 0;
+        font-size: 1rem;
         overflow-wrap: anywhere;
       }
 
-      p {
-        margin: 0 0 14px;
-      }
-
-      code {
-        padding: 0.1rem 0.28rem;
-        border: 1px solid var(--line);
-        border-radius: 4px;
-        background: var(--soft);
-        font-size: 0.92em;
-        max-width: 100%;
-        overflow-wrap: anywhere;
-        white-space: normal;
-        word-break: break-all;
-      }
-
-      .summary-grid,
-      .data-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 12px;
-        margin-top: 18px;
-      }
-
-      .data-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .summary-item,
-      .data-item,
-      figure {
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #fff;
-      }
-
-      .summary-item {
-        padding: 16px;
-      }
-
-      .summary-number {
-        display: block;
-        color: var(--accent);
-        font-size: 1.8rem;
-        font-weight: 800;
-        line-height: 1;
-      }
-
+      p,
+      .note,
       .summary-label {
-        display: block;
-        margin-top: 6px;
-        color: var(--muted);
-      }
-
-      .data-item {
-        padding: 16px;
-      }
-
-      .data-item ul {
-        display: grid;
-        gap: 8px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .data-item a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        max-width: 100%;
-        min-height: 34px;
-        border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
-        border-radius: 6px;
-        padding: 7px 10px;
-        background: color-mix(in srgb, var(--accent) 8%, #fff);
-        color: var(--accent);
-        font-size: 0.9rem;
-        font-weight: 700;
-        line-height: 1.25;
         overflow-wrap: anywhere;
-        text-align: center;
-        text-decoration: none;
       }
 
-      .data-item a:hover {
-        border-color: var(--accent);
-        background: color-mix(in srgb, var(--accent) 14%, #fff);
+      .summary-grid {
+        grid-template-columns: 1fr;
       }
 
-      .file-guide {
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        margin-top: 18px;
-        padding: 18px;
-        background: var(--paper);
+      .gallery-grid {
+        grid-template-columns: 1fr;
       }
 
-      .file-guide ul {
-        display: grid;
-        gap: 10px;
-        margin: 0;
-        padding-left: 20px;
-      }
-
-      .file-guide li {
-        padding-left: 4px;
-      }
-
-      .controls {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: end;
-        gap: 12px;
-        margin: 18px 0 20px;
-        padding: 14px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: var(--soft);
-      }
-
-      label {
-        display: grid;
-        gap: 5px;
-        color: var(--muted);
-        font-size: 0.9rem;
-        font-weight: 700;
+      .data-grid {
+        grid-template-columns: 1fr;
       }
 
       select,
       button {
-        min-height: 38px;
-        border: 1px solid #aeb7c2;
-        border-radius: 6px;
-        background: #fff;
-        color: var(--ink);
-        font: inherit;
-      }
-
-      select {
-        min-width: 190px;
-        padding: 6px 34px 6px 10px;
-      }
-
-      button {
-        padding: 7px 12px;
-        cursor: pointer;
-      }
-
-      button:hover {
-        border-color: var(--focus);
-      }
-
-      .gallery-section {
-        margin-top: 28px;
-      }
-
-      .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 16px;
-        margin-top: 14px;
-      }
-
-      figure {
-        margin: 0;
-        overflow: hidden;
-      }
-
-      figure[hidden] {
-        display: none;
-      }
-
-      figure a {
-        display: block;
-        background: #eef2f5;
-      }
-
-      img {
-        display: block;
         width: 100%;
-        height: auto;
       }
+    }
 
-      figcaption {
-        padding: 12px 14px 14px;
+    @media (min-width: 621px) and (max-width: 920px) {
+      .data-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+    }
+  </style>
+</head>
 
-      .caption-title {
-        display: block;
-        font-weight: 800;
-      }
+<body>
+  <header>
+    <div class="header-inner">
+      <p class="eyebrow">Supplementary material</p>
+      <h1>A multilingual and multidomain framework for measuring gender bias in large language models</h1>
+      <p class="lede">
+        This repository contains the figures and data used for the analysis.
+        The paper method generates narratives with neutral instructions, first
+        annotates references to people through the gender annotation protocol,
+        and then computes the metrics by model, language, topic, and subtopic.
+      </p>
+      <nav aria-label="Page sections">
+        <a href="#outputs">Output organization</a>
+        <a href="#figures">Figure gallery</a>
+        <a href="#data-folders">Annotated data folders</a>
+      </nav>
+    </div>
+  </header>
 
-      .caption-meta {
-        display: block;
-        margin-top: 4px;
-        color: var(--muted);
-        font-size: 0.9rem;
-      }
+  <main>
+    <section id="outputs" aria-labelledby="outputs-title">
+      <h2 id="outputs-title">How the outputs are organized</h2>
+      <p>
+        The run directory is <code>runs-FairTales-AI/</code>. The visual inspection
+        figures are stored in <code>runs-FairTales-AI/figures/</code>. The generated
+        narratives used in the study are available in an anonymized HuggingFace Dataset, and
+        the code used to compute the evaluation metrics is also provided in a
+        separate anonymized repository to support reproducibility. The annotated
+        data lives in model-specific folders following the
+        <code>&lt;model&gt;_databias_generated</code> pattern, and each folder is
+        divided into <code>english</code>, <code>spanish</code>, and
+        <code>valencian</code>.
+      </p>
+      <p>
+        The paper's method section defines a two-stage workflow. First, the
+        generated narratives are annotated with the gender annotation protocol,
+        which identifies nouns and pronouns referring to people and assigns
+        them a semantic <code>M</code>, <code>F</code>, or <code>N</code> label.
+        The metrics are then computed from those annotations for each model,
+        language, topic, and subtopic partition.
+      </p>
+      <p>
+        Within each language, numeric directories represent the experiment
+        topic and subtopic. For example, a path such as
+        <code>runs-FairTales-AI/Qwen3-8B_databias_generated/spanish/12.0/12.1/</code>
+        points to a specific Spanish subtopic for the Qwen3-8B model. Those
+        folders contain score files, aggregations, and filtered variants
+        produced by the metric calculation described in the paper.
+      </p>
+      <p class="note">
+        This page is only an index and explanation layer. It links to the
+        figures and folders included in the repository, but it does not read,
+        compute, or alter any JSON, CSV, PNG, or annotated file.
+      </p>
 
-      .caption-copy {
-        display: block;
-        margin-top: 8px;
-        color: #3c4043;
-        font-size: 0.95rem;
-      }
-
-      .note {
-        border-left: 4px solid var(--accent-2);
-        padding: 10px 14px;
-        background: #fff8ef;
-        color: #4a3420;
-      }
-
-      .footer-note {
-        color: var(--muted);
-        font-size: 0.92rem;
-      }
-
-      @media (max-width: 620px) {
-        .header-inner,
-        main {
-          width: min(calc(100% - 24px), 366px);
-          max-width: 366px;
-          margin-left: 12px;
-          margin-right: 12px;
-        }
-
-        .header-inner {
-          padding-top: 26px;
-        }
-
-        h1 {
-          font-size: 1.38rem;
-          line-height: 1.16;
-          overflow-wrap: anywhere;
-        }
-
-        .lede {
-          font-size: 1rem;
-          overflow-wrap: anywhere;
-        }
-
-        p,
-        .note,
-        .summary-label {
-          overflow-wrap: anywhere;
-        }
-
-        .summary-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .gallery-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .data-grid {
-          grid-template-columns: 1fr;
-        }
-
-        select,
-        button {
-          width: 100%;
-        }
-      }
-
-      @media (min-width: 621px) and (max-width: 920px) {
-        .data-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="header-inner">
-        <p class="eyebrow">Supplementary material</p>
-        <h1>A multilingual and multidomain framework for measuring gender bias in large language models</h1>
-        <p class="lede">
-          This repository contains the figures and data used for the analysis.
-          The paper method generates narratives with neutral instructions, first
-          annotates references to people through the gender annotation protocol,
-          and then computes the metrics by model, language, topic, and subtopic.
-        </p>
-        <nav aria-label="Page sections">
-          <a href="#outputs">Output organization</a>
-          <a href="#figures">Figure gallery</a>
-          <a href="#data-folders">Annotated data folders</a>
-        </nav>
+      <div class="summary-grid" aria-label="Current run summary">
+        <div class="summary-item">
+          <span class="summary-number">30</span>
+          <span class="summary-label">PNG figures in <code>figures/</code></span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-number">8</span>
+          <span class="summary-label">model output folders</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-number">3</span>
+          <span class="summary-label">languages: English, Spanish, and Valencian</span>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section id="outputs" aria-labelledby="outputs-title">
-        <h2 id="outputs-title">How the outputs are organized</h2>
-        <p>
-          The run directory is <code>runs-FairTales%20AI/</code>. The visual inspection
-          figures are stored in <code>runs-FairTales%20AI/figures/</code>. The generated
-          narratives used in the study are available in an anonymized HuggingFace Dataset, and
-          the code used to compute the evaluation metrics is also provided in a
-          separate anonymized repository to support reproducibility. The annotated
-          data lives in model-specific folders following the
-          <code>&lt;model&gt;_databias_generated</code> pattern, and each folder is
-          divided into <code>english</code>, <code>spanish</code>, and
-          <code>valencian</code>.
-        </p>
-        <p>
-          The paper's method section defines a two-stage workflow. First, the
-          generated narratives are annotated with the gender annotation protocol,
-          which identifies nouns and pronouns referring to people and assigns
-          them a semantic <code>M</code>, <code>F</code>, or <code>N</code> label.
-          The metrics are then computed from those annotations for each model,
-          language, topic, and subtopic partition.
-        </p>
-        <p>
-          Within each language, numeric directories represent the experiment
-          topic and subtopic. For example, a path such as
-          <code>runs-FairTales%20AI/Qwen3-8B_databias_generated/spanish/12.0/12.1/</code>
-          points to a specific Spanish subtopic for the Qwen3-8B model. Those
-          folders contain score files, aggregations, and filtered variants
-          produced by the metric calculation described in the paper.
-        </p>
-        <p class="note">
-          This page is only an index and explanation layer. It links to the
-          figures and folders included in the repository, but it does not read,
-          compute, or alter any JSON, CSV, PNG, or annotated file.
-        </p>
+    <section id="figures" aria-labelledby="figures-title">
+      <h2 id="figures-title">Figure gallery</h2>
+      <p>
+        The figures visualize metric results after gender annotation. Use the
+        filters to focus the gallery by model or language. The
+        filters only show or hide images already present on the page; they do
+        not inspect the data files.
+      </p>
 
-        <div class="summary-grid" aria-label="Current run summary">
-          <div class="summary-item">
-            <span class="summary-number">30</span>
-            <span class="summary-label">PNG figures in <code>figures/</code></span>
-          </div>
-          <div class="summary-item">
-            <span class="summary-number">8</span>
-            <span class="summary-label">model output folders</span>
-          </div>
-          <div class="summary-item">
-            <span class="summary-number">3</span>
-            <span class="summary-label">languages: English, Spanish, and Valencian</span>
-          </div>
+      <div class="controls" aria-label="Figure filters">
+        <label>
+          Language
+          <select id="language-filter">
+            <option value="all">All languages</option>
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="valencian">Valencian</option>
+          </select>
+        </label>
+        <label>
+          Model
+          <select id="model-filter">
+            <option value="all">All models</option>
+            <option value="Llama-3.2-1B-Instruct">Llama-3.2-1B-Instruct</option>
+            <option value="Llama-3.2-3B-Instruct">Llama-3.2-3B-Instruct</option>
+            <option value="Mistral-7B-Instruct-v0.3">Mistral-7B-Instruct-v0.3</option>
+            <option value="Qwen3-4B">Qwen3-4B</option>
+            <option value="Qwen3-8B">Qwen3-8B</option>
+            <option value="gpt-oss-20b">gpt-oss-20b</option>
+            <option value="salamandra-2b-instruct">salamandra-2b-instruct</option>
+            <option value="salamandra-7b-instruct">salamandra-7b-instruct</option>
+          </select>
+        </label>
+        <label>
+          Figure type
+          <select id="group-filter">
+            <option value="all">All figure types</option>
+            <option value="heatmap">Heatmaps</option>
+            <option value="model-summary">Model summaries</option>
+            <option value="genre-topic">Topic summaries</option>
+          </select>
+        </label>
+        <button type="button" id="reset-filters">Reset filters</button>
+      </div>
+
+      <div class="gallery-section">
+        <h3>Heatmaps by model and language</h3>
+        <p>
+          Each heatmap shows the subtopics within each topic for one model and one language. The cells summarize the
+          majority counter from the annotated outputs and make it easier to compare neutral behavior with stereotypical
+          and couterstereotypical behavior across the topic and subtopic hierarchy.
+        </p>
+        <div class="gallery-grid">
+          <figure data-group="heatmap" data-language="english" data-model="Llama-3.2-1B-Instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_english.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_english.png"
+                alt="Log score heatmap for Llama-3.2-1B-Instruct in English." />
+            </a>
+            <figcaption><span class="caption-title">Llama-3.2-1B-Instruct · English</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="spanish" data-model="Llama-3.2-1B-Instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_spanish.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_spanish.png"
+                alt="Log score heatmap for Llama-3.2-1B-Instruct in Spanish." />
+            </a>
+            <figcaption><span class="caption-title">Llama-3.2-1B-Instruct · Spanish</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="valencian" data-model="Llama-3.2-1B-Instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_valencian.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_valencian.png"
+                alt="Log score heatmap for Llama-3.2-1B-Instruct in Valencian." />
+            </a>
+            <figcaption><span class="caption-title">Llama-3.2-1B-Instruct · Valencian</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="english" data-model="Llama-3.2-3B-Instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_english.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_english.png"
+                alt="Log score heatmap for Llama-3.2-3B-Instruct in English." />
+            </a>
+            <figcaption><span class="caption-title">Llama-3.2-3B-Instruct · English</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="spanish" data-model="Llama-3.2-3B-Instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_spanish.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_spanish.png"
+                alt="Log score heatmap for Llama-3.2-3B-Instruct in Spanish." />
+            </a>
+            <figcaption><span class="caption-title">Llama-3.2-3B-Instruct · Spanish</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="valencian" data-model="Llama-3.2-3B-Instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_valencian.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_valencian.png"
+                alt="Log score heatmap for Llama-3.2-3B-Instruct in Valencian." />
+            </a>
+            <figcaption><span class="caption-title">Llama-3.2-3B-Instruct · Valencian</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="english" data-model="Mistral-7B-Instruct-v0.3">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_english.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_english.png"
+                alt="Log score heatmap for Mistral-7B-Instruct-v0.3 in English." />
+            </a>
+            <figcaption><span class="caption-title">Mistral-7B-Instruct-v0.3 · English</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="spanish" data-model="Mistral-7B-Instruct-v0.3">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_spanish.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_spanish.png"
+                alt="Log score heatmap for Mistral-7B-Instruct-v0.3 in Spanish." />
+            </a>
+            <figcaption><span class="caption-title">Mistral-7B-Instruct-v0.3 · Spanish</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="valencian" data-model="Mistral-7B-Instruct-v0.3">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_valencian.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_valencian.png"
+                alt="Log score heatmap for Mistral-7B-Instruct-v0.3 in Valencian." />
+            </a>
+            <figcaption><span class="caption-title">Mistral-7B-Instruct-v0.3 · Valencian</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="english" data-model="Qwen3-4B">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-4B_english.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-4B_english.png"
+                alt="Log score heatmap for Qwen3-4B in English." />
+            </a>
+            <figcaption><span class="caption-title">Qwen3-4B · English</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="spanish" data-model="Qwen3-4B">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-4B_spanish.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-4B_spanish.png"
+                alt="Log score heatmap for Qwen3-4B in Spanish." />
+            </a>
+            <figcaption><span class="caption-title">Qwen3-4B · Spanish</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="valencian" data-model="Qwen3-4B">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-4B_valencian.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-4B_valencian.png"
+                alt="Log score heatmap for Qwen3-4B in Valencian." />
+            </a>
+            <figcaption><span class="caption-title">Qwen3-4B · Valencian</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="english" data-model="Qwen3-8B">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-8B_english.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-8B_english.png"
+                alt="Log score heatmap for Qwen3-8B in English." />
+            </a>
+            <figcaption><span class="caption-title">Qwen3-8B · English</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="spanish" data-model="Qwen3-8B">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-8B_spanish.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-8B_spanish.png"
+                alt="Log score heatmap for Qwen3-8B in Spanish." />
+            </a>
+            <figcaption><span class="caption-title">Qwen3-8B · Spanish</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="valencian" data-model="Qwen3-8B">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-8B_valencian.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_Qwen3-8B_valencian.png"
+                alt="Log score heatmap for Qwen3-8B in Valencian." />
+            </a>
+            <figcaption><span class="caption-title">Qwen3-8B · Valencian</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="english" data-model="gpt-oss-20b">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_gpt-oss-20b_english.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_gpt-oss-20b_english.png"
+                alt="Log score heatmap for gpt-oss-20b in English." />
+            </a>
+            <figcaption><span class="caption-title">gpt-oss-20b · English</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="spanish" data-model="gpt-oss-20b">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_gpt-oss-20b_spanish.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_gpt-oss-20b_spanish.png"
+                alt="Log score heatmap for gpt-oss-20b in Spanish." />
+            </a>
+            <figcaption><span class="caption-title">gpt-oss-20b · Spanish</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="valencian" data-model="gpt-oss-20b">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_gpt-oss-20b_valencian.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_gpt-oss-20b_valencian.png"
+                alt="Log score heatmap for gpt-oss-20b in Valencian." />
+            </a>
+            <figcaption><span class="caption-title">gpt-oss-20b · Valencian</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="english" data-model="salamandra-2b-instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_salamandra-2b-instruct_english.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_salamandra-2b-instruct_english.png"
+                alt="Log score heatmap for salamandra-2b-instruct in English." />
+            </a>
+            <figcaption><span class="caption-title">salamandra-2b-instruct · English</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="spanish" data-model="salamandra-2b-instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_salamandra-2b-instruct_spanish.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_salamandra-2b-instruct_spanish.png"
+                alt="Log score heatmap for salamandra-2b-instruct in Spanish." />
+            </a>
+            <figcaption><span class="caption-title">salamandra-2b-instruct · Spanish</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="valencian" data-model="salamandra-2b-instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_salamandra-2b-instruct_valencian.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_salamandra-2b-instruct_valencian.png"
+                alt="Log score heatmap for salamandra-2b-instruct in Valencian." />
+            </a>
+            <figcaption><span class="caption-title">salamandra-2b-instruct · Valencian</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="english" data-model="salamandra-7b-instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_salamandra-7b-instruct_english.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_salamandra-7b-instruct_english.png"
+                alt="Log score heatmap for salamandra-7b-instruct in English." />
+            </a>
+            <figcaption><span class="caption-title">salamandra-7b-instruct · English</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="spanish" data-model="salamandra-7b-instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_salamandra-7b-instruct_spanish.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_salamandra-7b-instruct_spanish.png"
+                alt="Log score heatmap for salamandra-7b-instruct in Spanish." />
+            </a>
+            <figcaption><span class="caption-title">salamandra-7b-instruct · Spanish</span></figcaption>
+          </figure>
+
+          <figure data-group="heatmap" data-language="valencian" data-model="salamandra-7b-instruct">
+            <a href="runs-FairTales-AI/figures/heatmap_log_score_salamandra-7b-instruct_valencian.png">
+              <img src="runs-FairTales-AI/figures/heatmap_log_score_salamandra-7b-instruct_valencian.png"
+                alt="Log score heatmap for salamandra-7b-instruct in Valencian." />
+            </a>
+            <figcaption><span class="caption-title">salamandra-7b-instruct · Valencian</span></figcaption>
+          </figure>
         </div>
-      </section>
+      </div>
 
-      <section id="figures" aria-labelledby="figures-title">
-        <h2 id="figures-title">Figure gallery</h2>
+      <div class="gallery-section">
+        <h3>Model summary by language</h3>
         <p>
-          The figures visualize metric results after gender annotation. Use the
-          filters to focus the gallery by model or language. The
-          filters only show or hide images already present on the page; they do
-          not inspect the data files.
+          These figures aggregate <em>log score</em> behavior to compare models
+          within a single language. They show whether a model keeps the same
+          bias pattern in English, Spanish, or Valencian, or whether the
+          pattern changes with the generation language.
         </p>
+        <div class="gallery-grid">
+          <figure data-group="model-summary" data-language="english" data-model="none">
+            <a href="runs-FairTales-AI/figures/model_summary_log_score_english.png">
+              <img src="runs-FairTales-AI/figures/model_summary_log_score_english.png"
+                alt="Model-level log score summary for English." />
+            </a>
+            <figcaption><span class="caption-title">Model summary · English</span><span class="caption-meta">File:
+                model_summary_log_score_english.png</span><span class="caption-copy">Model comparison within English
+                outputs.</span></figcaption>
+          </figure>
 
-        <div class="controls" aria-label="Figure filters">
-          <label>
-            Language
-            <select id="language-filter">
-              <option value="all">All languages</option>
-              <option value="english">English</option>
-              <option value="spanish">Spanish</option>
-              <option value="valencian">Valencian</option>
-            </select>
-          </label>
-          <label>
-            Model
-            <select id="model-filter">
-              <option value="all">All models</option>
-              <option value="Llama-3.2-1B-Instruct">Llama-3.2-1B-Instruct</option>
-              <option value="Llama-3.2-3B-Instruct">Llama-3.2-3B-Instruct</option>
-              <option value="Mistral-7B-Instruct-v0.3">Mistral-7B-Instruct-v0.3</option>
-              <option value="Qwen3-4B">Qwen3-4B</option>
-              <option value="Qwen3-8B">Qwen3-8B</option>
-              <option value="gpt-oss-20b">gpt-oss-20b</option>
-              <option value="salamandra-2b-instruct">salamandra-2b-instruct</option>
-              <option value="salamandra-7b-instruct">salamandra-7b-instruct</option>
-            </select>
-          </label>
-          <label>
-            Figure type
-            <select id="group-filter">
-              <option value="all">All figure types</option>
-              <option value="heatmap">Heatmaps</option>
-              <option value="model-summary">Model summaries</option>
-              <option value="genre-topic">Topic summaries</option>
-            </select>
-          </label>
-          <button type="button" id="reset-filters">Reset filters</button>
+          <figure data-group="model-summary" data-language="spanish" data-model="none">
+            <a href="runs-FairTales-AI/figures/model_summary_log_score_spanish.png">
+              <img src="runs-FairTales-AI/figures/model_summary_log_score_spanish.png"
+                alt="Model-level log score summary for Spanish." />
+            </a>
+            <figcaption><span class="caption-title">Model summary · Spanish</span><span class="caption-meta">File:
+                model_summary_log_score_spanish.png</span><span class="caption-copy">Model comparison within Spanish
+                outputs.</span></figcaption>
+          </figure>
+
+          <figure data-group="model-summary" data-language="valencian" data-model="none">
+            <a href="runs-FairTales-AI/figures/model_summary_log_score_valencian.png">
+              <img src="runs-FairTales-AI/figures/model_summary_log_score_valencian.png"
+                alt="Model-level log score summary for Valencian." />
+            </a>
+            <figcaption><span class="caption-title">Model summary · Valencian</span><span class="caption-meta">File:
+                model_summary_log_score_valencian.png</span><span class="caption-copy">Model comparison within Valencian
+                outputs.</span></figcaption>
+          </figure>
         </div>
+      </div>
 
-        <div class="gallery-section">
-          <h3>Heatmaps by model and language</h3>
-          <p>
-            Each heatmap shows the subtopics within each topic for one model and one language. The cells summarize the majority counter from the annotated outputs and make it easier to compare neutral behavior with stereotypical and couterstereotypical behavior across the topic and subtopic hierarchy.
-          </p>
-          <div class="gallery-grid">
-            <figure data-group="heatmap" data-language="english" data-model="Llama-3.2-1B-Instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_english.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_english.png" alt="Log score heatmap for Llama-3.2-1B-Instruct in English." />
-              </a>
-              <figcaption><span class="caption-title">Llama-3.2-1B-Instruct · English</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="spanish" data-model="Llama-3.2-1B-Instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_spanish.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_spanish.png" alt="Log score heatmap for Llama-3.2-1B-Instruct in Spanish." />
-              </a>
-              <figcaption><span class="caption-title">Llama-3.2-1B-Instruct · Spanish</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="valencian" data-model="Llama-3.2-1B-Instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_valencian.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-1B-Instruct_valencian.png" alt="Log score heatmap for Llama-3.2-1B-Instruct in Valencian." />
-              </a>
-              <figcaption><span class="caption-title">Llama-3.2-1B-Instruct · Valencian</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="english" data-model="Llama-3.2-3B-Instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_english.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_english.png" alt="Log score heatmap for Llama-3.2-3B-Instruct in English." />
-              </a>
-              <figcaption><span class="caption-title">Llama-3.2-3B-Instruct · English</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="spanish" data-model="Llama-3.2-3B-Instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_spanish.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_spanish.png" alt="Log score heatmap for Llama-3.2-3B-Instruct in Spanish." />
-              </a>
-              <figcaption><span class="caption-title">Llama-3.2-3B-Instruct · Spanish</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="valencian" data-model="Llama-3.2-3B-Instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_valencian.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Llama-3.2-3B-Instruct_valencian.png" alt="Log score heatmap for Llama-3.2-3B-Instruct in Valencian." />
-              </a>
-              <figcaption><span class="caption-title">Llama-3.2-3B-Instruct · Valencian</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="english" data-model="Mistral-7B-Instruct-v0.3">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_english.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_english.png" alt="Log score heatmap for Mistral-7B-Instruct-v0.3 in English." />
-              </a>
-              <figcaption><span class="caption-title">Mistral-7B-Instruct-v0.3 · English</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="spanish" data-model="Mistral-7B-Instruct-v0.3">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_spanish.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_spanish.png" alt="Log score heatmap for Mistral-7B-Instruct-v0.3 in Spanish." />
-              </a>
-              <figcaption><span class="caption-title">Mistral-7B-Instruct-v0.3 · Spanish</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="valencian" data-model="Mistral-7B-Instruct-v0.3">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_valencian.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Mistral-7B-Instruct-v0.3_valencian.png" alt="Log score heatmap for Mistral-7B-Instruct-v0.3 in Valencian." />
-              </a>
-              <figcaption><span class="caption-title">Mistral-7B-Instruct-v0.3 · Valencian</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="english" data-model="Qwen3-4B">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-4B_english.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-4B_english.png" alt="Log score heatmap for Qwen3-4B in English." />
-              </a>
-              <figcaption><span class="caption-title">Qwen3-4B · English</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="spanish" data-model="Qwen3-4B">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-4B_spanish.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-4B_spanish.png" alt="Log score heatmap for Qwen3-4B in Spanish." />
-              </a>
-              <figcaption><span class="caption-title">Qwen3-4B · Spanish</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="valencian" data-model="Qwen3-4B">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-4B_valencian.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-4B_valencian.png" alt="Log score heatmap for Qwen3-4B in Valencian." />
-              </a>
-              <figcaption><span class="caption-title">Qwen3-4B · Valencian</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="english" data-model="Qwen3-8B">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-8B_english.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-8B_english.png" alt="Log score heatmap for Qwen3-8B in English." />
-              </a>
-              <figcaption><span class="caption-title">Qwen3-8B · English</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="spanish" data-model="Qwen3-8B">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-8B_spanish.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-8B_spanish.png" alt="Log score heatmap for Qwen3-8B in Spanish." />
-              </a>
-              <figcaption><span class="caption-title">Qwen3-8B · Spanish</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="valencian" data-model="Qwen3-8B">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-8B_valencian.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_Qwen3-8B_valencian.png" alt="Log score heatmap for Qwen3-8B in Valencian." />
-              </a>
-              <figcaption><span class="caption-title">Qwen3-8B · Valencian</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="english" data-model="gpt-oss-20b">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_gpt-oss-20b_english.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_gpt-oss-20b_english.png" alt="Log score heatmap for gpt-oss-20b in English." />
-              </a>
-              <figcaption><span class="caption-title">gpt-oss-20b · English</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="spanish" data-model="gpt-oss-20b">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_gpt-oss-20b_spanish.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_gpt-oss-20b_spanish.png" alt="Log score heatmap for gpt-oss-20b in Spanish." />
-              </a>
-              <figcaption><span class="caption-title">gpt-oss-20b · Spanish</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="valencian" data-model="gpt-oss-20b">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_gpt-oss-20b_valencian.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_gpt-oss-20b_valencian.png" alt="Log score heatmap for gpt-oss-20b in Valencian." />
-              </a>
-              <figcaption><span class="caption-title">gpt-oss-20b · Valencian</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="english" data-model="salamandra-2b-instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-2b-instruct_english.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-2b-instruct_english.png" alt="Log score heatmap for salamandra-2b-instruct in English." />
-              </a>
-              <figcaption><span class="caption-title">salamandra-2b-instruct · English</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="spanish" data-model="salamandra-2b-instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-2b-instruct_spanish.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-2b-instruct_spanish.png" alt="Log score heatmap for salamandra-2b-instruct in Spanish." />
-              </a>
-              <figcaption><span class="caption-title">salamandra-2b-instruct · Spanish</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="valencian" data-model="salamandra-2b-instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-2b-instruct_valencian.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-2b-instruct_valencian.png" alt="Log score heatmap for salamandra-2b-instruct in Valencian." />
-              </a>
-              <figcaption><span class="caption-title">salamandra-2b-instruct · Valencian</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="english" data-model="salamandra-7b-instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-7b-instruct_english.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-7b-instruct_english.png" alt="Log score heatmap for salamandra-7b-instruct in English." />
-              </a>
-              <figcaption><span class="caption-title">salamandra-7b-instruct · English</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="spanish" data-model="salamandra-7b-instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-7b-instruct_spanish.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-7b-instruct_spanish.png" alt="Log score heatmap for salamandra-7b-instruct in Spanish." />
-              </a>
-              <figcaption><span class="caption-title">salamandra-7b-instruct · Spanish</span></figcaption>
-            </figure>
-
-            <figure data-group="heatmap" data-language="valencian" data-model="salamandra-7b-instruct">
-              <a href="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-7b-instruct_valencian.png">
-                <img src="runs-FairTales%20AI/figures/heatmap_log_score_salamandra-7b-instruct_valencian.png" alt="Log score heatmap for salamandra-7b-instruct in Valencian." />
-              </a>
-              <figcaption><span class="caption-title">salamandra-7b-instruct · Valencian</span></figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="gallery-section">
-          <h3>Model summary by language</h3>
-          <p>
-            These figures aggregate <em>log score</em> behavior to compare models
-            within a single language. They show whether a model keeps the same
-            bias pattern in English, Spanish, or Valencian, or whether the
-            pattern changes with the generation language.
-          </p>
-          <div class="gallery-grid">
-            <figure data-group="model-summary" data-language="english" data-model="none">
-              <a href="runs-FairTales%20AI/figures/model_summary_log_score_english.png">
-                <img src="runs-FairTales%20AI/figures/model_summary_log_score_english.png" alt="Model-level log score summary for English." />
-              </a>
-              <figcaption><span class="caption-title">Model summary · English</span><span class="caption-meta">File: model_summary_log_score_english.png</span><span class="caption-copy">Model comparison within English outputs.</span></figcaption>
-            </figure>
-
-            <figure data-group="model-summary" data-language="spanish" data-model="none">
-              <a href="runs-FairTales%20AI/figures/model_summary_log_score_spanish.png">
-                <img src="runs-FairTales%20AI/figures/model_summary_log_score_spanish.png" alt="Model-level log score summary for Spanish." />
-              </a>
-              <figcaption><span class="caption-title">Model summary · Spanish</span><span class="caption-meta">File: model_summary_log_score_spanish.png</span><span class="caption-copy">Model comparison within Spanish outputs.</span></figcaption>
-            </figure>
-
-            <figure data-group="model-summary" data-language="valencian" data-model="none">
-              <a href="runs-FairTales%20AI/figures/model_summary_log_score_valencian.png">
-                <img src="runs-FairTales%20AI/figures/model_summary_log_score_valencian.png" alt="Model-level log score summary for Valencian." />
-              </a>
-              <figcaption><span class="caption-title">Model summary · Valencian</span><span class="caption-meta">File: model_summary_log_score_valencian.png</span><span class="caption-copy">Model comparison within Valencian outputs.</span></figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="gallery-section">
-          <h3>Summary by topic</h3>
-          <p>
-            These views organize results by topic. In the paper method, each
-            topic groups four subtopics, and metrics can be computed at the
-            subtopic level, at the topic level by aggregating subtopics, and at
-            the global level. These figures therefore connect the visual patterns
-            back to the numeric output folders.
-          </p>
-          <div class="gallery-grid">
-            <figure data-group="genre-topic" data-language="english" data-model="none">
-              <a href="runs-FairTales%20AI/figures/genre_per_topic_english.png">
-                <img src="runs-FairTales%20AI/figures/genre_per_topic_english.png" alt="Summary by topic for English." />
-              </a>
-              <figcaption><span class="caption-title">Summary by topic · English</span><span class="caption-meta">File: genre_per_topic_english.png</span><span class="caption-copy">Topic-oriented view for English outputs.</span></figcaption>
-            </figure>
-
-            <figure data-group="genre-topic" data-language="spanish" data-model="none">
-              <a href="runs-FairTales%20AI/figures/genre_per_topic_spanish.png">
-                <img src="runs-FairTales%20AI/figures/genre_per_topic_spanish.png" alt="Summary by topic for Spanish." />
-              </a>
-              <figcaption><span class="caption-title">Summary by topic · Spanish</span><span class="caption-meta">File: genre_per_topic_spanish.png</span><span class="caption-copy">Topic-oriented view for Spanish outputs.</span></figcaption>
-            </figure>
-
-            <figure data-group="genre-topic" data-language="valencian" data-model="none">
-              <a href="runs-FairTales%20AI/figures/genre_per_topic_valencian.png">
-                <img src="runs-FairTales%20AI/figures/genre_per_topic_valencian.png" alt="Summary by topic for Valencian." />
-              </a>
-              <figcaption><span class="caption-title">Summary by topic · Valencian</span><span class="caption-meta">File: genre_per_topic_valencian.png</span><span class="caption-copy">Topic-oriented view for Valencian outputs.</span></figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section id="data-folders" aria-labelledby="data-title">
-        <h2 id="data-title">Annotated data folders</h2>
+      <div class="gallery-section">
+        <h3>Summary by topic</h3>
         <p>
-          Annotated outputs are grouped first by model and then by language.
-          Within each language, numeric topics and subtopics appear in the form
-          <code>runs-FairTales%20AI/&lt;model&gt;_databias_generated/&lt;language&gt;/&lt;topic&gt;/&lt;subtopic&gt;/</code>.
-          The <code>all</code> folders are aggregate-level folders inside a topic.
+          These views organize results by topic. In the paper method, each
+          topic groups four subtopics, and metrics can be computed at the
+          subtopic level, at the topic level by aggregating subtopics, and at
+          the global level. These figures therefore connect the visual patterns
+          back to the numeric output folders.
         </p>
-        <p>
-          According to the paper's gender annotation protocol, the data files
-          come from identifying terms that refer to people and labeling them as
-          <code>M</code> male, <code>F</code> female, or <code>N</code> neutral
-          when the use is generic, mixed, or ambiguous. From those annotations,
-          metrics such as <em>representation score</em>, <em>count disparity</em>,
-          and <em>log score</em> are computed for each partition.
-        </p>
+        <div class="gallery-grid">
+          <figure data-group="genre-topic" data-language="english" data-model="none">
+            <a href="runs-FairTales-AI/figures/genre_per_topic_english.png">
+              <img src="runs-FairTales-AI/figures/genre_per_topic_english.png" alt="Summary by topic for English." />
+            </a>
+            <figcaption><span class="caption-title">Summary by topic · English</span><span class="caption-meta">File:
+                genre_per_topic_english.png</span><span class="caption-copy">Topic-oriented view for English
+                outputs.</span></figcaption>
+          </figure>
 
-        <div class="file-guide" aria-label="Representative output files">
-          <h3>Quick file guide</h3>
+          <figure data-group="genre-topic" data-language="spanish" data-model="none">
+            <a href="runs-FairTales-AI/figures/genre_per_topic_spanish.png">
+              <img src="runs-FairTales-AI/figures/genre_per_topic_spanish.png" alt="Summary by topic for Spanish." />
+            </a>
+            <figcaption><span class="caption-title">Summary by topic · Spanish</span><span class="caption-meta">File:
+                genre_per_topic_spanish.png</span><span class="caption-copy">Topic-oriented view for Spanish
+                outputs.</span></figcaption>
+          </figure>
+
+          <figure data-group="genre-topic" data-language="valencian" data-model="none">
+            <a href="runs-FairTales-AI/figures/genre_per_topic_valencian.png">
+              <img src="runs-FairTales-AI/figures/genre_per_topic_valencian.png"
+                alt="Summary by topic for Valencian." />
+            </a>
+            <figcaption><span class="caption-title">Summary by topic · Valencian</span><span class="caption-meta">File:
+                genre_per_topic_valencian.png</span><span class="caption-copy">Topic-oriented view for Valencian
+                outputs.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="data-folders" aria-labelledby="data-title">
+      <h2 id="data-title">Annotated data folders</h2>
+      <p>
+        Annotated outputs are grouped first by model and then by language.
+        Within each language, numeric topics and subtopics appear in the form
+        <code>runs-FairTales-AI/&lt;model&gt;_databias_generated/&lt;language&gt;/&lt;topic&gt;/&lt;subtopic&gt;/</code>.
+        The <code>all</code> folders are aggregate-level folders inside a topic.
+      </p>
+      <p>
+        According to the paper's gender annotation protocol, the data files
+        come from identifying terms that refer to people and labeling them as
+        <code>M</code> male, <code>F</code> female, or <code>N</code> neutral
+        when the use is generic, mixed, or ambiguous. From those annotations,
+        metrics such as <em>representation score</em>, <em>count disparity</em>,
+        and <em>log score</em> are computed for each partition.
+      </p>
+
+      <div class="file-guide" aria-label="Representative output files">
+        <h3>Quick file guide</h3>
+        <ul>
+          <li><code>.scores.json</code>: scores derived from the subtopic annotations.</li>
+          <li><code>.scores-with-confidence.json</code>: a score version with confidence information.</li>
+          <li><code>.scores-filtered.json</code>: filtered scores before aggregation outputs are produced.</li>
+          <li><code>aggregation.csv</code>: the main aggregation of terms, labels, and metrics for that partition.</li>
+          <li><code>aggregation-disparity-filtered-(0.5).csv</code>: an aggregation filtered by the disparity condition
+            indicated in the filename.</li>
+          <li><code>aggregation-z2filtered.csv</code>: an additional filtered aggregation variant; the filename
+            preserves the criterion used by the process.</li>
+          <li><code>aggregation-disparity-filtered-(0.5)-filtered-by-ADJ.csv</code> and
+            <code>filtered-by-VERB.csv</code>: views filtered by part of speech to inspect adjectives or verbs.</li>
+        </ul>
+      </div>
+
+      <div class="data-grid">
+        <div class="data-item">
+          <h3>Llama-3.2-1B-Instruct</h3>
           <ul>
-            <li><code>.scores.json</code>: scores derived from the subtopic annotations.</li>
-            <li><code>.scores-with-confidence.json</code>: a score version with confidence information.</li>
-            <li><code>.scores-filtered.json</code>: filtered scores before aggregation outputs are produced.</li>
-            <li><code>aggregation.csv</code>: the main aggregation of terms, labels, and metrics for that partition.</li>
-            <li><code>aggregation-disparity-filtered-(0.5).csv</code>: an aggregation filtered by the disparity condition indicated in the filename.</li>
-            <li><code>aggregation-z2filtered.csv</code>: an additional filtered aggregation variant; the filename preserves the criterion used by the process.</li>
-            <li><code>aggregation-disparity-filtered-(0.5)-filtered-by-ADJ.csv</code> and <code>filtered-by-VERB.csv</code>: views filtered by part of speech to inspect adjectives or verbs.</li>
+            <li><a href="runs-FairTales-AI/Llama-3.2-1B-Instruct_databias_generated/english/"
+                aria-label="Open annotated data folder in English for Llama-3.2-1B-Instruct">Llama-3.2-1B-Instruct -
+                English</a></li>
+            <li><a href="runs-FairTales-AI/Llama-3.2-1B-Instruct_databias_generated/spanish/"
+                aria-label="Open annotated data folder in Spanish for Llama-3.2-1B-Instruct">Llama-3.2-1B-Instruct -
+                Spanish</a></li>
+            <li><a href="runs-FairTales-AI/Llama-3.2-1B-Instruct_databias_generated/valencian/"
+                aria-label="Open annotated data folder in Valencian for Llama-3.2-1B-Instruct">Llama-3.2-1B-Instruct -
+                Valencian</a></li>
           </ul>
         </div>
-
-        <div class="data-grid">
-          <div class="data-item">
-            <h3>Llama-3.2-1B-Instruct</h3>
-            <ul>
-              <li><a href="runs-FairTales%20AI/Llama-3.2-1B-Instruct_databias_generated/english/" aria-label="Open annotated data folder in English for Llama-3.2-1B-Instruct">Llama-3.2-1B-Instruct - English</a></li>
-              <li><a href="runs-FairTales%20AI/Llama-3.2-1B-Instruct_databias_generated/spanish/" aria-label="Open annotated data folder in Spanish for Llama-3.2-1B-Instruct">Llama-3.2-1B-Instruct - Spanish</a></li>
-              <li><a href="runs-FairTales%20AI/Llama-3.2-1B-Instruct_databias_generated/valencian/" aria-label="Open annotated data folder in Valencian for Llama-3.2-1B-Instruct">Llama-3.2-1B-Instruct - Valencian</a></li>
-            </ul>
-          </div>
-          <div class="data-item">
-            <h3>Llama-3.2-3B-Instruct</h3>
-            <ul>
-              <li><a href="runs-FairTales%20AI/Llama-3.2-3B-Instruct_databias_generated/english/" aria-label="Open annotated data folder in English for Llama-3.2-3B-Instruct">Llama-3.2-3B-Instruct - English</a></li>
-              <li><a href="runs-FairTales%20AI/Llama-3.2-3B-Instruct_databias_generated/spanish/" aria-label="Open annotated data folder in Spanish for Llama-3.2-3B-Instruct">Llama-3.2-3B-Instruct - Spanish</a></li>
-              <li><a href="runs-FairTales%20AI/Llama-3.2-3B-Instruct_databias_generated/valencian/" aria-label="Open annotated data folder in Valencian for Llama-3.2-3B-Instruct">Llama-3.2-3B-Instruct - Valencian</a></li>
-            </ul>
-          </div>
-          <div class="data-item">
-            <h3>Mistral-7B-Instruct-v0.3</h3>
-            <ul>
-              <li><a href="runs-FairTales%20AI/Mistral-7B-Instruct-v0.3_databias_generated/english/" aria-label="Open annotated data folder in English for Mistral-7B-Instruct-v0.3">Mistral-7B-Instruct-v0.3 - English</a></li>
-              <li><a href="runs-FairTales%20AI/Mistral-7B-Instruct-v0.3_databias_generated/spanish/" aria-label="Open annotated data folder in Spanish for Mistral-7B-Instruct-v0.3">Mistral-7B-Instruct-v0.3 - Spanish</a></li>
-              <li><a href="runs-FairTales%20AI/Mistral-7B-Instruct-v0.3_databias_generated/valencian/" aria-label="Open annotated data folder in Valencian for Mistral-7B-Instruct-v0.3">Mistral-7B-Instruct-v0.3 - Valencian</a></li>
-            </ul>
-          </div>
-          <div class="data-item">
-            <h3>Qwen3-4B</h3>
-            <ul>
-              <li><a href="runs-FairTales%20AI/Qwen3-4B_databias_generated/english/" aria-label="Open annotated data folder in English for Qwen3-4B">Qwen3-4B - English</a></li>
-              <li><a href="runs-FairTales%20AI/Qwen3-4B_databias_generated/spanish/" aria-label="Open annotated data folder in Spanish for Qwen3-4B">Qwen3-4B - Spanish</a></li>
-              <li><a href="runs-FairTales%20AI/Qwen3-4B_databias_generated/valencian/" aria-label="Open annotated data folder in Valencian for Qwen3-4B">Qwen3-4B - Valencian</a></li>
-            </ul>
-          </div>
-          <div class="data-item">
-            <h3>Qwen3-8B</h3>
-            <ul>
-              <li><a href="runs-FairTales%20AI/Qwen3-8B_databias_generated/english/" aria-label="Open annotated data folder in English for Qwen3-8B">Qwen3-8B - English</a></li>
-              <li><a href="runs-FairTales%20AI/Qwen3-8B_databias_generated/spanish/" aria-label="Open annotated data folder in Spanish for Qwen3-8B">Qwen3-8B - Spanish</a></li>
-              <li><a href="runs-FairTales%20AI/Qwen3-8B_databias_generated/valencian/" aria-label="Open annotated data folder in Valencian for Qwen3-8B">Qwen3-8B - Valencian</a></li>
-            </ul>
-          </div>
-          <div class="data-item">
-            <h3>gpt-oss-20b</h3>
-            <ul>
-              <li><a href="runs-FairTales%20AI/gpt-oss-20b_databias_generated/english/" aria-label="Open annotated data folder in English for gpt-oss-20b">gpt-oss-20b - English</a></li>
-              <li><a href="runs-FairTales%20AI/gpt-oss-20b_databias_generated/spanish/" aria-label="Open annotated data folder in Spanish for gpt-oss-20b">gpt-oss-20b - Spanish</a></li>
-              <li><a href="runs-FairTales%20AI/gpt-oss-20b_databias_generated/valencian/" aria-label="Open annotated data folder in Valencian for gpt-oss-20b">gpt-oss-20b - Valencian</a></li>
-            </ul>
-          </div>
-          <div class="data-item">
-            <h3>salamandra-2b-instruct</h3>
-            <ul>
-              <li><a href="runs-FairTales%20AI/salamandra-2b-instruct_databias_generated/english/" aria-label="Open annotated data folder in English for salamandra-2b-instruct">salamandra-2b-instruct - English</a></li>
-              <li><a href="runs-FairTales%20AI/salamandra-2b-instruct_databias_generated/spanish/" aria-label="Open annotated data folder in Spanish for salamandra-2b-instruct">salamandra-2b-instruct - Spanish</a></li>
-              <li><a href="runs-FairTales%20AI/salamandra-2b-instruct_databias_generated/valencian/" aria-label="Open annotated data folder in Valencian for salamandra-2b-instruct">salamandra-2b-instruct - Valencian</a></li>
-            </ul>
-          </div>
-          <div class="data-item">
-            <h3>salamandra-7b-instruct</h3>
-            <ul>
-              <li><a href="runs-FairTales%20AI/salamandra-7b-instruct_databias_generated/english/" aria-label="Open annotated data folder in English for salamandra-7b-instruct">salamandra-7b-instruct - English</a></li>
-              <li><a href="runs-FairTales%20AI/salamandra-7b-instruct_databias_generated/spanish/" aria-label="Open annotated data folder in Spanish for salamandra-7b-instruct">salamandra-7b-instruct - Spanish</a></li>
-              <li><a href="runs-FairTales%20AI/salamandra-7b-instruct_databias_generated/valencian/" aria-label="Open annotated data folder in Valencian for salamandra-7b-instruct">salamandra-7b-instruct - Valencian</a></li>
-            </ul>
-          </div>
+        <div class="data-item">
+          <h3>Llama-3.2-3B-Instruct</h3>
+          <ul>
+            <li><a href="runs-FairTales-AI/Llama-3.2-3B-Instruct_databias_generated/english/"
+                aria-label="Open annotated data folder in English for Llama-3.2-3B-Instruct">Llama-3.2-3B-Instruct -
+                English</a></li>
+            <li><a href="runs-FairTales-AI/Llama-3.2-3B-Instruct_databias_generated/spanish/"
+                aria-label="Open annotated data folder in Spanish for Llama-3.2-3B-Instruct">Llama-3.2-3B-Instruct -
+                Spanish</a></li>
+            <li><a href="runs-FairTales-AI/Llama-3.2-3B-Instruct_databias_generated/valencian/"
+                aria-label="Open annotated data folder in Valencian for Llama-3.2-3B-Instruct">Llama-3.2-3B-Instruct -
+                Valencian</a></li>
+          </ul>
         </div>
+        <div class="data-item">
+          <h3>Mistral-7B-Instruct-v0.3</h3>
+          <ul>
+            <li><a href="runs-FairTales-AI/Mistral-7B-Instruct-v0.3_databias_generated/english/"
+                aria-label="Open annotated data folder in English for Mistral-7B-Instruct-v0.3">Mistral-7B-Instruct-v0.3
+                - English</a></li>
+            <li><a href="runs-FairTales-AI/Mistral-7B-Instruct-v0.3_databias_generated/spanish/"
+                aria-label="Open annotated data folder in Spanish for Mistral-7B-Instruct-v0.3">Mistral-7B-Instruct-v0.3
+                - Spanish</a></li>
+            <li><a href="runs-FairTales-AI/Mistral-7B-Instruct-v0.3_databias_generated/valencian/"
+                aria-label="Open annotated data folder in Valencian for Mistral-7B-Instruct-v0.3">Mistral-7B-Instruct-v0.3
+                - Valencian</a></li>
+          </ul>
+        </div>
+        <div class="data-item">
+          <h3>Qwen3-4B</h3>
+          <ul>
+            <li><a href="runs-FairTales-AI/Qwen3-4B_databias_generated/english/"
+                aria-label="Open annotated data folder in English for Qwen3-4B">Qwen3-4B - English</a></li>
+            <li><a href="runs-FairTales-AI/Qwen3-4B_databias_generated/spanish/"
+                aria-label="Open annotated data folder in Spanish for Qwen3-4B">Qwen3-4B - Spanish</a></li>
+            <li><a href="runs-FairTales-AI/Qwen3-4B_databias_generated/valencian/"
+                aria-label="Open annotated data folder in Valencian for Qwen3-4B">Qwen3-4B - Valencian</a></li>
+          </ul>
+        </div>
+        <div class="data-item">
+          <h3>Qwen3-8B</h3>
+          <ul>
+            <li><a href="runs-FairTales-AI/Qwen3-8B_databias_generated/english/"
+                aria-label="Open annotated data folder in English for Qwen3-8B">Qwen3-8B - English</a></li>
+            <li><a href="runs-FairTales-AI/Qwen3-8B_databias_generated/spanish/"
+                aria-label="Open annotated data folder in Spanish for Qwen3-8B">Qwen3-8B - Spanish</a></li>
+            <li><a href="runs-FairTales-AI/Qwen3-8B_databias_generated/valencian/"
+                aria-label="Open annotated data folder in Valencian for Qwen3-8B">Qwen3-8B - Valencian</a></li>
+          </ul>
+        </div>
+        <div class="data-item">
+          <h3>gpt-oss-20b</h3>
+          <ul>
+            <li><a href="runs-FairTales-AI/gpt-oss-20b_databias_generated/english/"
+                aria-label="Open annotated data folder in English for gpt-oss-20b">gpt-oss-20b - English</a></li>
+            <li><a href="runs-FairTales-AI/gpt-oss-20b_databias_generated/spanish/"
+                aria-label="Open annotated data folder in Spanish for gpt-oss-20b">gpt-oss-20b - Spanish</a></li>
+            <li><a href="runs-FairTales-AI/gpt-oss-20b_databias_generated/valencian/"
+                aria-label="Open annotated data folder in Valencian for gpt-oss-20b">gpt-oss-20b - Valencian</a></li>
+          </ul>
+        </div>
+        <div class="data-item">
+          <h3>salamandra-2b-instruct</h3>
+          <ul>
+            <li><a href="runs-FairTales-AI/salamandra-2b-instruct_databias_generated/english/"
+                aria-label="Open annotated data folder in English for salamandra-2b-instruct">salamandra-2b-instruct -
+                English</a></li>
+            <li><a href="runs-FairTales-AI/salamandra-2b-instruct_databias_generated/spanish/"
+                aria-label="Open annotated data folder in Spanish for salamandra-2b-instruct">salamandra-2b-instruct -
+                Spanish</a></li>
+            <li><a href="runs-FairTales-AI/salamandra-2b-instruct_databias_generated/valencian/"
+                aria-label="Open annotated data folder in Valencian for salamandra-2b-instruct">salamandra-2b-instruct -
+                Valencian</a></li>
+          </ul>
+        </div>
+        <div class="data-item">
+          <h3>salamandra-7b-instruct</h3>
+          <ul>
+            <li><a href="runs-FairTales-AI/salamandra-7b-instruct_databias_generated/english/"
+                aria-label="Open annotated data folder in English for salamandra-7b-instruct">salamandra-7b-instruct -
+                English</a></li>
+            <li><a href="runs-FairTales-AI/salamandra-7b-instruct_databias_generated/spanish/"
+                aria-label="Open annotated data folder in Spanish for salamandra-7b-instruct">salamandra-7b-instruct -
+                Spanish</a></li>
+            <li><a href="runs-FairTales-AI/salamandra-7b-instruct_databias_generated/valencian/"
+                aria-label="Open annotated data folder in Valencian for salamandra-7b-instruct">salamandra-7b-instruct -
+                Valencian</a></li>
+          </ul>
+        </div>
+      </div>
 
-    
-      </section>
-    </main>
 
-    <script>
-      const languageFilter = document.querySelector("#language-filter");
-      const modelFilter = document.querySelector("#model-filter");
-      const groupFilter = document.querySelector("#group-filter");
-      const resetButton = document.querySelector("#reset-filters");
-      const figures = Array.from(document.querySelectorAll("figure[data-group]"));
-      const filterControls = [languageFilter, modelFilter, groupFilter].filter(Boolean);
+    </section>
+  </main>
 
-      function matchesFilter(value, selected) {
-        return selected === "all" || value === selected;
-      }
+  <script>
+    const languageFilter = document.querySelector("#language-filter");
+    const modelFilter = document.querySelector("#model-filter");
+    const groupFilter = document.querySelector("#group-filter");
+    const resetButton = document.querySelector("#reset-filters");
+    const figures = Array.from(document.querySelectorAll("figure[data-group]"));
+    const filterControls = [languageFilter, modelFilter, groupFilter].filter(Boolean);
 
-      function applyFilters() {
-        const language = languageFilter ? languageFilter.value : "all";
-        const model = modelFilter ? modelFilter.value : "all";
-        const group = groupFilter ? groupFilter.value : "all";
+    function matchesFilter(value, selected) {
+      return selected === "all" || value === selected;
+    }
 
-        figures.forEach((figure) => {
-          const visible =
-            matchesFilter(figure.dataset.language, language) &&
-            matchesFilter(figure.dataset.model, model) &&
-            matchesFilter(figure.dataset.group, group);
-          figure.hidden = !visible;
-        });
-      }
+    function applyFilters() {
+      const language = languageFilter ? languageFilter.value : "all";
+      const model = modelFilter ? modelFilter.value : "all";
+      const group = groupFilter ? groupFilter.value : "all";
 
-      filterControls.forEach((control) => {
-        control.addEventListener("change", applyFilters);
+      figures.forEach((figure) => {
+        const visible =
+          matchesFilter(figure.dataset.language, language) &&
+          matchesFilter(figure.dataset.model, model) &&
+          matchesFilter(figure.dataset.group, group);
+        figure.hidden = !visible;
       });
+    }
 
-      if (resetButton) {
-        resetButton.addEventListener("click", () => {
-          filterControls.forEach((control) => {
-            control.value = "all";
-          });
-          applyFilters();
+    filterControls.forEach((control) => {
+      control.addEventListener("change", applyFilters);
+    });
+
+    if (resetButton) {
+      resetButton.addEventListener("click", () => {
+        filterControls.forEach((control) => {
+          control.value = "all";
         });
-      }
-    </script>
-  </body>
+        applyFilters();
+      });
+    }
+  </script>
+</body>
+
 </html>
