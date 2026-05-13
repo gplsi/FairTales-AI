@@ -6,7 +6,6 @@ from __future__ import annotations
 import html
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 DATA_ROOT = ROOT / "runs-FairTales AI"
 SKIP_FILES = {".DS_Store", "index.html"}
@@ -75,8 +74,15 @@ def render_index(directory: Path) -> str:
         if child.name not in SKIP_FILES
     ]
     if directory != DATA_ROOT:
-        rows.insert(0, '<div class="row"><a class="name" href="../">..</a><div class="meta">Parent folder</div></div>')
-    content = "\n".join(rows) if rows else '<div class="row"><span class="name">No files</span><div class="meta"></div></div>'
+        rows.insert(
+            0,
+            '<div class="row"><a class="name" href="../">..</a><div class="meta">Parent folder</div></div>',
+        )
+    content = (
+        "\n".join(rows)
+        if rows
+        else '<div class="row"><span class="name">No files</span><div class="meta"></div></div>'
+    )
 
     return f"""<!doctype html>
 <html lang="en">
@@ -91,7 +97,7 @@ def render_index(directory: Path) -> str:
 <div class="top">
 <div>
 <h1>{relative_label(directory)}</h1>
-<p>Static file listing for the FairTales AI dataset.</p>
+<p>FairTales AI Results and Annotation Files.</p>
 </div>
 <a class="home" href="{html.escape(home_href, quote=True)}">Back to overview</a>
 </div>
@@ -108,7 +114,10 @@ def render_index(directory: Path) -> str:
 def main() -> None:
     if not DATA_ROOT.exists():
         raise SystemExit(f"Missing data directory: {DATA_ROOT}")
-    for directory in [DATA_ROOT, *[path for path in DATA_ROOT.rglob("*") if path.is_dir()]]:
+    for directory in [
+        DATA_ROOT,
+        *[path for path in DATA_ROOT.rglob("*") if path.is_dir()],
+    ]:
         (directory / "index.html").write_text(render_index(directory), encoding="utf-8")
 
 
